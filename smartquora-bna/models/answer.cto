@@ -1,0 +1,66 @@
+/**
+ * New model file
+ */
+
+namespace smartquora.answer
+
+import smartquora.participant.QuoraUser
+import smartquora.question.Question
+
+enum AnswerStatus {
+  o CREATED
+  o VOTED
+  o AWARDED
+}
+
+enum VoteDirection {
+  o UP
+  o DOWN
+}
+
+concept Vote {
+  --> QuoraUser voter
+  o DateTime voteTime
+}
+
+asset Answer identified by answerId {
+  o String answerId
+  o String answerDesc
+  o Double earnings default = 0.0
+  o AnswerStatus status default = 'CREATED'
+  o DateTime timeCreated
+  o DateTime timeAwarded optional
+  --> Question associatedQuestion
+  --> QuoraUser owner
+  --> QuoraUser[] voters optional
+  o Integer votes default = 0
+}
+
+transaction VoteAnswer {
+  --> Answer answer
+  --> QuoraUser voter
+  o VoteDirection direction
+}
+
+event AnswerVoted {
+  --> Answer answer
+  --> QuoraUser voter
+  o Integer currentVotes
+  o VoteDirection direction
+  o DateTime timeVoted
+}
+
+transaction CreateAnswer {
+  --> Question associatedQuestion
+  --> QuoraUser answeredBy
+  o String answerId optional
+  o String answerDesc
+}
+
+event AnswerCreated {
+  --> Question associatedQuestion
+  --> QuoraUser answeredBy
+  o String answerId
+  o String answerDesc
+  o DateTime timeCreated
+}

@@ -1,0 +1,12 @@
+namespace smartquora.participant
+
+abstract participant User identified by emailId {
+  o String emailId
+  o String fName
+  o String lname
+}
+
+participant QuoraUser extends User {
+  o Integer rank default = 1
+  o Double token
+}
