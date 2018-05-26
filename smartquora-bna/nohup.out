@@ -1,0 +1,7 @@
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'e3f4ffae4a0b5fd5446f8282599d2a228c112fd3ed25b0f322551764465ca21f', has not been registered
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'e3f4ffae4a0b5fd5446f8282599d2a228c112fd3ed25b0f322551764465ca21f', has not been registered
+Error: Error trying to ping. Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'e3f4ffae4a0b5fd5446f8282599d2a228c112fd3ed25b0f322551764465ca21f', has not been registered
+    at _checkRuntimeVersions.then.catch (/home/hyperuser/.nvm/versions/node/v8.10.0/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:787:34)
+    at <anonymous>

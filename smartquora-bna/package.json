@@ -1,6 +1,6 @@
 {
   "name": "smartquora-bna",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Quora on Blockchain",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/smartquora-bna.bna",
@@ -25,5 +25,8 @@
     "nyc": "latest",
     "mkdirp": "latest",
     "mocha": "latest"
+  },
+  "dependencies": {
+    "passport-auth0": "^0.6.1"
   }
 }

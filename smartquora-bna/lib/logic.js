@@ -75,12 +75,14 @@ async function createQuestion(tx) {
     throw new Error("Awarding Time: " + awardingTime + " should be greater than question Creation Time: " + q.timeCreated);
   q.timeToAward = awardingTime;
 
+  var owner = getCurrentParticipant();
   // Owner should be an existing SmartQuora user
   const participantRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
-  var existingUser = await participantRegistry.exists(tx.askedBy.getIdentifier());
+  var existingUser = await participantRegistry.exists(owner.getIdentifier());
   if (!existingUser)
     throw new Error("User: " + tx.askedBy + " does not exist!");
-  q.owner = tx.askedBy;
+  //q.owner = tx.askedBy;
+  q.owner = owner;
 
   // Get the asset registry for the question.
   const assetRegistry = await getAssetRegistry('smartquora.question.Question');
@@ -88,11 +90,10 @@ async function createQuestion(tx) {
   // Add the question to the asset registry
   await assetRegistry.add(q);
 
-
   // Emit an event for the added question.
   let event = getFactory().newEvent('smartquora.question', 'QuestionCreated');
   event.question = q;
-  event.askedBy = tx.askedBy;
+  event.askedBy = owner;
   event.questionId = qid;
   event.questionDesc = tx.questionDesc;
   event.offer = tx.offer;
@@ -114,17 +115,19 @@ async function createAnswer(tx) {
     aid = generateId("answer");
 
   var a = getFactory().newResource('smartquora.answer', 'Answer', aid);
+  var owner = getCurrentParticipant();
 
   // AnsweredBy should be an existing SmartQuora user
   const participantRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
-  var userExists = await participantRegistry.exists(tx.answeredBy.getIdentifier());
+  var userExists = await participantRegistry.exists(owner.getIdentifier());
   if (!userExists)
     throw new Error("User: " + tx.answeredBy + " does not exist!");
-  a.owner = tx.answeredBy;
+  //a.owner = tx.answeredBy;
+  a.owner = owner;
 
   // Question cannot be answered by the question owner
   var questionOwner = tx.associatedQuestion.owner;
-  if (tx.answeredBy.getIdentifier() == questionOwner.getIdentifier()) {
+  if (owner.getIdentifier() == questionOwner.getIdentifier()) {
     throw new Error("Question cannot be answered by the questioner");
   }
 
@@ -133,6 +136,12 @@ async function createAnswer(tx) {
   var questionExists = await questionRegistry.exists(tx.associatedQuestion.getIdentifier());
   if (!questionExists)
     throw new Error("Question Id: " + tx.associatedQuestion.getIdentifier() + " does not exist!");
+
+  // Answer cannot be added after the awarding period starts
+  var currentTime = new Date();
+  if (currentTime >= tx.associatedQuestion.timeToAward)
+    throw new Error("Answer cannot be added now. Answering period has elapsed!");
+
   a.associatedQuestion = tx.associatedQuestion;
   a.answerDesc = tx.answerDesc;
   a.status = 'CREATED';
@@ -144,60 +153,21 @@ async function createAnswer(tx) {
   // Add the answer to the asset registry
   await assetRegistry.add(a);
 
+  // Answer has been created. Now associate it with the question.
+  // If there are no answers yet, initialize the answers array
+  if (typeof tx.associatedQuestion.answers == 'undefined')
+    tx.associatedQuestion.answers = [];
+  tx.associatedQuestion.answers.push(a);
+  tx.associatedQuestion.status = 'ANSWERED';
+  await questionRegistry.update(tx.associatedQuestion);
+
   // Emit an event for the added answer.
   let event = getFactory().newEvent('smartquora.answer', 'AnswerCreated');
   event.answerId = aid;
   event.answerDesc = tx.answerDesc;
-  event.answeredBy = tx.answeredBy;
+  event.answeredBy = owner;
   event.associatedQuestion = tx.associatedQuestion;
   event.timeCreated = a.timeCreated;
-  emit(event);
-}
-
-/**
- * Add Answer to Question transaction
- transaction AddAnswer {
-  --> Question question
-  --> Answer answer
-}
-
-event AnswerAdded {
-  --> Question question
-  --> Answer answer
-}
- * @param {smartquora.question.AddAnswer} addAnswer
- * @transaction
- */
-async function addAnswer(tx) {
-  // Question must exist
-  var questionRegistry = await getAssetRegistry('smartquora.question.Question');
-  var questionExists = await questionRegistry.exists(tx.question.getIdentifier());
-  if (!questionExists)
-    throw new Error("Question Id: " + tx.question.getIdentifier() + " does not exist!");
-
-  // Answer must exist
-  var answerRegistry = await getAssetRegistry('smartquora.answer.Answer');
-  var answerExists = await answerRegistry.exists(tx.answer.getIdentifier());
-  if (!answerExists)
-    throw new Error("Answer Id: " + tx.answer.getIdentifier() + " does not exist!");
-
-  // Answer cannot be added after the awarding period starts
-  var currentTime = new Date();
-  if (currentTime >= tx.question.timeToAward)
-    throw new Error("Answer :" + tx.answer.getIdentifier() + " cannot be added now. Answering period has elapsed!");
-
-  if (typeof tx.question.answers == 'undefined')
-    tx.question.answers = [];
-  if (isObjectInArray(tx.question.answers, tx.answer))
-    throw new Error("Answer: " + tx.answer.getIdentifier() + " was already added!");
-  tx.question.answers.push(tx.answer);
-  tx.question.status = 'ANSWERED';
-  await questionRegistry.update(tx.question);
-
-  // Emit an event for the added answer.
-  let event = getFactory().newEvent('smartquora.question', 'AnswerAdded');
-  event.question = tx.question;
-  event.answer = tx.answer;
   emit(event);
 }
 
@@ -213,13 +183,16 @@ async function voteAnswer(tx) {
   if (!answerExists)
     throw new Error("Answer Id: " + tx.answer.getIdentifier() + " does not exist!");
 
+  var voter = getCurrentParticipant();
+  console.log('@debug - Voter is: ' + voter);
   // voter should be an existing SmartQuora user
   const participantRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
-  var userExists = await participantRegistry.exists(tx.voter.getIdentifier());
+  var userExists = await participantRegistry.exists(voter.getIdentifier());
   if (!userExists)
-    throw new Error("User: " + tx.voter + " does not exist!");
+    throw new Error("User: " + voter + " does not exist!");
+  console.log('@debug - Voter exists!');
 
-  if (tx.answer.owner.getIdentifier() == tx.voter.getIdentifier())
+  if (tx.answer.owner.getIdentifier() == voter.getIdentifier())
     throw new Error("You cannot vote for your own answers!");
 
   // Answer cannot be voted after the awarding period starts
@@ -229,9 +202,10 @@ async function voteAnswer(tx) {
 
   if (typeof tx.answer.voters == 'undefined')
     tx.answer.voters = [];
-  if (isObjectInArray(tx.answer.voters, tx.voter))
-    throw new Error("Voter: " + tx.voter.getIdentifier() + " has already voted!");
-  tx.answer.voters.push(tx.voter);
+  if (isObjectInArray(tx.answer.voters, voter))
+    throw new Error("Voter: " + voter.getIdentifier() + " has already voted!");
+  console.log('@debug - Voter has not already voted for this question');
+  tx.answer.voters.push(voter);
   tx.answer.status = 'VOTED';
   if (tx.direction == 'UP')
     tx.answer.votes = tx.answer.votes + 1;
@@ -244,7 +218,7 @@ async function voteAnswer(tx) {
   // Emit an event for the answer voted.
   let event = getFactory().newEvent('smartquora.answer', 'AnswerVoted');
   event.answer = tx.answer;
-  event.voter = tx.voter;
+  event.voter = voter;
   event.currentVotes = tx.answer.votes;
   event.direction = tx.direction;
   event.timeVoted = new Date();
@@ -253,10 +227,10 @@ async function voteAnswer(tx) {
 
 /**
  * Award Answers to Question transaction
- * @param {smartquora.question.AwardAnswers} awardAnswers
+ * @param {smartquora.question.AwardQuestion} awardQuestion
  * @transaction
  */
-async function awardAnswers(tx) {
+async function awardQuestion(tx) {
   const participantRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
   const answerRegistry = await getAssetRegistry('smartquora.answer.Answer');
   const questionRegistry = await getAssetRegistry('smartquora.question.Question');
@@ -273,7 +247,7 @@ async function awardAnswers(tx) {
   // Answers cannot be added before the awarding period starts
   var currentTime = new Date();
   if (currentTime < tx.question.timeToAward)
-    throw new Error("Question :" + tx.question.getIdentifier() + " cannot be awarded now. Answering period has not started yet!");
+    throw new Error("Question :" + tx.question.getIdentifier() + " cannot be awarded now. Awarding period has not started yet!");
 
   if (tx.question.status == 'AWARDED')
     throw new Error("Question :" + tx.question.getIdentifier() + " has already been awarded");
@@ -290,7 +264,7 @@ async function awardAnswers(tx) {
     participantList.push(tx.question.owner);
   } else {
     var totalVotes = 0;
-    var originalBalance = tx.question.balance;
+    var stake = tx.question.stake;
     var length = tx.question.answers.length;
     for (i = 0; i < length; i++) {
       var answer = tx.question.answers[i];
@@ -298,7 +272,7 @@ async function awardAnswers(tx) {
     }
     for (i = 0; i < length; i++) {
       var answer = tx.question.answers[i];
-      var award = Math.round(answer.votes / totalVotes * originalBalance * 100)/100;
+      var award = Math.round(answer.votes / totalVotes * stake * 100)/100;
       //award = award.toFixed(2);
       answer.earnings = award;
       answer.status = 'AWARDED';
@@ -318,7 +292,7 @@ async function awardAnswers(tx) {
   await participantRegistry.updateAll(participantList);
 
   // Emit an event for the added answer.
-  let event = getFactory().newEvent('smartquora.question', 'AnswersAwarded');
+  let event = getFactory().newEvent('smartquora.question', 'QuestionAwarded');
   event.question = tx.question;
   event.timeAwarded = new Date();
   emit(event);

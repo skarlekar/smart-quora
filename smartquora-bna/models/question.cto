@@ -27,7 +27,6 @@ asset Question identified by questionId {
 
 transaction CreateQuestion {
   o String id optional
-  --> QuoraUser askedBy
   o String questionDesc
   o Double offer
   o DateTime awardingTime
@@ -42,21 +41,11 @@ event QuestionCreated {
   o DateTime timeCreated
 }
 
-transaction AddAnswer {
-  --> Question question
-  --> Answer answer
-}
-
-event AnswerAdded {
-  --> Question question
-  --> Answer answer
-}
-
-transaction AwardAnswers {
+transaction AwardQuestion {
   --> Question question
 }
 
-event AnswersAwarded {
+event QuestionAwarded {
   --> Question question
   o DateTime timeAwarded
 }

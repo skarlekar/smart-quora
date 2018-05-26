@@ -18,11 +18,6 @@ enum VoteDirection {
   o DOWN
 }
 
-concept Vote {
-  --> QuoraUser voter
-  o DateTime voteTime
-}
-
 asset Answer identified by answerId {
   o String answerId
   o String answerDesc
@@ -38,7 +33,6 @@ asset Answer identified by answerId {
 
 transaction VoteAnswer {
   --> Answer answer
-  --> QuoraUser voter
   o VoteDirection direction
 }
 
@@ -52,7 +46,6 @@ event AnswerVoted {
 
 transaction CreateAnswer {
   --> Question associatedQuestion
-  --> QuoraUser answeredBy
   o String answerId optional
   o String answerDesc
 }

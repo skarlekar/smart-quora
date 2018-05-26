@@ -1,0 +1,24 @@
+/**
+ * New query file
+ */
+
+query FindAllQuestions {
+  description: "Return all questions"
+  statement: 
+     SELECT smartquora.question.Question
+     ORDER BY timeCreated
+}
+
+query FindAllAnswersForGivenQuestion {
+  description: "Return all answers for the given question"
+  statement: 
+     SELECT smartquora.answer.Answer
+       WHERE (associatedQuestion == _$question_id)
+}
+
+query FindQuestionsForAwarding {
+  description: "Return all questions where timeToAward is past current Time"
+  statement:
+    SELECT smartquora.question.Question
+      WHERE ((timeToAward >= _$givenTime) AND (status == 'ANSWERED'))
+}

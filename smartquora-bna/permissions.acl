@@ -3,26 +3,26 @@
  */
 rule EverybodyCanReadEverything {
     description: "Allow all participants read access to all resources"
-    participant: "smartquora.SampleParticipant"
+    participant: "smartquora.participant.QuoraUser"
     operation: READ
-    resource: "smartquora.*"
+    resource: "smartquora.**"
     action: ALLOW
 }
 
 rule EverybodyCanSubmitTransactions {
     description: "Allow all participants to submit transactions"
-    participant: "smartquora.SampleParticipant"
+    participant: "smartquora.participant.QuoraUser"
     operation: CREATE
-    resource: "smartquora.SampleTransaction"
+    resource: "smartquora.**"
     action: ALLOW
 }
 
-rule OwnerHasFullAccessToTheirAssets {
-    description: "Allow all participants full access to their assets"
-    participant(p): "smartquora.SampleParticipant"
-    operation: ALL
-    resource(r): "smartquora.SampleAsset"
-    condition: (r.owner.getIdentifier() === p.getIdentifier())
+rule OwnerCannotUpdateTheirAssets {
+    description: "Restrict Participants from updating their assets"
+    participant(p): "smartquora.participant.QuoraUser"
+    operation: UPDATE
+    resource(r): "smartquora.**"
+    condition: (r.owner.getIdentifier() != p.getIdentifier())
     action: ALLOW
 }
 
@@ -49,3 +49,4 @@ rule NetworkAdminSystem {
     resource: "org.hyperledger.composer.system.**"
     action: ALLOW
 }
+
