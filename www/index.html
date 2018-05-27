@@ -22,32 +22,25 @@
     const faqurl = host + "/api/queries/FindAllQuestions";
     const pingurl = host + "/api/system/ping";
     const loginurl = host + "/auth/google";
+    const walleturl = host + "/api/wallet";
+    const walletimporturl = host + "/api/wallet/import";
+
+
 
     function paintPage() {
-      var access_token = getCookie('access_token');
-      if (!access_token) {
-        console.log("No access_token cookie found - Redirecting to authenticate.");
-        authenticationRedirect(access_token, pingurl, loginurl);
-        return;
-      }
-      var matches = access_token.match(/^s:(.+?)\./);
-      if (!matches) {
-        console.log("access_token cookie was found, but it was broken! Redirecting to authenticate.");
-        authenticationRedirect(access_token, pingurl, loginurl);
-        return;
-      }
-      access_token = matches[1];
+      access_token = getAccessToken();
       console.log("Access Token :" + access_token);
       paintQuestions(access_token);
+      paintWallet(walleturl, access_token);
     }
 
     function paintQuestions(accessToken) {
-      getData(faqurl, "", accessToken)
+      getData(faqurl, accessToken)
         .then(function(data) {
           console.log("Questions: " + JSON.stringify(data, null, 2));
           for (var i = 0; i < data.length; i++) {
             question = data[i];
-            addQuestionToTable(question["questionId"], question["questionDesc"], question["status"], question["stake"], question["balance"],question["timeCreated"], question["timeToAward"]);
+            addQuestionToTable(question["questionId"], question["questionDesc"], question["status"], question["stake"], question["balance"], question["timeCreated"], question["timeToAward"]);
           }
         })
         .catch(function(reason) {
@@ -62,7 +55,7 @@
       var dueTS = due.toLocaleDateString() + " " + due.toLocaleTimeString();
       var tableBody = "q-table-body";
       var quotedQid = "\"/question.html?qid=" + questionId + "\"";
-      var href = "<a  href=" + quotedQid + "><div class='font-weight-normal' align='left'>"+ questionId +"</div></a>";
+      var href = "<a  href=" + quotedQid + "><div class='font-weight-normal' align='left'>" + questionId + "</div></a>";
       var tableRef = document.getElementById(tableBody);
       var row = tableRef.insertRow(tableRef.rows.length);
       var cell0 = row.insertCell(0);
@@ -77,14 +70,177 @@
       cell4.innerHTML = "<div class='font-weight-normal' align='left'>" + dueTS + "</div>";;
       console.log('Exiting addRow');
     }
+
+    function paintWallet(walleturl, accessToken) {
+      var selectRef = document.getElementById("available-cards");
+      console.log("Fetching wallet data");
+      getData(walleturl, accessToken)
+        .then(function(data) {
+          console.log("Wallet: " + JSON.stringify(data, null, 2));
+          var currentCard;
+          var currentCardName = "None";
+          for (var i = 0; i < data.length; i++) {
+            card = data[i];
+            var opt = document.createElement('option');
+            opt.value = card["name"];
+            opt.innerHTML = card["name"];
+            if (card["default"]) {
+              currentCard = card;
+              currentCardName = card["name"];
+              opt.selectedIndex = i;
+            }
+            selectRef.appendChild(opt);
+          }
+          document.getElementById("current-card").value = currentCardName;
+        })
+        .catch(function(reason) {
+          console.log("Wallet Fetch Failure: " + reason.message)
+        });
+    }
+
+    function uploadCard0() {
+      var cardName = document.getElementById("new-card-name").value;
+      var cardFile = document.getElementById("card-file").value;
+      if (cardName.length == 0) {
+        alert("Error: Provide a card name");
+      } else if (cardFile.length == 0) {
+        alert("Error: Provide a valid card file");
+      } else {
+        var formElement = document.querySelector("upload-new-card");
+        var request = new XMLHttpRequest();
+        request.withCredentials = true;
+        request.addEventListener("readystatechange", function() {
+          if (this.readyState === 4) {
+            console.log("******** XMLHttpRequest Status: " + this.responseText);
+          }
+        });
+        request.open("POST", walletimporturl, false);
+        var accessToken = getAccessToken();
+        request.setRequestHeader("X-Access-Token", accessToken);
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader("Cache-Control", "no-cache");
+        request.send(new FormData(formElement));
+        console.log("Upload Status: " + request.status);
+      }
+    }
+
+    function uploadCard() {
+      var cardName = document.getElementById("new-card-name").value;
+      var cardFile = document.getElementById("card-file").value;
+      if (cardName.length == 0) {
+        alert("Error: Provide a card name");
+      } else if (cardFile.length == 0) {
+        alert("Error: Provide a valid card file");
+      } else {
+        var formData = new FormData();
+        formData.append("name", cardName);
+        formData.append("card", cardFile);
+        console.log("cardName: "+cardName);
+        console.log("cardFile: "+cardFile);
+        //formData.append("card", document.getElementById("card-file").files[0]);
+        var request = new XMLHttpRequest();
+        request.withCredentials = true;
+        request.addEventListener("readystatechange", function() {
+          if (this.readyState === 4) {
+            console.log("******** XMLHttpRequest Status: " + this.responseText);
+          }
+        });
+        var accessToken = getAccessToken();
+        console.log("walletimporturl: " + walletimporturl);
+        request.open("POST", walletimporturl, false);
+        request.setRequestHeader("X-Access-Token", accessToken);
+        //request.setRequestHeader("Content-Type", "multipart/form-data");
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader("Cache-Control", "no-cache");
+        request.send(formData);
+        console.log("Upload Status: " + request.status);
+      }
+    }
+
+    function changeCard() {
+      var dropdown = document.getElementById("available-cards");
+      var selected = dropdown.options[dropdown.selectedIndex].value;
+      var accessToken = getAccessToken();
+      var setDefaultUrl = walleturl + "/" + selected + "/" + "setDefault";
+      var message = "Digital Identity was changed to card: " + selected;
+      var result = postToUrl204(setDefaultUrl, accessToken, message);
+    }
   </script>
 </head>
 
 
 <a href="#"></a>
+
 <body>
   <h1 class="display-3 text-center my-4 bg-dark text-light p-3">Smart Quora</h1>
+
   <div class="container">
+    <!-- Wallet MODAL TRIGGER -->
+    <button class="btn btn-info" data-toggle="modal" data-target="#walletModal">Wallet</button>
+    <!-- Wallet MODAL -->
+    <div class="modal" id="walletModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Wallet</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+
+            <div class="card">
+              <div class="card-header">
+                Digital Identity Card
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="current-card">Current Digital Identity Card</label>
+                  <input type="text" placeholder="current-card" id="current-card" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="available-cards">Available Digital Identity Cards</label>
+                  <select id="available-cards" class="form-control">
+                  </select>
+                </div>
+                <div class="text-md-center">
+                  <button class="btn btn-secondary" onclick="changeCard()" data-dismiss="modal">Change Card</button>
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="card">
+              <div class="card-header">
+                Upload New Digital Identity Card
+              </div>
+              <div class="card-body">
+                <form name="upload-new-card">
+                  <div class="form-group">
+                    <label for="new-card-name">Card Name</label>
+                    <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10">
+                    <label for="card-file">Import Card</label>
+                    <input type="file" id="card-file" name="card" class="form-control-file" required>
+                    <small id="fileHelp" class="form-text text-muted">Upload a valid digital identity card</small>
+                    <div class="">
+                      <p></p>
+                    </div>
+                    <div class="text-md-center">
+                      <button class="btn btn-secondary" onclick="uploadCard()">Upload Card</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="text-md-center">
+              <button class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questions -->
     <h2 class="display-5 text-center my-4">Questions</h2>
     <div id="questions">
       <table id="q-table" class="table table-sm table-hover table-striped">

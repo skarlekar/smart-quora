@@ -24,71 +24,117 @@
     const faafgqurl = host + "/api/queries/FindAllAnswersForGivenQuestion?question_id=resource%3Asmartquora.question.Question%23";
     const voteurl = host + "/api/smartquora.answer.VoteAnswer";
     const pingurl = host + "/api/system/ping";
+    const identitiesurl = host + "/api/system/identities";
     const loginurl = host + "/auth/google";
+    var identityMap = {};
+
+    var ws = new WebSocket('wss://ec2-35-168-150-155.compute-1.amazonaws.com:3000');
+    ws.onerror = function(event) {
+      showErrorAlert("Error received from WebSocket. See Web Console for more details.");
+      console.log('-------------- Websocket Error ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+    };
+
+    ws.onclose = function(event) {
+      showInfoAlert("Closed connection to WebSocket.");
+      console.log('-------------- Websocket Close ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+    };
+
+    ws.onopen = function(event) {
+      //showInfoAlert("Now Connected to WebSocket: " + event.currentTarget.url);
+      console.log('-------------- Websocket is Open ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+
+    };
+
+    ws.onmessage = function(event) {
+      showInfoAlert(JSON.stringify(JSON.parse(event.data), null, 2));
+      //document.getElementById('mydiv').innerHTML = JSON.stringify(JSON.parse(event.data), null, 2);
+      console.log('-------------- Websocket Message Received  ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+      decipherEvent(JSON.parse(event.data));
+    };
+
+    function decipherEvent(eventData) {
+      if (eventData["$class"] == "smartquora.answer.AnswerVoted") {
+        var pound = eventData["answer"].indexOf("#");
+        var answer = eventData["answer"].substr(pound+1);
+        var votes = eventData["currentVotes"];
+        alert(answer + ":" + votes);
+        document.getElementById(answer).value = votes;
+      }
+    };
+
+    function buildIdentityMap(accessToken) {
+      getData(identitiesurl, accessToken)
+        .then(function(data) {
+          //console.log("Identities: " + JSON.stringify(data, null, 2));
+          for (var i = 0; i < data.length; i++) {
+            identity = data[i];
+            participant = identity["participant"];
+            name = identity["name"];
+            identityMap[participant] = name;
+          }
+          console.log("IdentityMap: " + JSON.stringify(identityMap, null, 2));
+        })
+        .catch(function(reason) {
+          console.log(reason.message)
+        });
+
+    }
 
     function voteAnswer(aid, direction) {
       var resource = "resource:smartquora.answer.Answer#" + aid;
-      var headers = {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      }
       var body = {
         "$class": "smartquora.answer.VoteAnswer",
         "answer": resource,
         "direction": direction
       };
-      let config = {
-        "method": "POST",
-        "headers": headers,
-        "body": JSON.stringify(body)
-      };
-      console.log("Posting this :" + JSON.stringify(config, null, 2));
-      fetch(voteurl, config)
-        .then(function(response) {
-          // we received the response and print the status code
-          console.log("Vote Response Status: " + response.status)
-          // return response body as JSON
-          return response.json()
-        })
-        .then(json => {
-          // print the JSON
-          console.log("Vote Return JSON: " + JSON.stringify(json, null, 2));
-        })
+      postToUrl200(voteurl, body, getAccessToken());
     }
 
-
     function voteUp(aid) {
-      alert("Vote Up: " + aid);
       voteAnswer(aid, "UP");
     }
 
     function voteDown(aid) {
-      alert("Vote Down: " + aid);
       voteAnswer(aid, "DOWN");
     }
 
+
     function paintForm() {
       var qid = getUrlParam("qid", "question-default");
-      var access_token = getCookie('access_token');
-      if (!access_token) {
-        console.log("No access_token cookie found - Redirecting to authenticate.");
-        authenticationRedirect(access_token, pingurl, loginurl);
-        return;
-      }
-      var matches = access_token.match(/^s:(.+?)\./);
-      if (!matches) {
-        console.log("access_token cookie was found, but it was broken! Redirecting to authenticate.");
-        authenticationRedirect(access_token, pingurl, loginurl);
-        return;
-      }
-      access_token = matches[1];
+      // var access_token = getCookie('access_token');
+      // if (!access_token) {
+      //   console.log("No access_token cookie found - Redirecting to authenticate.");
+      //   authenticationRedirect(access_token, pingurl, loginurl);
+      //   return;
+      // }
+      // var matches = access_token.match(/^s:(.+?)\./);
+      // if (!matches) {
+      //   console.log("access_token cookie was found, but it was broken! Redirecting to authenticate.");
+      //   authenticationRedirect(access_token, pingurl, loginurl);
+      //   return;
+      // }
+      // access_token = matches[1];
+      access_token = getAccessToken();
       console.log("Url Parameter qid :" + qid);
       console.log("Access Token :" + access_token);
+      buildIdentityMap(access_token);
       paintQuestion(qid, access_token);
     }
 
     function paintQuestion(qid, accessToken) {
-      getData(qurl, qid, accessToken)
+      getData(qurl + qid, accessToken)
         .then(function(data) {
           console.log("Question: " + JSON.stringify(data, null, 2));
           var created = new Date(data["timeCreated"]);
@@ -97,6 +143,7 @@
           var dueTS = due.toLocaleDateString() + " " + due.toLocaleTimeString();
           document.getElementById("question-id").value = data["questionId"];
           document.getElementById("question-description").value = data["questionDesc"];
+          document.getElementById("owner").value = identityMap[data["owner"]];
           document.getElementById("status").value = data["status"];
           document.getElementById("stake").value = data["stake"];
           document.getElementById("balance").value = data["balance"];
@@ -105,241 +152,56 @@
           paintCurrentAnswers(qid, accessToken);
         })
         .catch(function(reason) {
-          console.log(reason.message)
+          console.log("Question Fetch Failure: " + reason.message)
         });
     }
 
     function paintCurrentAnswers(qid, accessToken) {
-      getData(faafgqurl, qid, accessToken)
+      getData(faafgqurl + qid, accessToken)
         .then(function(data) {
           console.log("Answers: " + JSON.stringify(data, null, 2));
           for (var i = 0; i < data.length; i++) {
             answer = data[i];
             answerId = answer["answerId"];
             console.log("answerId: " + answerId);
-            addAnswerToTable(answer["answerId"], answer["answerDesc"], answer["earnings"], answer["status"], answer["timeCreated"], answer["votes"]);
+            addAnswerToTable(answer["answerId"], answer["answerDesc"], answer["earnings"], answer["status"], answer["timeCreated"], answer["votes"], identityMap[answer["owner"]]);
           }
         })
         .catch(function(reason) {
-          console.log(reason.message)
+          console.log("Answers Fetch Failure: " + reason.message)
         });
     }
 
 
-    function addAnswerToTable(aid, answerDesc, earnings, status, timeCreated, votes) {
+    function addAnswerToTable(aid, answerDesc, earnings, status, timeCreated, votes, owner) {
       var tableBody = "ca-table-body";
-      var quotedAid = "\"" + aid + "\""
-      var engageHTML = "<div class='btn-group-vertical'><button class='btn btn-success' type='button' onclick='voteUp(" + quotedAid + ")'><i class='fa fa-thumbs-up'></i></button><button class='btn btn-danger' type='button' onclick='voteDown(" +
+      var quotedAid = "\"" + aid + "\"";
+      var voteEnabled = "<div class='btn-group-vertical'><button class='btn btn-success' type='button' onclick='voteUp(" + quotedAid + ")'><i class='fa fa-thumbs-up'></i></button><button class='btn btn-danger' type='button' onclick='voteDown(" +
         quotedAid + ")'><i class='fa fa-thumbs-down'></i></button></div>";
+      var voteDisabled = "<div class='btn-group-vertical'><button class='btn btn-success' type='button' disabled onclick='voteUp(" + quotedAid +
+        ")'><i class='fa fa-thumbs-up'></i></button><button class='btn btn-danger' type='button' disabled onclick='voteDown(" +
+        quotedAid + ")'><i class='fa fa-thumbs-down'></i></button></div>";
+      var engageHTML;
+      if (status == 'AWARDED')
+        engageHTML = voteDisabled;
+      else
+        engageHTML = voteEnabled;
       var tableRef = document.getElementById(tableBody);
       var row = tableRef.insertRow(tableRef.rows.length);
       var cell0 = row.insertCell(0);
       cell0.innerHTML = aid;
       var cell1 = row.insertCell(1);
-      cell1.innerHTML = answerDesc;
+      cell1.innerHTML = owner;
       var cell2 = row.insertCell(2);
-      cell2.innerHTML = "<div align='center'>" + votes + "</div>";
+      cell2.innerHTML = answerDesc;
       var cell3 = row.insertCell(3);
-      cell3.innerHTML = "<div align='center'>" + earnings + "</div>";
+      cell3.innerHTML = "<div align='center'>" + votes + "</div>";
+      cell3.setAttribute("id", aid);
       var cell4 = row.insertCell(4);
-      cell4.innerHTML = engageHTML;
-      console.log('Exiting addRow');
+      cell4.innerHTML = "<div align='center'>" + earnings + "</div>";
+      var cell5 = row.insertCell(5);
+      cell5.innerHTML = engageHTML;
     }
-
-    /*
-            web3 = new Web3(new Web3.providers.HttpProvider("http://ec2-35-168-248-41.compute-1.amazonaws.com:8545"));
-            var programContractClass = web3.eth.contract(programAbi);;
-            var programContract;
-            var programContracts = [];
-            var count = [0,0,0,0];
-            //var contractCounts = {'federal': 0, 'state': 0, 'local': 0, 'prime' : 0};
-            var programTypes = ['federal', 'state', 'local', 'prime'];
-            var myContracts = loadContractsFromLocalStorage() ;
-
-
-            function createGrantProgram() {
-              var programName = document.getElementById("program-name").value;
-              var programDesc = document.getElementById("program-description").value;
-              var programType = document.getElementById("program-type").selectedIndex;
-              var programAmount = document.getElementById("program-amount").value;
-
-              console.log("Name =" + programName);
-              console.log("Description =" + programDesc);
-              console.log("Type =" + programType);
-              console.log("Amount =" + programAmount);
-
-              programContract = programContractClass.new(
-                programName,
-                programDesc,
-                programType,
-                programAmount,
-                {
-                  from: web3.eth.accounts[0],
-                  data: programByteCode,
-                  gas: '4700000'
-                },
-                function(e, contract) {
-                  console.log(e, contract);
-                  if (e) {
-                    var message = "Creation of Program " + programName + " resulted in this error: " + e;
-                    console.log(message);
-                    showErrorAlert(message);
-                  }
-                  if (typeof contract.address !== 'undefined') {
-                    count[programType]++;
-                    var message = 'Program name: ' + programName + '; Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash;
-                    showSuccessAlert(message);
-                    console.log(message);
-
-                    addRowToHTMLTable(count[programType], programName, programDesc, programType, programAmount, contract.address);
-                    addToMyContracts(contract.address, programName, programDesc, programType, programAmount);
-                  }
-                });
-
-                var info =  'Creation of a contract for Program: "' + programName + '" has initiated. You will be notified when the contract is created';
-                showInfoAlert(info);
-            }
-
-            function loadContractsFromLocalStorage() {
-              storedContracts = JSON.parse(localStorage.getItem("grantPrograms"));
-              if (storedContracts === null) {
-                storedContracts = {};
-              }
-
-              if (!storedContracts['federal']) {
-                storedContracts.federal = [];
-                count['federal']++;
-              }
-              if (!storedContracts['state']) {
-                storedContracts.state = [];
-                count['state']++;
-              }
-              if (!storedContracts['local']) {
-                storedContracts.local = [];
-                count['local']++;
-              }
-              if (!storedContracts['prime']) {
-                storedContracts.prime = [];
-                count['prime']++;
-              }
-
-              console.log("Stored Contracts =" + JSON.stringify(storedContracts));
-              return storedContracts;
-            }
-
-
-            function addToMyContracts(contractAddress, programName, programDescription, programType, programAmount) {
-              programTypeStr = programTypes[programType];
-              var jsonData = {};
-              jsonData['contractAddress'] = contractAddress;
-              jsonData['programName'] = programName;
-              jsonData['programDescription'] = programDescription;
-              jsonData['programTypeStr'] = programTypeStr;
-              jsonData['programType'] = programType;
-              jsonData['programAmount'] = programAmount;
-              myContracts[programTypeStr].push(jsonData);
-              console.log('myContracts:', JSON.stringify(myContracts));
-
-              localStorage.setItem("grantPrograms", JSON.stringify(myContracts));
-            }
-
-
-            function paintRowsFromLocalStorage() {
-              var storedContracts = myContracts;
-              renderContracts(storedContracts.federal);
-              renderContracts(storedContracts.state);
-              renderContracts(storedContracts.local);
-              renderContracts(storedContracts.prime);
-            }
-
-            function renderContracts(contractArray) {
-              if (!(contractArray === undefined))
-                for (var i = 0; i < contractArray.length; i++) {
-                  contract = contractArray[i];
-                  addRowToHTMLTable(i+1, contract.programName, contract.programDescription, contract.programType, contract.programAmount, contract.contractAddress);
-                }
-            }
-
-            function getCounter() {
-              document.getElementById("myCounter").innerText = programContract.getMyNumber().toNumber();
-            }
-
-            function getName() {
-              document.getElementById("register-name-span").innerText = web3.toAscii(programContract.getName()).replace(/\u0000/g, '');
-            }
-
-            function increaseCounter() {
-              var currentNumber = programContract.getMyNumber().toNumber();
-              currentNumber++;
-              programContract.setMyNumber(currentNumber, {
-                from: web3.eth.accounts[0],
-                gas: 200000
-              }, function(error, result) {
-                if (error) {
-                  console.error(error);
-                } else {
-                  var txHash = result;
-                  console.log(txHash);
-                  callWhenMined(txHash, getCounter);
-                }
-              })
-            }
-
-            function callWhenMined(txHash, callback) {
-              web3.eth.getTransactionReceipt(txHash, function(error, receipt) {
-                if (error) {
-                  console.error(error);
-                } else {
-                  if (receipt == null) {
-                    setTimeout(function() {
-                      callWhenMined(txHash, callback);
-                    }, 500);
-                  } else {
-                    callback();
-                  }
-                }
-              })
-            }
-
-            function testAddRows() {
-              var programName = document.getElementById("program-name").value;
-              var programDesc = document.getElementById("program-description").value;
-              var programType = document.getElementById("program-type").selectedIndex;
-              var programAmount = document.getElementById("program-amount").value;
-              var number = 1;
-              var address = "0xABCDEF";
-              addRow(number, programName, programDesc, programType, programAmount, address);
-
-            }
-
-            function addRowToHTMLTable(number, programName, programDesc, programType, programAmount, contractAddress) {
-              console.log('addRow Called with ', number, programName,  programDesc, programType, programAmount, contractAddress);
-              var tableName;
-              switch (programType) {
-                case 0:
-                  tableName = "federal-table";
-                  break;
-                case 1:
-                  tableName = "state-table";
-                  break;
-                case 2:
-                  tableName = "local-table";
-                  break;
-                default:
-                  tableName = "prime-table";
-              }
-              var tableBody = tableName + "-body";
-              var tableRef = document.getElementById(tableBody);
-              var row = tableRef.insertRow(tableRef.rows.length);
-              var cell0 = row.insertCell(0); cell0.innerHTML = number;
-              var cell1 = row.insertCell(1); cell1.innerHTML = programName;
-              var cell2 = row.insertCell(2); cell2.innerHTML = programDesc;
-              var cell3 = row.insertCell(3); cell3.innerHTML = programTypes[programType];
-              var cell4 = row.insertCell(4); cell4.innerHTML = "$" + programAmount;
-              var cell5 = row.insertCell(5); cell5.innerHTML = contractAddress;
-              console.log('Exiting addRow');
-            }
-            */
   </script>
 </head>
 
@@ -361,6 +223,12 @@
       <div class="form-row">
         <div class="col-md-2">
           <div class="form-group">
+            <label for="status">Owner</label>
+            <input class="form-control form-control-sm" type="text" id="owner" required="required" readonly>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
             <label for="status">Status</label>
             <input class="form-control form-control-sm" type="text" id="status" required="required" readonly>
           </div>
@@ -377,13 +245,13 @@
             <input class="form-control form-control-sm" type="text" id="balance" required="required" readonly>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="form-group">
             <label for="created">Created</label> &nbsp;
             <input class="form-control form-control-sm" type="text" id="created" required="required" readonly>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="form-group">
             <label for="due">Due</label> &nbsp;
             <input class="form-control form-control-sm" type="text" id="due" required="required" readonly>
@@ -396,6 +264,7 @@
           <thead>
             <tr>
               <th>Id</th>
+              <th>Owner</th>
               <th>Answer</th>
               <th>Votes</th>
               <th>Earnings</th>
