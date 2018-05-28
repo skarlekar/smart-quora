@@ -12,8 +12,8 @@ You are a Developer or Solutions Architect wanting to learn and build robust, se
 As you are building this application, you will learn about the Hyperledger Fabric blockchain framework, Hyperledger Fabric Composer API, Passport authentication middleware and various development scaffolding frameworks such as Yeoman, Loopback etc. discussed below.
 
 ## Architecture
-
+The Hyperledger Blockchain 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI1NTU4NjNdfQ==
+eyJoaXN0b3J5IjpbMjM3ODc1NjY1LC0yMTMyNTU1ODYzXX0=
 -->
