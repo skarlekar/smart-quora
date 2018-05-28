@@ -16,9 +16,10 @@ The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonst
 
 The following diagram provides a high-level component diagram of the SmartQuora DApp. 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDYzODMwOCwtMTc0NzIxNDI1NCwyMT
-E1NDQ3NTU0LDE2MzY4OTEzOTksLTE3NjgyNDgxNDksLTIxMzI1
-NTU4NjNdfQ==
+eyJoaXN0b3J5IjpbMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMT
+U0NDc1NTQsMTYzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1
+NTg2M119
 -->
