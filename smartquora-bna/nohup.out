@@ -1558,3 +1558,34 @@ Unhandled error for request POST /api/smartquora.answer.VoteAnswer: Error: Error
 Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Error: You cannot vote for your own answers!
     at _initializeChannel.then.then.then.then.catch (/home/hyperuser/.nvm/versions/node/v8.10.0/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:965:34)
     at <anonymous>
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Registering named query: FindAllQuestions
+Registering named query: FindAllAnswersForGivenQuestion
+Registering named query: FindQuestionsForAwarding
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Swagger: skipping unknown type "smartquora.question.Question".
+Swagger: skipping unknown type "smartquora.answer.Answer".
+Added schemas for all types to Loopback
+Web server listening at: https://localhost:3000
+Browse your REST API at https://localhost:3000/explorer
+Unhandled error for request POST /api/smartquora.answer.CreateAnswer: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Error: Answer cannot be added now. Answering period has elapsed!
+    at _initializeChannel.then.then.then.then.catch (/home/hyperuser/.nvm/versions/node/v8.10.0/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:965:34)
+    at <anonymous>
