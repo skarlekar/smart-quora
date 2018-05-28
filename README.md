@@ -12,11 +12,11 @@ You are a Developer or Solutions Architect wanting to learn and build robust, se
 As you are building this application, you will learn about the Hyperledger Fabric blockchain framework, Hyperledger Fabric Composer API, Passport authentication middleware, Docker containerization and various development scaffolding frameworks such as Yeoman, Loopback etc. discussed below.
 
 ## Architecture
-The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonstration is built on top of AWS EC2 platform. It uses Docker containers to host various parts of the Hyperledger Fabric components such as the endorser, committer, ledger, orderer and the chain-code.
+The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonstration is built on top of AWS EC2 platform. It uses Docker containers to host various parts of the Hyperledger Fabric components such as the endorser, committer, ledger, orderer (consensus service) and the chain-code.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMj
-EzMjU1NTg2M119
+eyJoaXN0b3J5IjpbMjExNTQ0NzU1NCwxNjM2ODkxMzk5LC0xNz
+Y4MjQ4MTQ5LC0yMTMyNTU1ODYzXX0=
 -->
