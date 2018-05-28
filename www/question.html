@@ -29,6 +29,9 @@
     const answerurl = host + "/api/smartquora.answer.Answer";
     const loginurl = host + "/auth/google";
     const quorauserurl = host + "/api/smartquora.participant.QuoraUser";
+    const walleturl = host + "/api/wallet";
+    const walletimporturl = host + "/api/wallet/import";
+    const createquestionurl = host + "/api/smartquora.question.CreateQuestion";
     var identityMap = {};
 
     var ws = new WebSocket('wss://ec2-35-168-150-155.compute-1.amazonaws.com:3000');
@@ -155,6 +158,7 @@
     function paintForm() {
       var qid = getUrlParam("qid", "question-default");
       access_token = getAccessToken();
+      paintWallet(walleturl, access_token);
       console.log("Url Parameter qid :" + qid);
       console.log("Access Token :" + access_token);
       buildIdentityMap(access_token);
@@ -237,6 +241,73 @@
 <body>
   <h1 class="display-3 text-center my-4 bg-dark text-light p-3">Smart Quora</h1>
   <div class="container">
+    <!-- Wallet Model code starts here -->
+    <!-- Wallet MODAL TRIGGER -->
+    <button class="btn btn-info" data-toggle="modal" data-target="#walletModal">Wallet</button>
+    <!-- Wallet MODAL -->
+    <div class="modal" id="walletModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Wallet</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+
+            <div class="card">
+              <div class="card-header">
+                Digital Identity Card
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="current-card">Current Digital Identity Card</label>
+                  <input type="text" placeholder="" id="current-card" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="token-value">Token Value</label>
+                  <input type="text" placeholder="" id="token-value" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="available-cards">Available Digital Identity Cards</label>
+                  <select id="available-cards" class="form-control">
+                  </select>
+                </div>
+                <div class="text-md-center">
+                  <button class="btn btn-secondary" onclick="changeCard()" data-dismiss="modal">Change Card</button>
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <!-- <div class="card">
+              <div class="card-header">
+                Upload New Digital Identity Card
+              </div>
+              <div class="card-body">
+                  <div class="form-group">
+                    <label for="new-card-name">Card Name</label>
+                    <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10">
+                    <label for="card-file">Import Card</label>
+                    <input type="file" id="card-file" name="card" class="form-control-file" required>
+                    <small id="fileHelp" class="form-text text-muted">Upload a valid digital identity card</small>
+                    <div class="">
+                      <p></p>
+                    </div>
+                    <div class="text-md-center">
+                      <button class="btn btn-secondary" onclick="uploadCard()">Upload Card</button>
+                    </div>
+                  </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="modal-footer">
+            <div class="text-md-center">
+              <button class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Wallet Modal code ends here -->
     <h2 class="display-5 text-center my-4">Question View</h2>
     <!--<form>-->
     <div class="form-group">

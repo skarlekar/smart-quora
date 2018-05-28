@@ -126,114 +126,7 @@
       console.log('Exiting addRow');
     }
 
-    function paintWallet(walleturl, accessToken) {
-      var selectRef = document.getElementById("available-cards");
-      console.log("Fetching wallet data");
-      getData(walleturl, accessToken)
-        .then(function(data) {
-          console.log("Wallet: " + JSON.stringify(data, null, 2));
-          var currentCard;
-          var currentCardName = "None";
-          for (var i = 0; i < data.length; i++) {
-            card = data[i];
-            var opt = document.createElement('option');
-            opt.value = card["name"];
-            opt.innerHTML = card["name"];
-            if (card["default"]) {
-              currentCard = card;
-              currentCardName = card["name"];
-              opt.selectedIndex = i;
-            }
-            selectRef.appendChild(opt);
-          }
-          document.getElementById("current-card").value = currentCardName;
-        })
-        .then(function(){
-           getTokenValue(pingurl, quorauserurl)
-          .then(function(tokenValue) {
-            document.getElementById("token-value").value = tokenValue;
-          })
-        })
-        .catch(function(reason) {
-          console.log("Wallet Fetch Failure: " + reason.message)
-        });
-    }
 
-    function uploadCard() {
-      var cardName = document.getElementById("new-card-name").value;
-      var cardFile = document.getElementById("card-file").value;
-      if (cardName.length == 0) {
-        alert("Error: Provide a card name");
-      } else if (cardFile.length == 0) {
-        alert("Error: Provide a valid card file");
-      } else {
-        var formElement = document.querySelector("upload-new-card");
-        var request = new XMLHttpRequest();
-        request.withCredentials = true;
-        request.addEventListener("readystatechange", function() {
-          if (this.readyState === 4) {
-            console.log("******** XMLHttpRequest Status: " + this.responseText);
-          }
-        });
-        request.open("POST", walletimporturl, false);
-        var accessToken = getAccessToken();
-        request.setRequestHeader("X-Access-Token", accessToken);
-        request.setRequestHeader("Accept", "application/json");
-        request.setRequestHeader("Cache-Control", "no-cache");
-        request.send(new FormData(formElement));
-        console.log("Upload Status: " + request.status);
-      }
-    }
-
-    function uploadCard1() {
-      var cardName = document.getElementById("new-card-name").value;
-      var cardFile = document.getElementById("card-file").value;
-      if (cardName.length == 0) {
-        alert("Error: Provide a card name");
-      } else if (cardFile.length == 0) {
-        alert("Error: Provide a valid card file");
-      } else {
-        var formData = new FormData();
-        formData.append("name", cardName);
-        formData.append("card", cardFile);
-        console.log("cardName: " + cardName);
-        console.log("cardFile: " + cardFile);
-        //formData.append("card", document.getElementById("card-file").files[0]);
-        var request = new XMLHttpRequest();
-        request.withCredentials = true;
-        request.addEventListener("readystatechange", function() {
-          if (this.readyState === 4) {
-            console.log("******** XMLHttpRequest Status: " + this.responseText);
-          }
-        });
-        var accessToken = getAccessToken();
-        console.log("walletimporturl: " + walletimporturl);
-        request.open("POST", walletimporturl, false);
-        request.setRequestHeader("X-Access-Token", accessToken);
-        //request.setRequestHeader("Content-Type", "multipart/form-data");
-        request.setRequestHeader("Accept", "application/json");
-        request.setRequestHeader("Cache-Control", "no-cache");
-        request.send(formData);
-        console.log("Upload Status: " + request.status);
-      }
-    }
-
-    function changeCard() {
-      var dropdown = document.getElementById("available-cards");
-      var selected = dropdown.options[dropdown.selectedIndex].value;
-      var accessToken = getAccessToken();
-      var setDefaultUrl = walleturl + "/" + selected + "/" + "setDefault";
-      var message = "Digital Identity was changed to card: " + selected;
-      postToUrl204(setDefaultUrl, accessToken, message)
-      .then(function() {
-        document.getElementById("token-value").value = "";
-        document.getElementById("current-card").value = selected;
-        getTokenValue(pingurl, quorauserurl)
-        .then(function(tokenValue){
-          document.getElementById("token-value").value = tokenValue;
-        });
-      });
-    }
 
     function postQuestion() {
       var is_date = function(input) {
@@ -309,12 +202,11 @@
               </div>
             </div>
             <p>&nbsp;</p>
-            <div class="card">
+            <!-- <div class="card">
               <div class="card-header">
                 Upload New Digital Identity Card
               </div>
               <div class="card-body">
-                <!-- <form name="upload-new-card"> -->
                   <div class="form-group">
                     <label for="new-card-name">Card Name</label>
                     <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10">
@@ -328,9 +220,8 @@
                       <button class="btn btn-secondary" onclick="uploadCard()">Upload Card</button>
                     </div>
                   </div>
-                <!-- </form> -->
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="modal-footer">
             <div class="text-md-center">
