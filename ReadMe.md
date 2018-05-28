@@ -9,11 +9,11 @@ SmartQuora uses a Javascript-based front-end web application to communicate with
 ## Audience
 You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
 
-As you are building this application, you will learn about the Hyperledger Fabric blockchain framework, Hyperledger Fabric Composer API, Passport authentication middleware and various development scaffolding frameworks such as Yeoman, Loopback etc. discussed below.
+As you are building this application, you will learn about the Hyperledger Fabric blockchain framework, Hyperledger Fabric Composer API, Passport authentication middleware, Docker containerization and various development scaffolding frameworks such as Yeoman, Loopback etc. discussed below.
 
 ## Architecture
-The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonstration is built on top of AWS EC2 
+The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonstration is built on top of AWS EC2 platform. It uses Docker containers to host various parts of the Hyperledger Fabr
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODM2MDY5OSwtMjEzMjU1NTg2M119
+eyJoaXN0b3J5IjpbMTk2NzU1MDc4LC0yMTMyNTU1ODYzXX0=
 -->
