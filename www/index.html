@@ -84,6 +84,7 @@
 
     function paintPage() {
       access_token = getAccessToken();
+      authenticationRedirect(access_token, pingurl, loginurl);
       console.log("Access Token :" + access_token);
       paintQuestions(access_token);
       paintWallet(walleturl, access_token);

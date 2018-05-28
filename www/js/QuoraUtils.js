@@ -128,6 +128,7 @@ async function postFormData(url, accessToken) {
 }
 
 function authenticationRedirect(accessToken, pingurl, loginurl) {
+  var statusCode;
   var config = {
     "headers": {
       "X-Access-Token": accessToken
@@ -137,17 +138,29 @@ function authenticationRedirect(accessToken, pingurl, loginurl) {
   fetch(pingurl, config)
     .then(function(response) {
       console.log("Auth Check Response Status: " + response.status);
+      statusCode = response.status;
       if (response.status == '401')
         window.location.href = loginurl;
-      return response;
-    });
-}
+      return response.json();
+    })
+    .then(json => {
+        // print the JSON
+        console.log("&&&&&&&&&&&&&&&&&&&&& postToUrl Response : " + JSON.stringify(json, null, 2));
+        if (statusCode == 500) {
+          var errorStr = json["error"]["message"];
+          showErrorAlert(errorStr);
+          if (errorStr == "A business network card has not been specified") {
+            window.location.href = "upload-card.html";
+          }
+        }
+      });
+    }
 
-async function getTokenValue(pingurl, quorauserurl) {
-  accessToken = getAccessToken();
-  var currentUserData = await getData(pingurl, accessToken);
-  var currentUserId = currentUserData["participant"].substr(currentUserData["participant"].indexOf("#") + 1);
-  var quoraUserData = await getData(quorauserurl + "/" + currentUserId, accessToken);
-  var tokenValue = quoraUserData["token"];
-  return tokenValue;
-}
+  async function getTokenValue(pingurl, quorauserurl) {
+    accessToken = getAccessToken();
+    var currentUserData = await getData(pingurl, accessToken);
+    var currentUserId = currentUserData["participant"].substr(currentUserData["participant"].indexOf("#") + 1);
+    var quoraUserData = await getData(quorauserurl + "/" + currentUserId, accessToken);
+    var tokenValue = quoraUserData["token"];
+    return tokenValue;
+  }

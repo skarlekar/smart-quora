@@ -28,5 +28,5 @@ export COMPOSER_DATASOURCES='{
 	"password": "quora123"
     }
 }'
-composer-rest-server 
+nohup composer-rest-server & 
 
