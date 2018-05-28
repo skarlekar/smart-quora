@@ -1,3 +1,4 @@
-*.bna
-*.card
 composer-logs
+*.card
+*.bna
+*.bakup

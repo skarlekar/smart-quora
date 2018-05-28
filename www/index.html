@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" />
   <title>Smart Quora</title>
   <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
   <script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
@@ -24,8 +25,62 @@
     const loginurl = host + "/auth/google";
     const walleturl = host + "/api/wallet";
     const walletimporturl = host + "/api/wallet/import";
+    const createquestionurl = host + "/api/smartquora.question.CreateQuestion";
+    const quorauserurl = host + "/api/smartquora.participant.QuoraUser";
 
+    var createdQuestions = [];
 
+    var ws = new WebSocket('wss://ec2-35-168-150-155.compute-1.amazonaws.com:3000');
+    ws.onerror = function(event) {
+      showErrorAlert("Error received from WebSocket. See Web Console for more details.");
+      console.log('-------------- Websocket Error ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+    };
+
+    ws.onclose = function(event) {
+      showInfoAlert("Closed connection to WebSocket.");
+      console.log('-------------- Websocket Close ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+    };
+
+    ws.onopen = function(event) {
+      //showInfoAlert("Now Connected to WebSocket: " + event.currentTarget.url);
+      console.log('-------------- Websocket is Open ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+
+    };
+
+    ws.onmessage = function(event) {
+      //showInfoAlert(JSON.stringify(JSON.parse(event.data), null, 2));
+      //document.getElementById('mydiv').innerHTML = JSON.stringify(JSON.parse(event.data), null, 2);
+      console.log('-------------- Websocket Message Received  ------------------------');
+      console.log('typeof event: ' + typeof event);
+      console.log('event: ' + JSON.stringify(event, null, 2));
+      console.log('-------------- EOM------------------------');
+      decipherEvent(JSON.parse(event.data));
+    };
+
+    function decipherEvent(eventData) {
+      if (eventData["$class"] == "smartquora.question.QuestionCreated") {
+        var questionId = eventData["questionId"];
+        if (createdQuestions.indexOf(questionId) != -1) {
+          getData(qurl + "/" + questionId, getAccessToken())
+            .then(function(question) {
+              console.log("Newly added question: " + JSON.stringify(question, null, 2));
+              addQuestionToTable(question["questionId"], question["questionDesc"], question["status"], question["stake"], question["balance"], question["timeCreated"], question["timeToAward"]);
+            })
+            .catch(function(reason) {
+              console.log("Question Fetch Failure: " + reason.message)
+            });
+        }
+      }
+    };
 
     function paintPage() {
       access_token = getAccessToken();
@@ -47,7 +102,6 @@
           console.log(reason.message)
         });
     }
-
 
     function addQuestionToTable(questionId, questionDesc, status, stake, balance, timeCreated, timeToAward) {
       console.log("timeToAward: " + timeToAward);
@@ -93,12 +147,18 @@
           }
           document.getElementById("current-card").value = currentCardName;
         })
+        .then(function(){
+           getTokenValue(pingurl, quorauserurl)
+          .then(function(tokenValue) {
+            document.getElementById("token-value").value = tokenValue;
+          })
+        })
         .catch(function(reason) {
           console.log("Wallet Fetch Failure: " + reason.message)
         });
     }
 
-    function uploadCard0() {
+    function uploadCard() {
       var cardName = document.getElementById("new-card-name").value;
       var cardFile = document.getElementById("card-file").value;
       if (cardName.length == 0) {
@@ -124,7 +184,7 @@
       }
     }
 
-    function uploadCard() {
+    function uploadCard1() {
       var cardName = document.getElementById("new-card-name").value;
       var cardFile = document.getElementById("card-file").value;
       if (cardName.length == 0) {
@@ -135,8 +195,8 @@
         var formData = new FormData();
         formData.append("name", cardName);
         formData.append("card", cardFile);
-        console.log("cardName: "+cardName);
-        console.log("cardFile: "+cardFile);
+        console.log("cardName: " + cardName);
+        console.log("cardFile: " + cardFile);
         //formData.append("card", document.getElementById("card-file").files[0]);
         var request = new XMLHttpRequest();
         request.withCredentials = true;
@@ -163,13 +223,50 @@
       var accessToken = getAccessToken();
       var setDefaultUrl = walleturl + "/" + selected + "/" + "setDefault";
       var message = "Digital Identity was changed to card: " + selected;
-      var result = postToUrl204(setDefaultUrl, accessToken, message);
+      postToUrl204(setDefaultUrl, accessToken, message)
+      .then(function() {
+        document.getElementById("token-value").value = "";
+        document.getElementById("current-card").value = selected;
+        getTokenValue(pingurl, quorauserurl)
+        .then(function(tokenValue){
+          document.getElementById("token-value").value = tokenValue;
+        });
+      });
+    }
+
+    function postQuestion() {
+      var is_date = function(input) {
+        if (Object.prototype.toString.call(input) === "[object Date]")
+          return true;
+        return false;
+      };
+      var questionDesc = escapeHtml(document.getElementById("your-question").value);
+      var stake = Number(escapeHtml(document.getElementById("stake").value));
+      var due = new Date(document.getElementById("due").value);
+      var questionId = generateId("question");
+      if (isNaN(stake)) {
+        alert("Error: Stake should be a number");
+        return;
+      }
+      if (due == "Invalid Date") {
+        alert("Error: Date should be in MM/DD/YYYY HH:MM:SS format");
+        return;
+      }
+      var body = {
+        "$class": "smartquora.question.CreateQuestion",
+        "id": questionId,
+        "questionDesc": questionDesc,
+        "offer": stake,
+        "awardingTime": due
+      }
+      createdQuestions.push(questionId);
+      postToUrl200(createquestionurl, body, getAccessToken());
+      document.getElementById("your-question").value = "";
+      document.getElementById("stake").value = "";
+      document.getElementById("due").value = "";
     }
   </script>
 </head>
-
-
-<a href="#"></a>
 
 <body>
   <h1 class="display-3 text-center my-4 bg-dark text-light p-3">Smart Quora</h1>
@@ -194,7 +291,11 @@
               <div class="card-body">
                 <div class="form-group">
                   <label for="current-card">Current Digital Identity Card</label>
-                  <input type="text" placeholder="current-card" id="current-card" class="form-control" readonly>
+                  <input type="text" placeholder="" id="current-card" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="token-value">Token Value</label>
+                  <input type="text" placeholder="" id="token-value" class="form-control" readonly>
                 </div>
                 <div class="form-group">
                   <label for="available-cards">Available Digital Identity Cards</label>
@@ -212,7 +313,7 @@
                 Upload New Digital Identity Card
               </div>
               <div class="card-body">
-                <form name="upload-new-card">
+                <!-- <form name="upload-new-card"> -->
                   <div class="form-group">
                     <label for="new-card-name">Card Name</label>
                     <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10">
@@ -226,10 +327,9 @@
                       <button class="btn btn-secondary" onclick="uploadCard()">Upload Card</button>
                     </div>
                   </div>
-                </form>
+                <!-- </form> -->
               </div>
             </div>
-
           </div>
           <div class="modal-footer">
             <div class="text-md-center">
@@ -257,19 +357,48 @@
         </tbody>
       </table>
     </div>
-  </div>
-  <hr>
+    <hr>
+    <div class="card">
+      <div class="card-header">
+        Get Answers To Your Own Questions
+      </div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="stake">Stake</label>
+              <input class="form-control form-control-sm" type="text" id="stake" required="required">
+              <small class="form-text text-muted">Enter the reward amount (numbers only)</small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="due">Due</label>
+              <input class="form-control form-control-sm" type="text" id="due" required="required" placeholder="MM/DD/YYYY HH:MM:SS">
+              <small class="form-text text-muted">Enter date in MM/DD/YYYY HH:MM:SS format</small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="your-question">Ask A Question</label>
+          <textarea id="your-question" rows="3" class="form-control"></textarea> &nbsp;
+          <div class="text-md-center">
+            <button class="btn btn-primary" onclick="postQuestion()">Ask</button><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
 
-
-
-  <div style="margin-top:500px;"></div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    window.onload = paintPage();
-  </script>
+    <div style="margin-top:500px;"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js" integrity="sha256-L3S3EDEk31HcLA5C6T2ovHvOcD80+fgqaCDt2BAi92o=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js" integrity="sha256-tW5LzEC7QjhG0CiAvxlseMTs2qJS7u3DRPauDjFJ3zo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      window.onload = paintPage();
+    </script>
 </body>
 
 </html>

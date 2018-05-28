@@ -1,3 +1,12 @@
+function randomInRange(from, to) {
+  var r = Math.random();
+  return Math.round(Math.floor(r * (to - from) + from));
+}
+
+function generateId(header) {
+  return header + "-" + randomInRange(1000, 9999999);
+}
+
 function getAccessToken() {
   var access_token = getCookie('access_token');
   if (!access_token) {
@@ -53,7 +62,7 @@ function postToUrl200(url, body, accessToken) {
   fetch(url, config)
     .then(response => {
       // we received the response, now print the status code
-      console.log("postToUrl Response Status: " + response.status);
+      console.log("@@@@@@@@@@@@@@@@@@@@@@ postToUrl Response Status: " + response.status);
       statusCode = response.status;
       if (response.status == 200) {
         showSuccessAlert("Transaction posted successfully!");
@@ -132,4 +141,13 @@ function authenticationRedirect(accessToken, pingurl, loginurl) {
         window.location.href = loginurl;
       return response;
     });
+}
+
+async function getTokenValue(pingurl, quorauserurl) {
+  accessToken = getAccessToken();
+  var currentUserData = await getData(pingurl, accessToken);
+  var currentUserId = currentUserData["participant"].substr(currentUserData["participant"].indexOf("#") + 1);
+  var quoraUserData = await getData(quorauserurl + "/" + currentUserId, accessToken);
+  var tokenValue = quoraUserData["token"];
+  return tokenValue;
 }

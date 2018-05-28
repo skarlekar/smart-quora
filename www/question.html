@@ -23,9 +23,12 @@
     const qurl = host + "/api/smartquora.question.Question/";
     const faafgqurl = host + "/api/queries/FindAllAnswersForGivenQuestion?question_id=resource%3Asmartquora.question.Question%23";
     const voteurl = host + "/api/smartquora.answer.VoteAnswer";
+    const createanswerurl = host + "/api/smartquora.answer.CreateAnswer";
     const pingurl = host + "/api/system/ping";
     const identitiesurl = host + "/api/system/identities";
+    const answerurl = host + "/api/smartquora.answer.Answer";
     const loginurl = host + "/auth/google";
+    const quorauserurl = host + "/api/smartquora.participant.QuoraUser";
     var identityMap = {};
 
     var ws = new WebSocket('wss://ec2-35-168-150-155.compute-1.amazonaws.com:3000');
@@ -55,7 +58,7 @@
     };
 
     ws.onmessage = function(event) {
-      showInfoAlert(JSON.stringify(JSON.parse(event.data), null, 2));
+      //showInfoAlert(JSON.stringify(JSON.parse(event.data), null, 2));
       //document.getElementById('mydiv').innerHTML = JSON.stringify(JSON.parse(event.data), null, 2);
       console.log('-------------- Websocket Message Received  ------------------------');
       console.log('typeof event: ' + typeof event);
@@ -65,12 +68,32 @@
     };
 
     function decipherEvent(eventData) {
+      if (eventData["$class"] == "smartquora.question.QuestionAwarded") {
+        identityMap = {};
+        paintForm();
+      }
       if (eventData["$class"] == "smartquora.answer.AnswerVoted") {
         var pound = eventData["answer"].indexOf("#");
-        var answer = eventData["answer"].substr(pound+1);
+        var answer = eventData["answer"].substr(pound + 1);
         var votes = eventData["currentVotes"];
-        alert(answer + ":" + votes);
-        document.getElementById(answer).value = votes;
+        document.getElementById(answer).innerHTML = "<div align='center'>" + votes + "</div>";
+      }
+      if (eventData["$class"] == "smartquora.answer.AnswerCreated") {
+        var answerId = eventData["answerId"];
+        var questionId = eventData["associatedQuestion"].substr(eventData["associatedQuestion"].indexOf("#") + 1);
+        var paramQid = getUrlParam("qid", "question-default");
+        if (questionId == paramQid) {
+          getData(answerurl + "/" + answerId, getAccessToken())
+            .then(function(data) {
+              console.log("Newly added answer: " + JSON.stringify(data, null, 2));
+              answer = data;
+              answerId = answer["answerId"];
+              addAnswerToTable(answer["answerId"], answer["answerDesc"], answer["earnings"], answer["status"], answer["timeCreated"], answer["votes"], identityMap[answer["owner"]]);
+            })
+            .catch(function(reason) {
+              console.log("Question Fetch Failure: " + reason.message)
+            });
+        }
       }
     };
 
@@ -89,7 +112,23 @@
         .catch(function(reason) {
           console.log(reason.message)
         });
+    }
 
+
+
+    function postAnswer() {
+      var qid = getUrlParam("qid", "question-default");
+      var question = "resource:smartquora.question.Question#" + qid;
+      var answerDesc = escapeHtml(document.getElementById("your-answer").value);
+      var answerId = generateId("answer");
+      var body = {
+        "$class": "smartquora.answer.CreateAnswer",
+        "answerId": answerId,
+        "associatedQuestion": question,
+        "answerDesc": answerDesc
+      }
+      postToUrl200(createanswerurl, body, getAccessToken());
+      document.getElementById("your-answer").value = "";
     }
 
     function voteAnswer(aid, direction) {
@@ -110,22 +149,8 @@
       voteAnswer(aid, "DOWN");
     }
 
-
     function paintForm() {
       var qid = getUrlParam("qid", "question-default");
-      // var access_token = getCookie('access_token');
-      // if (!access_token) {
-      //   console.log("No access_token cookie found - Redirecting to authenticate.");
-      //   authenticationRedirect(access_token, pingurl, loginurl);
-      //   return;
-      // }
-      // var matches = access_token.match(/^s:(.+?)\./);
-      // if (!matches) {
-      //   console.log("access_token cookie was found, but it was broken! Redirecting to authenticate.");
-      //   authenticationRedirect(access_token, pingurl, loginurl);
-      //   return;
-      // }
-      // access_token = matches[1];
       access_token = getAccessToken();
       console.log("Url Parameter qid :" + qid);
       console.log("Access Token :" + access_token);
@@ -164,14 +189,13 @@
             answer = data[i];
             answerId = answer["answerId"];
             console.log("answerId: " + answerId);
-            addAnswerToTable(answer["answerId"], answer["answerDesc"], answer["earnings"], answer["status"], answer["timeCreated"], answer["votes"], identityMap[answer["owner"]]);
+            addAnswerToTable(answer["answerId"], (answer["answerDesc"]), answer["earnings"], answer["status"], answer["timeCreated"], answer["votes"], identityMap[answer["owner"]]);
           }
         })
         .catch(function(reason) {
           console.log("Answers Fetch Failure: " + reason.message)
         });
     }
-
 
     function addAnswerToTable(aid, answerDesc, earnings, status, timeCreated, votes, owner) {
       var tableBody = "ca-table-body";
@@ -211,7 +235,7 @@
   <h1 class="display-3 text-center my-4 bg-dark text-light p-3">Smart Quora</h1>
   <div class="container">
     <h2 class="display-5 text-center my-4">Question View</h2>
-    <form>
+    <!--<form>-->
       <div class="form-group">
         <label for="question-id">Question Id</label>
         <input class="form-control form-control-sm" type="text" id="question-id" required="required" maxlength="76" readonly>
@@ -221,7 +245,7 @@
         <textarea id="question-description" rows="3" class="form-control" readonly></textarea>
       </div>
       <div class="form-row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <div class="form-group">
             <label for="status">Owner</label>
             <input class="form-control form-control-sm" type="text" id="owner" required="required" readonly>
@@ -279,12 +303,12 @@
 
       <div class="form-group">
         <label for="your-answer">Your Answer</label>
-        <textarea id="your-answer" rows="3" class="form-control" readonly></textarea> &nbsp;
+        <textarea id="your-answer" rows="3" class="form-control" ></textarea> &nbsp;
         <div class="text-md-center">
-          <button class="btn btn-primary" onclick="postAnswer()" name="sub">Answer</button><br/>
+          <button class="btn btn-primary" onclick="postAnswer()">Answer</button><br/>
         </div>
       </div>
-    </form>
+    <!-- </form> -->
   </div>
   <hr>
 
@@ -294,7 +318,7 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
   <script type="text/javascript">
     window.onload = paintForm();
   </script>

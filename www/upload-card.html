@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<link rel=icon href=/favicon.png>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" />
+  <title>Smart Quora</title>
+  <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src="js/Alerts.js"></script>
+  <script src="js/CommonUtils.js"></script>
+  <script src="js/QuoraUtils.js"></script>
+  <script type="text/javascript">
+    const host = "https://ec2-35-168-150-155.compute-1.amazonaws.com:3000"
+    const qurl = host + "/api/smartquora.question.Question/";
+    const faqurl = host + "/api/queries/FindAllQuestions";
+    const pingurl = host + "/api/system/ping";
+    const loginurl = host + "/auth/google";
+    const walleturl = host + "/api/wallet";
+    const walletimporturl = host + "/api/wallet/import";
+    const createquestionurl = host + "/api/smartquora.question.CreateQuestion";
+    const quorauserurl = host + "/api/smartquora.participant.QuoraUser";
+
+
+    function uploadCard0() {
+      var cardName = document.getElementById("new-card-name").value;
+      var cardFile = document.getElementById("card-file").value;
+      if (cardName.length == 0) {
+        alert("Error: Provide a card name");
+      } else if (cardFile.length == 0) {
+        alert("Error: Provide a valid card file");
+      } else {
+        var formElement = document.querySelector("upload-new-card");
+        var request = new XMLHttpRequest();
+        request.withCredentials = true;
+        request.addEventListener("readystatechange", function() {
+          if (this.readyState === 4) {
+            console.log("******** XMLHttpRequest Status: " + this.responseText);
+          }
+        });
+        request.open("POST", walletimporturl, false);
+        var accessToken = getAccessToken();
+        request.setRequestHeader("X-Access-Token", accessToken);
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader("Cache-Control", "no-cache");
+        request.send(new FormData(formElement));
+        console.log("Upload Status: " + request.status);
+      }
+    }
+
+    function uploadCard() {
+      var cardName = document.getElementById("new-card-name").value;
+      var cardFile = document.getElementById("card-file").value;
+      if (cardName.length == 0) {
+        alert("Error: Provide a card name");
+      } else if (cardFile.length == 0) {
+        alert("Error: Provide a valid card file");
+      } else {
+        var formData = new FormData();
+        formData.append("name", cardName);
+        formData.append("card", cardFile);
+        console.log("cardName: " + cardName);
+        console.log("cardFile: " + cardFile);
+        //formData.append("card", document.getElementById("card-file").files[0]);
+        var request = new XMLHttpRequest();
+        request.withCredentials = true;
+        request.addEventListener("readystatechange", function() {
+          if (this.readyState === 4) {
+            console.log("******** XMLHttpRequest Status: " + this.responseText);
+          }
+        });
+        var accessToken = getAccessToken();
+        console.log("walletimporturl: " + walletimporturl);
+        request.open("POST", walletimporturl, false);
+        request.setRequestHeader("X-Access-Token", accessToken);
+        //request.setRequestHeader("Content-Type", "multipart/form-data");
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader("Cache-Control", "no-cache");
+        request.send(formData);
+        console.log("Upload Status: " + request.status);
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <h1 class="display-3 text-center my-4 bg-dark text-light p-3">Smart Quora</h1>
+
+  <div class="container">
+    <h2 class="display-5 text-center my-4">Questions</h2>
+    <div class="card">
+      <div class="card-header">
+        Upload New Digital Identity Card
+      </div>
+      <div class="card-body">
+        <form name="upload-new-card" action="https://ec2-35-168-150-155.compute-1.amazonaws.com:3000/api/wallet/import" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="new-card-name">Card Name</label>
+            <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10" accept="*.card">
+            <label for="card-file">Import Card</label>
+            <input type="file" id="card-file" name="card" class="form-control-file" required>
+            <small id="fileHelp" class="form-text text-muted">Upload a valid digital identity card</small>
+            <div class="">
+              <p></p>
+            </div>
+            <div class="text-md-center">
+              <button class="btn btn-primary" type="submit" >Upload Card</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+
+    <div style="margin-top:500px;"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js" integrity="sha256-L3S3EDEk31HcLA5C6T2ovHvOcD80+fgqaCDt2BAi92o=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js" integrity="sha256-tW5LzEC7QjhG0CiAvxlseMTs2qJS7u3DRPauDjFJ3zo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
