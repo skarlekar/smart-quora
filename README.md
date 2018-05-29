@@ -156,21 +156,21 @@ cd ~/fabric-dev-servers
     ./startFabric.sh
     ./createPeerAdminCard.sh
 ```
-8. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application:
+8. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
 ```
     composer-playground
 ```
-9. On your favorite browser, navigate to poar
+9. On your favorite browser, navigate to port 8080. You should see the followin
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzY3NzI5MiwtMTc0MTA2NDk5NSwtNz
-U2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQw
-NzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC
-0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0
-NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1Mj
-YsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEz
-OTU1MDU5NF19
+eyJoaXN0b3J5IjpbODM4MDEyMjYwLC0xNzQxMDY0OTk1LC03NT
+Y3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3
+NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLT
+E5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1
+ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNi
+wtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5
+NTUwNTk0XX0=
 -->
