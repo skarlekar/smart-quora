@@ -134,7 +134,10 @@ Follow the instructions below or use the [HLF Development Tools installation gui
     ```
     npm install -g yo
     ```
-5. Install the Pl
+5. Install the Playground app used for editing and testing Business Networks:
+```
+npm install -g yo
+```
 6. Download the tool that installs Hyperledger Fabric:
 ```
 mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
@@ -142,7 +145,7 @@ mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
 tar -xvf fabric-dev-servers.tar.gz
 ```
-7. Install Hyperledger Fabric runtime:
+8. Install Hyperledger Fabric runtime:
 ```
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
@@ -158,11 +161,11 @@ cd ~/fabric-dev-servers
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTIyMzc5NCwtNzU2NzA3NjMxLDcxMz
-E5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3
-NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC
-0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLTM1MTUy
-MzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OC
-wxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4
-OTM4OTIwXX0=
+eyJoaXN0b3J5IjpbLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MT
+MxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2
+NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5Ny
+wtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1
+MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4ND
+gsMTY2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAw
+ODkzODkyMF19
 -->
