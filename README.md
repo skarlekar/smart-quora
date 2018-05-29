@@ -94,21 +94,21 @@ Next run the script to install the pre-requisites.
 ```
 ./prereqs-ubuntu.sh
 ```
-This will install the following:
-node
-npm
-docker
-python
+After the installation is complete you should see a message stating that the following components are installed:
+
+1. node
+2. npm
+3. docker
+4. python
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjY5MzM1NywxMTI4MTkxMjQ1LC04MT
-EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
-NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
-EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
-MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
-UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
-
+eyJoaXN0b3J5IjpbNTA5NDc1OTg0LDExMjgxOTEyNDUsLTgxMT
+A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
+ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
+w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
+NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
+wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
