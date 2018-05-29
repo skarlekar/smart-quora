@@ -188,9 +188,9 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 Now that we have installed Hyperledger Fabric runtime, let us create a Hello-World application to understand the principles and elements of Hyperledger Fabric.
 
 1. In your home directory, use Yeoman to create a business application _hello_bna_ using:
-
-yo hyperledger-composer
-
+```
+	yo hyperledger-composer
+```
 Use the following instructions to respond to the menu options:
 Select Business Network
 
@@ -204,9 +204,9 @@ Select Business Network
 This will create the necessary code in the _hello_bna_ directory.
 
  2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and step into it.
- 
+ ```
     mkdir dist; cd dist
-
+```
  3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
 
 
@@ -217,11 +217,11 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODUwNTMwNzAsLTE5ODg4OTYwMTQsLT
-E1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5
-MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OS
-wtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4
-MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1Mz
-gzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5
-LDE1MjYxMTQyMjFdfQ==
+eyJoaXN0b3J5IjpbMTkyODgwODg1MiwtMTk4ODg5NjAxNCwtMT
+U2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkw
+MTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC
+0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgx
+OTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzOD
+MsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTks
+MTUyNjExNDIyMV19
 -->
