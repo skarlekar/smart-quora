@@ -61,7 +61,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
-#### Launce an EC2 Instance
+#### Launch an EC2 Instance
 For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS 64-bit environment on a AWS EC2 instance as per the configuration shown in the picture below. 
 Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 ![AWS EC2 Instance Configuration](https://github.com/skarlekar/smart-quora/blob/master/images/EC2%20Instance%20Configuration.png)
@@ -74,10 +74,10 @@ Allocate a new Elastic IP address and associate it with the newly created instan
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYxMTU3ODYsLTcyMjk2MjY3NywxNj
-MwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5
-MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NC
-wzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0
-MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OT
-IwLDEyODYyNTk3MzJdfQ==
+eyJoaXN0b3J5IjpbLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2Mz
+AxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkx
+NjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LD
+MzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQz
+MjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5Mj
+AsMTI4NjI1OTczMl19
 -->
