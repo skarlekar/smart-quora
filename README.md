@@ -103,17 +103,17 @@ After the installation is complete you should see a message stating that the fol
 
 At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.
 
-V
+Verify that you have the right 
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ1Mzg0NzIsMTEyODE5MTI0NSwtOD
-ExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIy
-MzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0Mj
-IxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3
-OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExND
-I1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbMTY1NTIyMjUyMiwxMTI4MTkxMjQ1LC04MT
+EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
+NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
+EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
+MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
+UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
 
 -->
