@@ -142,29 +142,29 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	tar -xvf fabric-dev-servers.tar.gz
 	```
 7. Install Hyperledger Fabric runtime:
-```
-cd ~/fabric-dev-servers
-./downloadFabric.sh
-```
+	```
+	cd ~/fabric-dev-servers
+	./downloadFabric.sh
+	```
 
  8. Ensure five Docker images are downloaded:
-```
-docker images
-```
-You should see the following:
+	```
+	docker images
+	```
+	You should see the following:
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/docker-images-verification.png)
 
  9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
- ```
-    cd ~/fabric-dev-servers
-    ./startFabric.sh
-    ./createPeerAdminCard.sh
-```
+	 ```
+	    cd ~/fabric-dev-servers
+	    ./startFabric.sh
+	    ./createPeerAdminCard.sh
+	```
 
 10. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
-```
-    composer-playground
-```
+	```
+	    composer-playground
+	    ```
 
 11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
@@ -174,7 +174,7 @@ You should see the following:
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDMzMjkyOSwxMjc2MTQ2MDUsLTEzOT
+eyJoaXN0b3J5IjpbMTY3MDEyMzI0OSwxMjc2MTQ2MDUsLTEzOT
 EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
 NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
 03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
