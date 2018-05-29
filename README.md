@@ -189,7 +189,7 @@ Now that we have installed Hyperledger Fabric runtime, let us create a Hello-Wor
 
 1. In your home directory, use Yeoman to create a business application _hello_bna_ using:
 
-    yo hyperledger-composer
+yo hyperledger-composer
 
 Use the following instructions to respond to the menu options:
 Select Business Network
@@ -217,11 +217,11 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg4OTYwMTQsLTE1NjY4NjU0MjQsMT
-kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
-NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
-wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
-NDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzND
-g1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEs
-Nzk0NTgzMzddfQ==
+eyJoaXN0b3J5IjpbLTEzODUwNTMwNzAsLTE5ODg4OTYwMTQsLT
+E1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5
+MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OS
+wtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4
+MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1Mz
+gzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5
+LDE1MjYxMTQyMjFdfQ==
 -->
