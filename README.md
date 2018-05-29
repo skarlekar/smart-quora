@@ -134,14 +134,20 @@ Follow the instructions below or use the [HLF Development Tools installation gui
     ```
     npm install -g yo
     ```
-5. Ins
+5. Download the tools that Hyperledger Fabric:
+```
+mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
+
+curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
+tar -xvf fabric-dev-servers.tar.gz
+```
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MjMyNzQxMiw3MTMxOTE3MzgsMTEyOD
+eyJoaXN0b3J5IjpbMTQ3NDY0ODk4Niw3MTMxOTE3MzgsMTEyOD
 E5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4
 MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OS
 wxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2
