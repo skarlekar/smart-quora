@@ -112,8 +112,37 @@ Verify that you have access to the binaries installed as follows:
     node -v
     python
     
-Install the Command Line Utilities
-
+#### Install the Command Line Utilities
+1.  Essential CLI tools:
+    ```
+    npm install -g composer-cli
+    
+    ```
+2.  Utility for running a REST Server on your machine to expose your business networks as RESTful APIs:
+    
+    Copy
+    
+    ```
+    npm install -g composer-rest-server
+    
+    ```
+    
+3.  Useful utility for generating application assets:
+    
+    Copy
+    
+    ```
+    npm install -g generator-hyperledger-composer
+    
+    ```
+    
+4.  Yeoman is a tool for generating applications, which utilises  `generator-hyperledger-composer`:
+    
+    Copy
+    
+    ```
+    npm install -g yo
+    ```
     npm install -g composer-cli
 
 ## Using SmartQuora
@@ -121,10 +150,11 @@ Install the Command Line Utilities
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODU0MTQzLDExMjgxOTEyNDUsLTgxMT
-A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
-ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
-w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
-NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
-wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbLTkyNTUwNDAyOCwxMTI4MTkxMjQ1LC04MT
+EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
+NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
+EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
+MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
+UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
+
 -->
