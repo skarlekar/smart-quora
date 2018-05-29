@@ -218,7 +218,22 @@ composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
 5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
 ```
 composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
-`
+```
+6. Import the admin@hello-bna.card using the composer card import command
+```
+composer card import -f ./admin@hello-bna.card
+```
+7. Ensure the new admin@hello-bna.card is imported using the composer-card-list command.
+```
+composer card list
+```
+8. Ensure that the application is running using the composer network ping command
+```
+composer network ping -c admin@hello-bna
+```
+Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
+
+docker ps
 ## Installing SmartQuora
 
 
@@ -226,11 +241,11 @@ composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjEwOTk0OCwtMjU3MzA4MDU5LC0xOT
-g4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4
-NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLT
-ExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMx
-OTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2Nz
-csMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5Nywt
-MTUwOTE2MjE1OV19
+eyJoaXN0b3J5IjpbNjkyODc5MDU2LC0yNTczMDgwNTksLTE5OD
+g4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3
+NCwyMDY5NzU5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMT
+EyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5
+MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3Ny
+wxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0x
+NTA5MTYyMTU5XX0=
 -->
