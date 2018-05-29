@@ -107,15 +107,17 @@ At this point remember to log out and log back in to ensure you have access to t
 
 Verify that you have access to the binaries installed as follows:
 
-docker -v
-npm -v
-node -v
+    docker -v
+    npm -v
+    node -v
+    python
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzOTYyNTg3OSwxMTI4MTkxMjQ1LC04MT
+eyJoaXN0b3J5IjpbMTEwMzE3MDU0NywxMTI4MTkxMjQ1LC04MT
 EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
 NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
 EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
