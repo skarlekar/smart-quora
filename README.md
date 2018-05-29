@@ -51,7 +51,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 ## DApps - Decentralized Applications
 ### Understanding Blockchain
-Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its distributed-ness. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies p 
+Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its distributed-ness. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](https://medium.com/@skarlekar/blockchain-smart-contracts-demystified-4c239d879f4c). 
  
 ### Anatomy of the DApp (or BNA)
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
@@ -65,9 +65,9 @@ Before we break-down a DApp it is essential to understand its underlying technol
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzUyNjk5NTcsLTE1MDkxNjIxNTksMT
-UyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1
-MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLT
-I4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1
-OTczMl19
+eyJoaXN0b3J5IjpbNTM1NDk1MjI5LC0xNTA5MTYyMTU5LDE1Mj
+YxMTQyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMs
+LTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yOD
+YzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3
+MzJdfQ==
 -->
