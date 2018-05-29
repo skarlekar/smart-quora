@@ -20,10 +20,13 @@ The following diagram provides a high-level component diagram of the SmartQuora 
 
 As such, the blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
 
+### Storage
 DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of chaincode and state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain.
 
+### Service Layer
 Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
 
+### Authent
 SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://www.passportjs.org/) authentication middleware to secure the REST server. Specifically, it uses the [Passport Google OAuth](https://github.com/jaredhanson/passport-google-oauth#readme) delegated authentication strategy allowing users to authenticate themselves using their Google account.
 
 The following diagram depicts a single-node view of the SmartQuora DApp.
@@ -32,8 +35,9 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1Mzc4MTQ4LC0xNjY1NzI1ODUyLDM5Nz
-ExMzcxOCwtMTY1NTI5MzQ3MiwtNjEwMzc0MDAsLTE1MzI0MDk3
-MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1NTQsMT
-YzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M119
+eyJoaXN0b3J5IjpbLTE1Mjk4NjExOTEsLTE2NjU3MjU4NTIsMz
+k3MTEzNzE4LC0xNjU1MjkzNDcyLC02MTAzNzQwMCwtMTUzMjQw
+OTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQyNTQsMjExNTQ0NzU1NC
+wxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC0yMTMyNTU1ODYzXX0=
+
 -->
