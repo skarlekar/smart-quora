@@ -60,15 +60,15 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ## SmartQuora Process Flow
 
 ## Setup Instructions
-### Installing Hyperledger Fabric
+### Installing Hyperledger Fabric on AW
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMT
-UyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1
-MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLT
-I4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1
-OTczMl19
+eyJoaXN0b3J5IjpbLTQ3ODIyNTk0MiwtMTkyMTEwNTk5NywtMT
+UwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMx
+NDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMT
+Y2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkz
+ODkyMCwxMjg2MjU5NzMyXX0=
 -->
