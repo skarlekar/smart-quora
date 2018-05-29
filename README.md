@@ -29,7 +29,7 @@ Aside from storage, a DApp requires a service layer to communicate with the chai
 ### Authentication
 SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://www.passportjs.org/) authentication middleware to secure the REST server. Specifically, it uses the [Passport Google OAuth](https://github.com/jaredhanson/passport-google-oauth#readme) delegated authentication strategy allowing users to authenticate themselves using their Google account.
 
-All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available data source. 
+All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available MongoDB data source online at M. 
 
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
@@ -37,7 +37,7 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjE3NzU2MiwtMTY2NTcyNTg1MiwzOT
+eyJoaXN0b3J5IjpbMTQ1ODUzOTE5MywtMTY2NTcyNTg1MiwzOT
 cxMTM3MTgsLTE2NTUyOTM0NzIsLTYxMDM3NDAwLC0xNTMyNDA5
 NzI2LDEyMTQ1MTY2NiwtMTc0NzIxNDI1NCwyMTE1NDQ3NTU0LD
 E2MzY4OTEzOTksLTE3NjgyNDgxNDksLTIxMzI1NTU4NjNdfQ==
