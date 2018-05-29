@@ -41,9 +41,11 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 2.  **Peer**: A peer receives ordered state updates in the form of _blocks_ from the ordering service and maintain the state and the ledger. Peers can additionally take up a special role of an  **endorser** which uses endorsement policies to sign the transactions. Once the client receives enough signatures to satisfy the endorsement policy, it can submit the transaction (and the signatures) to be added to the ledger.
 3.  **Orderer**: The orderer provides a shared _communication channel_ to clients and peers, offering a broadcast service for messages containing transactions and implements a delivery guarantee.
 
-For further details on the basic workflow of a transaction inside a blockchain please refer to the 
+For further details on the basic workflow of a transaction inside a Hyperledger Fabric blockchain please refer to this [document](http://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement).
+
+The following p
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2MjI5Njc1LDIwMDg5Mzg5MjAsMTI4Nj
-I1OTczMl19
+eyJoaXN0b3J5IjpbLTEwMTg3ODQ1NDUsMjAwODkzODkyMCwxMj
+g2MjU5NzMyXX0=
 -->
