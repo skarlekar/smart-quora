@@ -35,7 +35,7 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
 ### Digital Identity
-Blockchain uses Digital Identities to represent participants in the network. A identity is a digital certificate and private key. These identities are used to sign transactions on behalf of the participants on the blockchain network. Identities are stored in an envelope called _business network cards_ in Hyperledger F
+Blockchain uses Digital Identities to represent participants in the network. A identity is a digital certificate and private key. These identities are used to sign transactions on behalf of the participants on the blockchain network. Identities are stored in an envelope called _business network cards_ in Hyperledger Fabric. 
 
 ### Nodes 
 The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network. These nodes are the communication entities of the blockchain. There are three types of nodes in the Hyperledger Fabric blockchain:
@@ -52,7 +52,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multi-node 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDA5OTkxMjcsMTY2NDMyMjAwMywtMj
-g2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2MjU5
-NzMyXX0=
+eyJoaXN0b3J5IjpbLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yOD
+YzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3
+MzJdfQ==
 -->
