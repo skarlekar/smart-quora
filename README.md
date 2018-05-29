@@ -208,11 +208,14 @@ This will create the necessary code in the _hello_bna_ directory.
     mkdir dist; cd dist
 ```
  3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
-
-    composer archive create -t dir -n ../
-
+```
+composer archive create -t dir -n ../
+```
 4. Install version 0.0.1 of the business app using the peer admin card created earlier.
-
+```
+composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
+```
+5. 
 ## Installing SmartQuora
 
 
@@ -220,7 +223,7 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDMxMDc0NywtMjU3MzA4MDU5LC0xOT
+eyJoaXN0b3J5IjpbLTgzODQ4ODU4OSwtMjU3MzA4MDU5LC0xOT
 g4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4
 NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLT
 ExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMx
