@@ -146,17 +146,17 @@ tar -xvf fabric-dev-servers.tar.gz
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
 ```
- 
+ 7. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTc2NTg4OTEsNzEzMTkxNzM4LDExMj
-gxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUz
-ODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNT
-ksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQx
-NjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMD
-MsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4
-NjI1OTczMl19
+eyJoaXN0b3J5IjpbMTcxNDkxNjI5MSw3MTMxOTE3MzgsMTEyOD
+E5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4
+MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OS
+wxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2
+NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMy
+wtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2
+MjU5NzMyXX0=
 -->
