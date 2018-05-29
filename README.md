@@ -34,7 +34,9 @@ All information regarding authenticated users and their wallets is persisted in 
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
-### Digital Ie
+### Digital Identity
+When using Hyperledger Fabric, Hyperledger Composer issues new identities by using the Hyperledger Fabric certificate authority (CA) to register new enrollment certificates. This CA runs as a node i
+
 ### Nodes 
 The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network. These nodes are the communication entities of the blockchain. There are three types of nodes in the Hyperledger Fabric blockchain:
 
@@ -50,6 +52,6 @@ The following diagram depicts the SmartQuora DApp when deployed on a multi-node 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTcwMTU1NywyMTM5NTUwNTk0LDIwMD
+eyJoaXN0b3J5IjpbLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMD
 g5Mzg5MjAsMTI4NjI1OTczMl19
 -->
