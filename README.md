@@ -73,7 +73,8 @@ Hyperledger Fabric installation prohibits using the root identity to install the
     $ sudo adduser hyperuser
     $ sudo adduser hyperuser sudo
 
-Always use _su -_ to switch user going forward to enable the environment variables are sourced from your _.profile_
+Switch user to 
+Note: Always use _su -_ to switch user going forward to enable the environment variables are sourced from your _.profile_
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
 
@@ -81,10 +82,10 @@ Always use _su -_ to switch user going forward to enable the environment variabl
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjcwNzYyMiwtODExMDQ0MDc3LC03Mj
-I5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEw
-NTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC
-0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0
-OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OT
-QsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbLTIwNDkyMDIxNjAsLTgxMTA0NDA3NywtNz
+IyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjEx
+MDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNy
+wtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1
+NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNT
+k0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
