@@ -62,13 +62,13 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
 For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS environment.
-Note: While this t
+Note: While this section goes over the installation of HLF on a compute instance on EC2, the installation can be
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzQxNzc1OSwtMTkyMTEwNTk5NywtMT
+eyJoaXN0b3J5IjpbMTIwOTQxNzM3NSwtMTkyMTEwNTk5NywtMT
 UwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMx
 NDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMT
 Y2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkz
