@@ -113,7 +113,7 @@ Verify that you have access to the binaries installed as follows:
     python
     
 #### Install the Command Line Utilities
-1.  Essential CLI tools:
+1.  Composer CLI tools:
     ```
     npm install -g composer-cli
     
@@ -133,18 +133,17 @@ Verify that you have access to the binaries installed as follows:
     ```
     npm install -g yo
     ```
-    npm install -g composer-cli
+
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODAyOTE5MSwxMTI4MTkxMjQ1LC04MT
-EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
-NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
-EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
-MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
-UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
-
+eyJoaXN0b3J5IjpbNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMT
+A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
+ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
+w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
+NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
+wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
