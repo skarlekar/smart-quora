@@ -18,10 +18,20 @@ The following diagram provides a high-level component diagram of the SmartQuora 
 
 ![SmartQuora Component Diagram](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-components.png)
 
+As such, the blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
+
+DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is CouchDB which is a JSON store.
+
+Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
+
+The following diagram depicts a single-node view of the SmartQuora DApp.
+![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDM3NDAwLC0xNTMyNDA5NzI2LDEyMT
-Q1MTY2NiwtMTc0NzIxNDI1NCwyMTE1NDQ3NTU0LDE2MzY4OTEz
-OTksLTE3NjgyNDgxNDksLTIxMzI1NTU4NjNdfQ==
+eyJoaXN0b3J5IjpbMTkyNTk0MzI4MiwtNjEwMzc0MDAsLTE1Mz
+I0MDk3MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1
+NTQsMTYzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M1
+19
 -->
