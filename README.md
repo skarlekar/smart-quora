@@ -160,17 +160,18 @@ cd ~/fabric-dev-servers
 ```
     composer-playground
 ```
-9. On your favorite browser, navigate to port 8080. You should see the followin
+9. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
+ 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4MDEyMjYwLC0xNzQxMDY0OTk1LC03NT
-Y3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3
-NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLT
-E5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1
-ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNi
-wtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5
-NTUwNTk0XX0=
+eyJoaXN0b3J5IjpbLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLT
+c1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0
+MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NS
+wtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5
+NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NT
+I2LC05MjU0OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExNDI1LDIx
+Mzk1NTA1OTRdfQ==
 -->
