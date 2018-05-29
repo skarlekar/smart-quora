@@ -134,14 +134,15 @@ Follow the instructions below or use the [HLF Development Tools installation gui
     ```
     npm install -g yo
     ```
-5. Download the tool that installs Hyperledger Fabric:
+5. Install the Pl
+6. Download the tool that installs Hyperledger Fabric:
 ```
 mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
 
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
 tar -xvf fabric-dev-servers.tar.gz
 ```
-6. Install Hyperledger Fabric runtime:
+7. Install Hyperledger Fabric runtime:
 ```
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
@@ -157,11 +158,11 @@ cd ~/fabric-dev-servers
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyOD
-E5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4
-MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OS
-wxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2
-NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMy
-wtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2
-MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbMTQ2OTIyMzc5NCwtNzU2NzA3NjMxLDcxMz
+E5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3
+NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC
+0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLTM1MTUy
+MzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OC
+wxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4
+OTM4OTIwXX0=
 -->
