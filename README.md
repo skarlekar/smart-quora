@@ -39,8 +39,8 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 
 1.  **Client**  : The client represents the entity that acts on behalf of an end-user. It orchestrates data and transactions between peers and the ordering service.
 2.  **Peer**: A peer receives ordered state updates in the form of _blocks_ from the ordering service and maintain the state and the ledger. Peers can additionally take up a special role of an  **endorser** which uses endorsement policies to sign the transactions. Once the client receives enough signatures to satisfy the endorsement policy, it can submit the transaction (and the signatures) to be added to the ledger.
-3.  **Orderer**: a node running the communication service that implements a delivery guarantee, such as atomic or total order broadcast.
+3.  **Orderer**: The orderer a node running the communication service that implements a delivery guarantee, such as atomic or total order broadcast.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbLTE5NzMzNDg4NTYsMTI4NjI1OTczMl19
 -->
