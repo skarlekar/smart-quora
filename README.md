@@ -101,6 +101,8 @@ After the installation is complete you should see a message stating that the fol
 3. docker
 4. python
 
+![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/pre-req-install-out.png)
+
 At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.
 
 Verify that you have the right 
@@ -109,7 +111,7 @@ Verify that you have the right
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NTIyMjUyMiwxMTI4MTkxMjQ1LC04MT
+eyJoaXN0b3J5IjpbMTYyNzYyMDI3NSwxMTI4MTkxMjQ1LC04MT
 EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
 NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
 EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
