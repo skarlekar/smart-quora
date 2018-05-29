@@ -49,6 +49,8 @@ For further details on the basic workflow of a transaction inside a Hyperledger 
 The following diagram depicts the SmartQuora DApp when deployed on a multiple hosts to derive the benefits of the blockchain. For the sake of simplicity, in this tutorial, we will deploy the SmartQuora DApp as a logical instance on single host.
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-multi-node-view.png)
 
+## DApps - Decentralized Applications
+
 ### Anatomy of the DApp
  We will use the Composer to model the SmartQuora BNA - Business Network Application. Note: In the world of Hyperledger Fabric, DApps are called BNA. Hyperledger Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
 ![BNA Breakdown](https://github.com/skarlekar/smart-quora/blob/master/images/bna-breakdown.png)
@@ -61,8 +63,8 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MT
-Y0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAz
-LC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyOD
-YyNTk3MzJdfQ==
+eyJoaXN0b3J5IjpbLTIyMzU2Mjg0NSw3OTQ1ODMzNywtMzUxNT
+IzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4
+LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMD
+g5Mzg5MjAsMTI4NjI1OTczMl19
 -->
