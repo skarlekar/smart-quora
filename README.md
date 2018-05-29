@@ -174,13 +174,17 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
  ### Starting and Stopping Hyperledger Fabric 
- 1. To start the Hyperledger Fabric environment, 
+ 1. To start the Hyperledger Fabric environment, use the following:
+ ```
+ cd ~/fabric-dev-servers
+ ./startFabr
+ 3. To stop the Hyperledger Fabric environment, use the following:
 ## Installing SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDA0MzgxNiw0OTg0NTg3NCwyMDY5Nz
+eyJoaXN0b3J5IjpbMTgxNTMyNjI1NCw0OTg0NTg3NCwyMDY5Nz
 U5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3
 OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMT
 I4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1
