@@ -150,12 +150,12 @@ tar -xvf fabric-dev-servers.tar.gz
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
 ```
- 7. Ensure five Docker images are downloaded:
+ 8. Ensure five Docker images are downloaded:
 ```
 docker images
 ```
 You should see the following:
-
+![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/docker-images-verification.png)
  9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
  ```
     cd ~/fabric-dev-servers
@@ -166,7 +166,7 @@ You should see the following:
 ```
     composer-playground
 ```
-9. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
+10. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
 ## Using SmartQuora
@@ -174,11 +174,11 @@ You should see the following:
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMT
-IxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkx
-NzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LD
-E2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1
-MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMT
-Q0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2
-NjQzMjIwMDNdfQ==
+eyJoaXN0b3J5IjpbMTgzNTAwNjI0MSwxMjc2MTQ2MDUsLTEzOT
+EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
+NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
+03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
+MTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4Mz
+M3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05
+MjU0OTI4NDhdfQ==
 -->
