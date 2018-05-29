@@ -69,7 +69,10 @@ Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between relaunches of the instance.
 #### Create Hyperuser
 Hyperledger Fabric installation prohibits using the root identity to install the software. Therefore, create a new user and add that user to the _sudo_ group.
-$ sudo adduser <user-
+
+    $ sudo adduser user-name
+    $ sudo adduser user-name sudo
+
 
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
@@ -78,10 +81,10 @@ $ sudo adduser <user-
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTYyMzQ4OCwtODExMDQ0MDc3LC03Mj
-I5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEw
-NTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC
-0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0
-OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OT
-QsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbLTE3NzE4NjE1OTQsLTgxMTA0NDA3NywtNz
+IyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjEx
+MDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNy
+wtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1
+NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNT
+k0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
