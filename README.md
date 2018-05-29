@@ -43,9 +43,9 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 
 For further details on the basic workflow of a transaction inside a Hyperledger Fabric blockchain please refer to this [document](http://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement).
 
-The following p
+The following diagram depicts the SmartQuora DApp when deployed on a multi-node blockchain. For the sake of simplicity of this tutorial, we will deploy 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg3ODQ1NDUsMjAwODkzODkyMCwxMj
+eyJoaXN0b3J5IjpbLTEwMjMwNzc1OTMsMjAwODkzODkyMCwxMj
 g2MjU5NzMyXX0=
 -->
