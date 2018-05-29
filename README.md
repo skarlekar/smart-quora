@@ -119,27 +119,17 @@ Verify that you have access to the binaries installed as follows:
     
     ```
 2.  Utility for running a REST Server on your machine to expose your business networks as RESTful APIs:
-    
-    Copy
-    
     ```
     npm install -g composer-rest-server
     
     ```
-    
 3.  Useful utility for generating application assets:
-    
-    Copy
-    
     ```
     npm install -g generator-hyperledger-composer
     
     ```
-    
 4.  Yeoman is a tool for generating applications, which utilises  `generator-hyperledger-composer`:
-    
-    Copy
-    
+
     ```
     npm install -g yo
     ```
@@ -150,7 +140,7 @@ Verify that you have access to the binaries installed as follows:
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTUwNDAyOCwxMTI4MTkxMjQ1LC04MT
+eyJoaXN0b3J5IjpbLTY1ODAyOTE5MSwxMTI4MTkxMjQ1LC04MT
 EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
 NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
 EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
