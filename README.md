@@ -194,11 +194,12 @@ Now that we have installed Hyperledger Fabric runtime, let us create a Hello-Wor
 Use the following instructions to respond to the menu options:
 Select Business Network
 
-> Business network name: hello-bna Description: My first BNA on HLF
-> Author name: your-name Author email: your-name@email.com License: Press
-> enter to accept Apache-2.0 Namespace: Press enter to accept default Do
-> you want to generate an empty template network?: Select No to generate
-> a populated network
+> **Business network name**: hello-bna Description: My first BNA on HLF
+> **Author name**: your-name 
+> **Author email**: your-name@email.com 
+> License: Press enter to accept Apache-2.0 
+> Namespace: Press enter to accept default 
+> Do you want to generate an empty template network?: Select No to generate a populated network
 
 This will create the necessary code in the _hello_bna_ directory.
 
@@ -212,11 +213,11 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0ODY4ODg0LC0xNTY2ODY1NDI0LDE5Mz
-Y4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUs
-LTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLT
-c1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0
-MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NS
-wtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5
-NDU4MzM3XX0=
+eyJoaXN0b3J5IjpbMTU2NzA3MzM0OCwtMTU2Njg2NTQyNCwxOT
+M2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1
+LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC
+03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0
+NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0OD
+UsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3
+OTQ1ODMzN119
 -->
