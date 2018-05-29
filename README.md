@@ -57,10 +57,12 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 ## Setup Instructions
 
+## Using SmartQuora
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MTEyNzI5NCwtMzUxNTIzMTQ0LDMzMz
-QxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIw
-MDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMT
-I4NjI1OTczMl19
+eyJoaXN0b3J5IjpbNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MT
+Y0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAz
+LC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyOD
+YyNTk3MzJdfQ==
 -->
