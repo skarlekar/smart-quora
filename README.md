@@ -185,7 +185,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	 ./stopFabric.sh
 	 ```
 ## Creating a Hello World on Hyperledger Fabric
-Now that we have installed Hyperledger Fabric, let us create a Hello-World application so as not to break the tradition of programming.
+Now that we have installed Hyperledger Fabric, let us create a Hello-World application to understand the principles and elements o so as not to break the tradition of programming.
 
 
 ## Installing SmartQuora
@@ -194,11 +194,11 @@ Now that we have installed Hyperledger Fabric, let us create a Hello-World appli
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjY4OTg5NCwtMTU2Njg2NTQyNCwxOT
-M2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1
-LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC
-03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0
-NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0OD
-UsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3
-OTQ1ODMzN119
+eyJoaXN0b3J5IjpbLTEyMTU4MjEyNzQsLTE1NjY4NjU0MjQsMT
+kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
+NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
+wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
+NDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzND
+g1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEs
+Nzk0NTgzMzddfQ==
 -->
