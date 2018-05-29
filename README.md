@@ -82,15 +82,16 @@ Switch user to hyperuser and add the current working directory "." to the PATH e
 **Note**: Always use _su -_ to switch user going forward to enable the environment variables are sourced from your _.profile_
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
-
+#### Download Hyperledger Fabric Pre-requisities
+Follow the gui
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5ODk0OTYsLTgxMTA0NDA3NywtNzIyOT
-YyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5
-OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMz
-UxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDky
-ODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LD
-IwMDg5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbODM3Njk3MTM2LC04MTEwNDQwNzcsLTcyMj
+k2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1
+OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLT
+M1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5
+Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NC
+wyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
 -->
