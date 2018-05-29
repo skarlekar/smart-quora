@@ -101,16 +101,19 @@ After the installation is complete you should see a message stating that the fol
 3. docker
 4. python
 
-At this point remember to log out and log back in to ensure that the newly added environment variables takes into effect.
+At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.
+
+V
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2MTExMjI3LDExMjgxOTEyNDUsLTgxMT
-A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
-ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
-w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
-NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
-wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbLTE5NDQ1Mzg0NzIsMTEyODE5MTI0NSwtOD
+ExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIy
+MzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0Mj
+IxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3
+OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExND
+I1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
+
 -->
