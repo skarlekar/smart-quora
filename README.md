@@ -168,12 +168,12 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
-## Using SmartQuora
+## Installing SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI5NjUwMzEsMTI3NjE0NjA1LC0xMz
+eyJoaXN0b3J5IjpbLTE1MDkwNzU2NjAsMTI3NjE0NjA1LC0xMz
 kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
 MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
 wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
