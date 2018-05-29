@@ -112,7 +112,7 @@ Verify that you have access to the binaries installed as follows:
     node -v
     python
     
-#### Install the Command Line Utilities
+#### Install the Hyperledger Development Environmen
 1.  Composer CLI tools:
     ```
     npm install -g composer-cli
@@ -133,17 +133,18 @@ Verify that you have access to the binaries installed as follows:
     ```
     npm install -g yo
     ```
-
+#### Installin
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMT
-A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
-ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
-w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
-NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
-wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbMTAxMTYyMzA2NCw3MTMxOTE3MzgsMTEyOD
+E5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4
+MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OS
+wxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2
+NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMy
+wtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2
+MjU5NzMyXX0=
 -->
