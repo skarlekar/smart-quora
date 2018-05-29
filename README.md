@@ -67,6 +67,7 @@ Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 ![AWS EC2 Instance Configuration](https://github.com/skarlekar/smart-quora/blob/master/images/EC2%20Instance%20Configuration.png)
 #### Associate an Elastic IP 
 Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between relaunches of the instance.
+#### SSH 
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
 
@@ -74,10 +75,10 @@ Allocate a new Elastic IP address and associate it with the newly created instan
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2Mz
-AxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkx
-NjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LD
-MzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQz
-MjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5Mj
-AsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbLTkwMzQ0NDQ1LC04MTEwNDQwNzcsLTcyMj
+k2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1
+OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLT
+M1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5
+Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NC
+wyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
 -->
