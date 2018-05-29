@@ -83,7 +83,7 @@ Switch user to hyperuser and add the current working directory "." to the PATH e
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
 
-#### Download Hyperledger Fabric Pre-requisities
+#### Installing Hyperledger Fabric Pre-requisites
 Use the following commands or follow the [installing pre-requisites guide](https://hyperledger.github.io/composer/latest/installing/installing-prereqs.html#ubuntu) to prep the environment for Hyperledger Fabric installation.
 ```bash
 curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh
@@ -111,17 +111,17 @@ Verify that you have access to the binaries installed as follows:
     npm -v
     node -v
     python
-
+#### Install Hyperledger Fabric Components
+Install the Composer CLI 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzE3MDU0NywxMTI4MTkxMjQ1LC04MT
-EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
-NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
-EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
-MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
-UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
-
+eyJoaXN0b3J5IjpbOTI1NTQzNDkyLDExMjgxOTEyNDUsLTgxMT
+A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
+ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
+w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
+NDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNS
+wyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
