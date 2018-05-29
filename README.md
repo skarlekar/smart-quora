@@ -38,9 +38,9 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network. These nodes are the communication entities of the blockchain. There are three types of nodes in the Hyperledger Fabric blockchain:
 
 1.  **Client**  : The client represents the entity that acts on behalf of an end-user. It orchestrates data and transactions between peers and the ordering service.
-2.  **Peer**: A peer receives ordered state updates in the form of _blocks_ from the ordering service and maintain the state and the ledger. Peers can additionally take up a special role of an  **endorser** which uses endorsement policies to.
+2.  **Peer**: A peer receives ordered state updates in the form of _blocks_ from the ordering service and maintain the state and the ledger. Peers can additionally take up a special role of an  **endorser** which uses endorsement policies to sign the transactions.
 3.  **Ordering-service-node**  or  **orderer**: a node running the communication service that implements a delivery guarantee, such as atomic or total order broadcast.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzAyMDM3OTddfQ==
+eyJoaXN0b3J5IjpbMTEyNDM3MzE4OF19
 -->
