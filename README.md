@@ -147,12 +147,17 @@ cd ~/fabric-dev-servers
 ./downloadFabric.sh
 ```
  7. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
+ ```
+    cd ~/fabric-dev-servers
+    ./startFabric.sh
+    ./createPeerAdminCard.sh
+```
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDkxNjI5MSw3MTMxOTE3MzgsMTEyOD
+eyJoaXN0b3J5IjpbLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyOD
 E5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4
 MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OS
 wxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2
