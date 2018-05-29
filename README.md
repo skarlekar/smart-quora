@@ -154,7 +154,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	You should see the following:
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/docker-images-verification.png)
 
- 9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
+ 9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card which will be used to connect to the HLF:
 	 ```
 	    cd ~/fabric-dev-servers
 	    ./startFabric.sh
@@ -173,11 +173,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDkwNzU2NjAsMTI3NjE0NjA1LC0xMz
-kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
-MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
-wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
-MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
-MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
-OTI1NDkyODQ4XX0=
+eyJoaXN0b3J5IjpbMTIyNjQ0MTU4OCwxMjc2MTQ2MDUsLTEzOT
+EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
+NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
+03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
+MTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4Mz
+M3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05
+MjU0OTI4NDhdfQ==
 -->
