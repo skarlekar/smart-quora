@@ -164,7 +164,8 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	```
 	docker ps
 	```
-	This should show four 
+	This should show four containers running which are the core of the Hyperledger Fabric environment.
+	
 12. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
      ```
 	composer-playground 
@@ -178,11 +179,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE0MjQ2NTMsMTI3NjE0NjA1LC0xMz
-kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
-MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
-wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
-MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
-MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
-OTI1NDkyODQ4XX0=
+eyJoaXN0b3J5IjpbMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOT
+EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
+NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
+03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
+MTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4Mz
+M3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05
+MjU0OTI4NDhdfQ==
 -->
