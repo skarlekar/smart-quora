@@ -113,7 +113,7 @@ Verify that you have access to the binaries installed as follows:
     python
     
 #### Install the Hyperledger Development Environment
-Follow the instructions below or use the HLF Development Tools installation guide to install the HLF development environment.
+Follow the instructions below or use the [HLF Development Tools installation guide](https://hyperledger.github.io/composer/latest/installing/development-tools.html) to install the HLF development environment.
 
 1.  Composer CLI tools:
     ```
@@ -131,22 +131,21 @@ Follow the instructions below or use the HLF Development Tools installation guid
     
     ```
 4.  Yeoman is a tool for generating applications, which utilises  `generator-hyperledger-composer`:
-
     ```
     npm install -g yo
     ```
-#### Installin
+
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxMTAzNDcsNzEzMTkxNzM4LDExMjgxOT
-EyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMs
-LTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMT
-UyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1
-MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLT
-I4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1
-OTczMl19
+eyJoaXN0b3J5IjpbOTc5MjI3NTY1LDcxMzE5MTczOCwxMTI4MT
+kxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1Mzgz
+LC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LD
+E1MjYxMTQyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0
+NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC
+0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYy
+NTk3MzJdfQ==
 -->
