@@ -35,6 +35,7 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
 ### Digital Identity
+Blockchain uses Digital Identities to represent participants in the network.
 When using Hyperledger Fabric, Hyperledger Composer issues new identities by using the Hyperledger Fabric certificate authority (CA) to register new enrollment certificates. This CA runs as a node i
 
 ### Nodes 
@@ -52,6 +53,6 @@ The following diagram depicts the SmartQuora DApp when deployed on a multi-node 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMD
-g5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbMjA4Mjg5NjQ4NCwtMjg2MzExNDI1LDIxMz
+k1NTA1OTQsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
 -->
