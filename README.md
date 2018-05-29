@@ -229,6 +229,7 @@ composer card list
 ```
 This should display the existing card in your runtime as follows:
 ![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
+
 8. Ensure that the application is running using the composer network ping command
 ```
 composer network ping -c admin@hello-bna
@@ -244,11 +245,11 @@ docker ps
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgyNTE1NTIsLTI1NzMwODA1OSwtMT
-k4ODg5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1
-ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC
-0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEz
-MTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNj
-c3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcs
-LTE1MDkxNjIxNTldfQ==
+eyJoaXN0b3J5IjpbLTQ3ODA3Njk0MiwtMjU3MzA4MDU5LC0xOT
+g4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4
+NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLT
+ExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMx
+OTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2Nz
+csMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5Nywt
+MTUwOTE2MjE1OV19
 -->
