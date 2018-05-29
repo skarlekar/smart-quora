@@ -94,15 +94,21 @@ Next run the script to install the pre-requisites.
 ```
 ./prereqs-ubuntu.sh
 ```
+This will install the following:
+node
+npm
+docker
+python
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODE5MTI0NSwtODExMDQ0MDc3LC03Mj
-I5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEw
-NTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC
-0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0
-OTI4NDgsMTY2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OT
-QsMjAwODkzODkyMCwxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbLTY1MjY5MzM1NywxMTI4MTkxMjQ1LC04MT
+EwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIz
+NDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMj
+EsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5
+MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0Mj
+UsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
+
 -->
