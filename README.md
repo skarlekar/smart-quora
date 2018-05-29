@@ -35,11 +35,16 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
 ### Nodes 
-The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network. These node
+The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network. These nodes are the communication entities of the blockchain. There are three types of nodes in the Hyperledger Fabric blockchain:
+
+1.  **Client**  or  **submitting-client**: a client that submits an actual transaction-invocation to the endorsers, and broadcasts transaction-proposals to the ordering service.
+2.  **Peer**: a node that commits transactions and maintains the state and a copy of the ledger (see Sec, 1.2). Besides, peers can have a special  **endorser**  role.
+3.  **Ordering-service-node**  or  **orderer**: a node running the communication service that implements a delivery guarantee, such as atomic or total order broadcast.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2NzM1MDE0LC0xNjY1NzI1ODUyLDM5Nz
-ExMzcxOCwtMTY1NTI5MzQ3MiwtNjEwMzc0MDAsLTE1MzI0MDk3
-MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1NTQsMT
-YzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M119
+eyJoaXN0b3J5IjpbLTE3NDA1Mjg0ODIsLTE2NjU3MjU4NTIsMz
+k3MTEzNzE4LC0xNjU1MjkzNDcyLC02MTAzNzQwMCwtMTUzMjQw
+OTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQyNTQsMjExNTQ0NzU1NC
+wxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC0yMTMyNTU1ODYzXX0=
+
 -->
