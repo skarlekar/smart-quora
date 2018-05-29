@@ -136,20 +136,20 @@ Follow the instructions below or use the [HLF Development Tools installation gui
     ```
 5. Install the Playground app used for editing and testing Business Networks:
 ```
-npm install -g yo
-```
+npm install -
 6. Download the tool that installs Hyperledger Fabric:
 ```
 mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
-
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
 tar -xvf fabric-dev-servers.tar.gz
 ```
+
 7. Install Hyperledger Fabric runtime:
 ```
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
 ```
+
  8. Ensure five Docker images are downloaded:
 ```
 docker images
@@ -168,7 +168,8 @@ You should see the following:
 ```
     composer-playground
 ```
-10. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
+
+11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
 ## Using SmartQuora
@@ -176,7 +177,7 @@ You should see the following:
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTgwMDY4MDIsMTI3NjE0NjA1LC0xMz
+eyJoaXN0b3J5IjpbLTE2NTQ0MDczOTgsMTI3NjE0NjA1LC0xMz
 kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
 MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
 wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
