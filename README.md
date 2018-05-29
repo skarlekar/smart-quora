@@ -66,17 +66,17 @@ For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS
 Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 ![AWS EC2 Instance Configuration](https://github.com/skarlekar/smart-quora/blob/master/images/EC2%20Instance%20Configuration.png)
 #### Associate an Elastic IP 
-Allocat
+Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between re
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
 
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2MzIxMjEwLC03MjI5NjI2NzcsMTYzMD
-EzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2
-MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMz
-MzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMy
-MjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMC
-wxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbMTMzMDM5MTMwNCwtNzIyOTYyNjc3LDE2Mz
+AxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1MDkx
+NjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LD
+MzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2NjQz
+MjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5Mzg5Mj
+AsMTI4NjI1OTczMl19
 -->
