@@ -188,20 +188,21 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 Now that we have installed Hyperledger Fabric runtime, let us create a Hello-World application to understand the principles and elements of Hyperledger Fabric.
 
 1. In your home directory, use Yeoman to create a business application _hello_bna_ using:
-yo hyperledger-composer
+
+    yo hyperledger-composer
 
 Use the following instructions to respond to the menu options:
 Select Business Network
 
-Business network name: hello-bna
-Description: My first bna on HLF
-Author name: your name
-Author email: yourname@email.com
-License: Press enter to accept Apache-2.0
-Namespace: Press enter to accept default
-Do you want to generate an empty template network?: Select No to generate a populated network
+> Business network name: hello-bna Description: My first BNA on HLF
+> Author name: your-name Author email: your-name@email.com License: Press
+> enter to accept Apache-2.0 Namespace: Press enter to accept default Do
+> you want to generate an empty template network?: Select No to generate
+> a populated network
 
-This will create the necessary code in the _hello_bna_ directory in your 
+This will create the necessary code in the _hello_bna_ directory.
+
+ 
 
 
 ## Installing SmartQuora
@@ -209,12 +210,13 @@ This will create the necessary code in the _hello_bna_ directory in your
 
 > Written with [StackEdit](https://stackedit.io/).
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ3NDMzMjQsLTE1NjY4NjU0MjQsMT
-kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
-NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
-wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
-NDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzND
-g1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEs
-Nzk0NTgzMzddfQ==
+eyJoaXN0b3J5IjpbNDM0ODY4ODg0LC0xNTY2ODY1NDI0LDE5Mz
+Y4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUs
+LTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLT
+c1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0
+MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NS
+wtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5
+NDU4MzM3XX0=
 -->
