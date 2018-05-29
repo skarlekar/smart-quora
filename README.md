@@ -24,13 +24,15 @@ DApps such as SmartQuora consists of Smart Contracts that are translated to chai
 
 Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
 
+
+
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTk0MzI4MiwtNjEwMzc0MDAsLTE1Mz
+eyJoaXN0b3J5IjpbLTI1ODY2ODM5NCwtNjEwMzc0MDAsLTE1Mz
 I0MDk3MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1
 NTQsMTYzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M1
 19
