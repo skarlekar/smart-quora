@@ -20,7 +20,7 @@ The following diagram provides a high-level component diagram of the SmartQuora 
 
 As such, the blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
 
-DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB which is a JSON store. In addition to storing 
+DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB which is a JSON store. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain.
 
 Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
 
@@ -32,7 +32,7 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5MTA3MDM3LC0xNjU1MjkzNDcyLC02MT
+eyJoaXN0b3J5IjpbMzk3MTEzNzE4LC0xNjU1MjkzNDcyLC02MT
 AzNzQwMCwtMTUzMjQwOTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQy
 NTQsMjExNTQ0NzU1NCwxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC
 0yMTMyNTU1ODYzXX0=
