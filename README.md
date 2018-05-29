@@ -51,12 +51,12 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 ### Anatomy of the DApp
  We will use the Composer to model the SmartQuora BNA - Business Network Application. Note: In the world of Hyperledger Fabric, DApps are called BNA. Hyperledger Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
-
+![BNA Breakdown](https://github.com/skarlekar/smart-quora/blob/master/images/bna-breakdown.png)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzIwMjc0MjQsMzMzNDE2NDUzLC0xNj
-M3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMywtMjg2MzEx
-NDI1LDIxMzk1NTA1OTQsMjAwODkzODkyMCwxMjg2MjU5NzMyXX
-0=
+eyJoaXN0b3J5IjpbLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mz
+c5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0
+MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ
+==
 -->
