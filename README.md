@@ -112,13 +112,16 @@ Verify that you have access to the binaries installed as follows:
     node -v
     python
 #### Install Hyperledger Fabric Components
-Install the Composer CLI 
+Install the Composer CLI Tool
+
+    npm install -g composer-cli
+
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1NTQzNDkyLDExMjgxOTEyNDUsLTgxMT
+eyJoaXN0b3J5IjpbODcwMjMyNDE1LDExMjgxOTEyNDUsLTgxMT
 A0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0
 ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMS
 w3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkx
