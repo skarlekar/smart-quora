@@ -73,6 +73,7 @@ Hyperledger Fabric installation prohibits using the root identity to install the
     $ sudo adduser hyperuser
     $ sudo adduser hyperuser sudo
 
+Always use _su -_ to switch user t
 
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
@@ -81,10 +82,10 @@ Hyperledger Fabric installation prohibits using the root identity to install the
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0OTg1NzQ0LC04MTEwNDQwNzcsLTcyMj
-k2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1
-OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLT
-M1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5
-Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NC
-wyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
+eyJoaXN0b3J5IjpbNzQwODIyODUsLTgxMTA0NDA3NywtNzIyOT
+YyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5
+OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMz
+UxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDky
+ODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LD
+IwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
