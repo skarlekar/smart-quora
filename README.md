@@ -228,7 +228,7 @@ composer card import -f ./admin@hello-bna.card
 composer card list
 ```
 This should display the existing card in your runtime as follows:
-![composer card lis](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
+![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
 8. Ensure that the application is running using the composer network ping command
 ```
 composer network ping -c admin@hello-bna
@@ -244,7 +244,7 @@ docker ps
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDgxODI0MTksLTI1NzMwODA1OSwtMT
+eyJoaXN0b3J5IjpbLTEyNTgyNTE1NTIsLTI1NzMwODA1OSwtMT
 k4ODg5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1
 ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC
 0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEz
