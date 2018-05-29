@@ -118,17 +118,14 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 1.  Composer CLI tools:
     ```
     npm install -g composer-cli
-    
     ```
 2.  Utility for running a REST Server on your machine to expose your business networks as RESTful APIs:
     ```
     npm install -g composer-rest-server
-    
     ```
 3.  Useful utility for generating application assets:
     ```
     npm install -g generator-hyperledger-composer
-    
     ```
 4.  Yeoman is a tool for generating applications, which utilises  `generator-hyperledger-composer`:
     ```
@@ -136,7 +133,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
     ```
 5. Install the Playground app used for editing and testing Business Networks:
 ```
-npm install -
+npm install -g composer-playgroun
 6. Download the tool that installs Hyperledger Fabric:
 ```
 mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
@@ -177,11 +174,11 @@ You should see the following:
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ0MDczOTgsMTI3NjE0NjA1LC0xMz
-kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
-MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
-wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
-MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
-MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
-OTI1NDkyODQ4XX0=
+eyJoaXN0b3J5IjpbLTYyMjAwMzYyMywxMjc2MTQ2MDUsLTEzOT
+EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
+NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
+03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
+MTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4Mz
+M3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05
+MjU0OTI4NDhdfQ==
 -->
