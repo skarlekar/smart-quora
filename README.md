@@ -227,13 +227,16 @@ composer card import -f ./admin@hello-bna.card
 ```
 composer card list
 ```
+This should display the existing card in your runtime as follows:
+![composer card lis](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
 8. Ensure that the application is running using the composer network ping command
 ```
 composer network ping -c admin@hello-bna
 ```
-Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
-
+9. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
+```
 docker ps
+```
 ## Installing SmartQuora
 
 
@@ -241,11 +244,11 @@ docker ps
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyODc5MDU2LC0yNTczMDgwNTksLTE5OD
-g4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3
-NCwyMDY5NzU5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMT
-EyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5
-MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3Ny
-wxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0x
-NTA5MTYyMTU5XX0=
+eyJoaXN0b3J5IjpbLTE4MDgxODI0MTksLTI1NzMwODA1OSwtMT
+k4ODg5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1
+ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC
+0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEz
+MTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNj
+c3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcs
+LTE1MDkxNjIxNTldfQ==
 -->
