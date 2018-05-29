@@ -68,10 +68,10 @@ Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 #### Associate an Elastic IP 
 Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between relaunches of the instance.
 #### Create Hyperuser
-Hyperledger Fabric installation prohibits using the root identity to install the software. Therefore, create a new user and add that user to the _sudo_ group.
+Hyperledger Fabric installation prohibits using the root identity to install the software. Therefore, create a new user and add that user to the _sudo_ group. You can choose any user name. I am using _hyperuser_
 
-    $ sudo adduser user-name
-    $ sudo adduser user-name sudo
+    $ sudo adduser hyperuser
+    $ sudo adduser hyperuser sudo
 
 
 
@@ -81,10 +81,10 @@ Hyperledger Fabric installation prohibits using the root identity to install the
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE4NjE1OTQsLTgxMTA0NDA3NywtNz
-IyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjEx
-MDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNy
-wtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1
-NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNT
-k0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
+eyJoaXN0b3J5IjpbNzI0OTg1NzQ0LC04MTEwNDQwNzcsLTcyMj
+k2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1
+OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLT
+M1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTkyNTQ5
+Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NC
+wyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ==
 -->
