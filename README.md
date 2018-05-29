@@ -197,13 +197,13 @@ Select Business Network
 > **Business network name**: hello-bna Description: My first BNA on HLF
 > **Author name**: your-name 
 > **Author email**: your-name@email.com 
-> License: Press enter to accept Apache-2.0 
-> Namespace: Press enter to accept default 
-> Do you want to generate an empty template network?: Select No to generate a populated network
+> **License**: Press enter to accept Apache-2.0 
+> **Namespace**: Press enter to accept default 
+> **Do you want to generate an empty template network?**: Select No to generate a populated network
 
 This will create the necessary code in the _hello_bna_ directory.
 
- 
+ 2. Create an archive by providing the type of archive as _directory
 
 
 ## Installing SmartQuora
@@ -213,7 +213,7 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzA3MzM0OCwtMTU2Njg2NTQyNCwxOT
+eyJoaXN0b3J5IjpbLTMxNjQ5MTY0MiwtMTU2Njg2NTQyNCwxOT
 M2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1
 LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC
 03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0
