@@ -160,13 +160,17 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	    ./startFabric.sh
 	    ./createPeerAdminCard.sh
 	```
-10. Verify that the Hyperledger Fabric environment started successfully by running the following
-10. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
+10. Verify that the Hyperledger Fabric environment started successfully by running the following:
+	```
+	docker ps
+	```
+	This should show four 
+12. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
      ```
 	composer-playground 
 	```
 
-11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
+13. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
 ## Installing SmartQuora
@@ -174,11 +178,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0NDgyODkwLDEyNzYxNDYwNSwtMTM5MT
-M5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3
-NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLT
-cyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIx
-MTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMz
-csLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTky
-NTQ5Mjg0OF19
+eyJoaXN0b3J5IjpbLTE2NzE0MjQ2NTMsMTI3NjE0NjA1LC0xMz
+kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
+MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
+wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
+MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
+MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
+OTI1NDkyODQ4XX0=
 -->
