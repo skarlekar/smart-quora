@@ -24,7 +24,7 @@ DApps such as SmartQuora consists of Smart Contracts that are translated to chai
 
 Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
 
-SmartQuora DApp uses the OAuth authentication strategy of the Passport authentication middleware to secure the app. Specifically, 
+SmartQuora DApp uses the OAuth authentication strategy of the Passport authentication middleware to secure the app. Specifically, it uses the Passport Google OAuth delegated authentication strategy allowing users to authenticate them
 
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
@@ -32,8 +32,8 @@ The following diagram depicts a single-node view of the SmartQuora DApp.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTc5NzUzMSwtNjEwMzc0MDAsLTE1Mz
-I0MDk3MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1
-NTQsMTYzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M1
-19
+eyJoaXN0b3J5IjpbODA2NTI1MjYwLC02MTAzNzQwMCwtMTUzMj
+QwOTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQyNTQsMjExNTQ0NzU1
+NCwxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC0yMTMyNTU1ODYzXX
+0=
 -->
