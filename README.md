@@ -203,7 +203,10 @@ Select Business Network
 
 This will create the necessary code in the _hello_bna_ directory.
 
- 2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and change 
+ 2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and step into it.
+ 
+    mkdir dist; cd dist
+
  3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
 
 
@@ -214,11 +217,11 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDIzMjQ5NiwtMTU2Njg2NTQyNCwxOT
-M2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1
-LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC
-03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0
-NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0OD
-UsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3
-OTQ1ODMzN119
+eyJoaXN0b3J5IjpbLTE5ODg4OTYwMTQsLTE1NjY4NjU0MjQsMT
+kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
+NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
+wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
+NDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzND
+g1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEs
+Nzk0NTgzMzddfQ==
 -->
