@@ -203,7 +203,8 @@ Select Business Network
 
 This will create the necessary code in the _hello_bna_ directory.
 
- 2. Create an archive by providing the type of archive as _directory
+ 2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and change 
+ 3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
 
 
 ## Installing SmartQuora
@@ -213,7 +214,7 @@ This will create the necessary code in the _hello_bna_ directory.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjQ5MTY0MiwtMTU2Njg2NTQyNCwxOT
+eyJoaXN0b3J5IjpbMTk2NDIzMjQ5NiwtMTU2Njg2NTQyNCwxOT
 M2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3NjE0NjA1
 LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC
 03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0
