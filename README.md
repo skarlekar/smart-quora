@@ -145,7 +145,7 @@ mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
 tar -xvf fabric-dev-servers.tar.gz
 ```
-8. Install Hyperledger Fabric runtime:
+7. Install Hyperledger Fabric runtime:
 ```
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
@@ -156,13 +156,17 @@ cd ~/fabric-dev-servers
     ./startFabric.sh
     ./createPeerAdminCard.sh
 ```
-8. Verify that Hyperledger Fabric was successfully installed:
+8. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application:
+```
+    composer-playground
+```
+9. On your favorite browser, navigate to poar
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTE1NTgyMSwtMTc0MTA2NDk5NSwtNz
+eyJoaXN0b3J5IjpbMTYyNzY3NzI5MiwtMTc0MTA2NDk5NSwtNz
 U2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQw
 NzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC
 0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0
