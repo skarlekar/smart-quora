@@ -89,11 +89,12 @@ curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh
 
 chmod u+x prereqs-ubuntu.sh
 ```
+Next run the script to install the pre-requisites.
 ## Using SmartQuora
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NTY5NDU5OCwtODExMDQ0MDc3LC03Mj
+eyJoaXN0b3J5IjpbMTI4ODA2MDM2NSwtODExMDQ0MDc3LC03Mj
 I5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTkyMTEw
 NTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC
 0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0
