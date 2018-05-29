@@ -166,7 +166,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	```
 	This should show four containers running which are the core of the Hyperledger Fabric environment.
 	![HLF Started Verification](https://github.com/skarlekar/smart-quora/blob/master/images/hlf-started-verification.png)
-12. You can also that your Hyperledger Fabric is functioning normally by interacting with it on the Playground web application. This will start the web application on port 8080:
+12. You can also verify that your Hyperledger Fabric is functioning normally by interacting with it on the Playground web application. To do this, start the web application on port 8080 as follows:
      ```
 	composer-playground 
 	```
@@ -178,11 +178,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Nzc2MDAzLDIwNjk3NTkwMTIsMTI3Nj
-E0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0
-OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLT
-gxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUy
-MjM0ODUsLTE5MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExND
-IyMSw3OTQ1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYz
-NzkxNDUyNl19
+eyJoaXN0b3J5IjpbNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MT
+Q2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5
+OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtOD
+ExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIy
+MzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0Mj
+IxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3
+OTE0NTI2XX0=
 -->
