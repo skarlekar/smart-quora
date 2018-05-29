@@ -164,7 +164,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 10. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
 	```
 	    composer-playground
-	    ```
+```
 
 11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
@@ -174,11 +174,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDEyMzI0OSwxMjc2MTQ2MDUsLTEzOT
-EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
-NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
-03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
-MTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4Mz
-M3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05
-MjU0OTI4NDhdfQ==
+eyJoaXN0b3J5IjpbLTIxMzkxMDYxNTEsMTI3NjE0NjA1LC0xMz
+kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
+MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
+wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
+MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
+MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
+OTI1NDkyODQ4XX0=
 -->
