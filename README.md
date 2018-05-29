@@ -154,17 +154,18 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	You should see the following:
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/docker-images-verification.png)
 
- 9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card which will be used to connect to the HLF environment:
+ 9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card which will be used to connect to the Hyperledger Fabric environment:
 	 ```
 	    cd ~/fabric-dev-servers
 	    ./startFabric.sh
 	    ./createPeerAdminCard.sh
 	```
-
+10. Verify that the Hyperledger Fabric environment started successfully by running the following
 10. Verify that Hyperledger Fabric was successfully installed by starting the Playground web application. This will start the web application on port 8080:
      ```
 	composer-playground 
 	```
+
 11. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
 ![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
  
@@ -173,11 +174,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDgzMDQyNDUsMTI3NjE0NjA1LC0xMz
-kxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3
-MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3Ny
-wtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5
-MjExMDU5OTcsLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1OD
-MzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwt
-OTI1NDkyODQ4XX0=
+eyJoaXN0b3J5IjpbNDU0NDgyODkwLDEyNzYxNDYwNSwtMTM5MT
+M5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3
+NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEwNDQwNzcsLT
+cyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1MjIzNDg1LC0xOTIx
+MTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMTQyMjEsNzk0NTgzMz
+csLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2Mzc5MTQ1MjYsLTky
+NTQ5Mjg0OF19
 -->
