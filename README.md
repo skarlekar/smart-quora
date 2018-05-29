@@ -34,11 +34,12 @@ All information regarding authenticated users and their wallets is persisted in 
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
 
-The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. 
+The decentralized nature of a blockchain platform is what gives it the power to tolerate system failures, record transactions that cannot be altered retroactively without the alteration of subsequent blocks and the collusion of the network. Decentralization or peer-to-peer network requires multiple nodes to be added to the blockchain network.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5ODE2MzM0LC0xNjY1NzI1ODUyLDM5Nz
-ExMzcxOCwtMTY1NTI5MzQ3MiwtNjEwMzc0MDAsLTE1MzI0MDk3
-MjYsMTIxNDUxNjY2LC0xNzQ3MjE0MjU0LDIxMTU0NDc1NTQsMT
-YzNjg5MTM5OSwtMTc2ODI0ODE0OSwtMjEzMjU1NTg2M119
+eyJoaXN0b3J5IjpbLTE3MDkyMDk4ODMsLTE2NjU3MjU4NTIsMz
+k3MTEzNzE4LC0xNjU1MjkzNDcyLC02MTAzNzQwMCwtMTUzMjQw
+OTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQyNTQsMjExNTQ0NzU1NC
+wxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC0yMTMyNTU1ODYzXX0=
+
 -->
