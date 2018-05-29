@@ -46,13 +46,13 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 
 For further details on the basic workflow of a transaction inside a Hyperledger Fabric blockchain please refer to this [document](http://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement).
 
-The following diagram depicts the SmartQuora DApp when deployed on a multi-node blockchain. For the sake of simplicity of this tutorial, we will deploy the DApp in a single node only.
+The following diagram depicts the SmartQuora DApp when deployed on a multiple hosts to derive the benefits of the blockchain. For the sake of simplicity of this tutorial, we will deploy the DApp in a single node only.
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-multi-node-view.png)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNj
-Y0MzIyMDAzLC0yODYzMTE0MjUsMjEzOTU1MDU5NCwyMDA4OTM4
-OTIwLDEyODYyNTk3MzJdfQ==
+eyJoaXN0b3J5IjpbMTE4MDIwNDAyMCwtMTYzNzkxNDUyNiwtOT
+I1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUw
+NTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
 -->
