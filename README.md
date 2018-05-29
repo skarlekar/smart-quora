@@ -215,7 +215,10 @@ composer archive create -t dir -n ../
 ```
 composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
-5. 
+5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
+```
+composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
+`
 ## Installing SmartQuora
 
 
@@ -223,7 +226,7 @@ composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODQ4ODU4OSwtMjU3MzA4MDU5LC0xOT
+eyJoaXN0b3J5IjpbLTc5MjEwOTk0OCwtMjU3MzA4MDU5LC0xOT
 g4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4
 NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLT
 ExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMx
