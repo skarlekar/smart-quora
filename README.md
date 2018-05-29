@@ -160,7 +160,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	    ./startFabric.sh
 	    ./createPeerAdminCard.sh
 	```
-10. Verify that the Hyperledger Fabric environment started successfully by running the following:
+10. You can also verify that your Hyperledger Fabric environment started successfully by running the following:
 	```
 	docker ps
 	```
@@ -178,11 +178,11 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTM0MjMzNSwyMDY5NzU5MDEyLDEyNz
-YxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2
-NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC
-04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMDY1
-MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYxMT
-QyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLTE2
-Mzc5MTQ1MjZdfQ==
+eyJoaXN0b3J5IjpbNTIyMTI2MjMsMjA2OTc1OTAxMiwxMjc2MT
+Q2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5
+OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtOD
+ExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIy
+MzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwxNTI2MTE0Mj
+IxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2NDUzLC0xNjM3
+OTE0NTI2XX0=
 -->
