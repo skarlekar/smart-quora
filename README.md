@@ -150,7 +150,8 @@ tar -xvf fabric-dev-servers.tar.gz
 cd ~/fabric-dev-servers
 ./downloadFabric.sh
 ```
- 7. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
+ 7. Ensure five Docker images are downloaded:
+ 8. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card:
  ```
     cd ~/fabric-dev-servers
     ./startFabric.sh
@@ -168,11 +169,11 @@ cd ~/fabric-dev-servers
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLT
-E3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5
-MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEzNTM4My
-wtMjA2NTIyMzQ4NSwtMTkyMTEwNTk5NywtMTUwOTE2MjE1OSwx
-NTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMxNDQsMzMzNDE2ND
-UzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMTY2NDMyMjAwMywt
-Mjg2MzExNDI1XX0=
+eyJoaXN0b3J5IjpbNTIwODY3MTUzLC0xMzkxMzkxMTM0LC0xMT
+IxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkx
+NzM4LDExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LD
+E2MzAxMzUzODMsLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLTE1
+MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIzMT
+Q0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LDE2
+NjQzMjIwMDNdfQ==
 -->
