@@ -62,7 +62,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
 For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS 64-bit environment on a AWS EC2 instance as per the configuration shown in the picture below. 
-Make sure to open ports: 80, 443, 8080-81 & 3000
+Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 ![AWS EC2 Instance Configuration](https://github.com/skarlekar/smart-quora/blob/master/images/EC2%20Instance%20Configuration.png)
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
@@ -71,7 +71,7 @@ Make sure to open ports: 80, 443, 8080-81 & 3000
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDUzMDg0MSwxNjMwMTM1MzgzLC0yMD
+eyJoaXN0b3J5IjpbLTcyMjk2MjY3NywxNjMwMTM1MzgzLC0yMD
 Y1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMTU5LDE1MjYx
 MTQyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0MTY0NTMsLT
 E2Mzc5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYz
