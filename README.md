@@ -42,9 +42,5 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 3.  **Ordering-service-node**  or  **orderer**: a node running the communication service that implements a delivery guarantee, such as atomic or total order broadcast.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA1Mjg0ODIsLTE2NjU3MjU4NTIsMz
-k3MTEzNzE4LC0xNjU1MjkzNDcyLC02MTAzNzQwMCwtMTUzMjQw
-OTcyNiwxMjE0NTE2NjYsLTE3NDcyMTQyNTQsMjExNTQ0NzU1NC
-wxNjM2ODkxMzk5LC0xNzY4MjQ4MTQ5LC0yMTMyNTU1ODYzXX0=
-
+eyJoaXN0b3J5IjpbLTE3NDA1Mjg0ODJdfQ==
 -->
