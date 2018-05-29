@@ -201,6 +201,7 @@ License: Press enter to accept Apache-2.0
 Namespace: Press enter to accept default
 Do you want to generate an empty template network?: Select No to generate a populated network
 
+This will create the necessary code in the _hello_bna_ directory in your 
 
 
 ## Installing SmartQuora
@@ -209,7 +210,7 @@ Do you want to generate an empty template network?: Select No to generate a popu
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzI1MDU3NDQsLTE1NjY4NjU0MjQsMT
+eyJoaXN0b3J5IjpbLTE5NzQ3NDMzMjQsLTE1NjY4NjU0MjQsMT
 kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
 NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
 wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
