@@ -61,7 +61,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
-For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS 64-bit environment.
+For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS 64-bit environment on a AWS EC2 instance.
 
 **Note**: While this section goes over the installation of HLF on a compute instance on AWS EC2, the installation can be done on a compute instance on any public cloud such as Microsoft Azure, Google Cloud, IBM Bluemix or your own virtual machine on your local desktop/laptop.
 
@@ -69,9 +69,9 @@ For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjE3ODcxMywtMTkyMTEwNTk5NywtMT
-UwOTE2MjE1OSwxNTI2MTE0MjIxLDc5NDU4MzM3LC0zNTE1MjMx
-NDQsMzMzNDE2NDUzLC0xNjM3OTE0NTI2LC05MjU0OTI4NDgsMT
-Y2NDMyMjAwMywtMjg2MzExNDI1LDIxMzk1NTA1OTQsMjAwODkz
-ODkyMCwxMjg2MjU5NzMyXX0=
+eyJoaXN0b3J5IjpbLTIwNjUyMjM0ODUsLTE5MjExMDU5OTcsLT
+E1MDkxNjIxNTksMTUyNjExNDIyMSw3OTQ1ODMzNywtMzUxNTIz
+MTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUyNiwtOTI1NDkyODQ4LD
+E2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMTM5NTUwNTk0LDIwMDg5
+Mzg5MjAsMTI4NjI1OTczMl19
 -->
