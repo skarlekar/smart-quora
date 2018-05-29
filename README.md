@@ -49,11 +49,12 @@ For further details on the basic workflow of a transaction inside a Hyperledger 
 The following diagram depicts the SmartQuora DApp when deployed on a multiple hosts to derive the benefits of the blockchain. For the sake of simplicity, in this tutorial, we will deploy the SmartQuora DApp as a logical instance on single host.
 ![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-multi-node-view.png)
 
-### Hyperledger Compos
+### Hyperledger Composer
+Hyperledger Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. We will use the Composer to model the SmartQuora B
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTM4NzcwNCwzMzM0MTY0NTMsLTE2Mz
+eyJoaXN0b3J5IjpbMTcyNzA1MDg5OCwzMzM0MTY0NTMsLTE2Mz
 c5MTQ1MjYsLTkyNTQ5Mjg0OCwxNjY0MzIyMDAzLC0yODYzMTE0
 MjUsMjEzOTU1MDU5NCwyMDA4OTM4OTIwLDEyODYyNTk3MzJdfQ
 ==
