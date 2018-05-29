@@ -54,8 +54,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its distributed-ness. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps.
  
 ### Anatomy of the DApp (or BNA)
- 
- We will use the Composer to model the SmartQuora BNA - Business Network Application. Note: Hyperledger Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
+ In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
 ![BNA Breakdown](https://github.com/skarlekar/smart-quora/blob/master/images/bna-breakdown.png)
 
 ## SmartQuora Process Flow
@@ -66,7 +65,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgwOTUyNzQsMTUyNjExNDIyMSw3OT
+eyJoaXN0b3J5IjpbLTE1MDkxNjIxNTksMTUyNjExNDIyMSw3OT
 Q1ODMzNywtMzUxNTIzMTQ0LDMzMzQxNjQ1MywtMTYzNzkxNDUy
 NiwtOTI1NDkyODQ4LDE2NjQzMjIwMDMsLTI4NjMxMTQyNSwyMT
 M5NTUwNTk0LDIwMDg5Mzg5MjAsMTI4NjI1OTczMl19
