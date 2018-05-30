@@ -357,19 +357,21 @@ For testing the BNA we will use a light-weight Node.js based web-server.  Instal
 ```
 cd <repo>/www
 npm install -g http-server
-
+http-server -p 8081
 ```
+
+Point your 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjA1MTA0NDEsLTIxMTk2MTE3OTAsLT
-Y3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5
-MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LD
-EwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4
-MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYxNT
-MyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwx
-Mzk3MzQ2NDU3XX0=
+eyJoaXN0b3J5IjpbLTM2NjExODEzNCwtMjExOTYxMTc5MCwtNj
+cwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2Mjky
+MTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMT
+A1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4MywtMTg1Njgw
+OTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1Mz
+I0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEz
+OTczNDY0NTddfQ==
 -->
