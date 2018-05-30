@@ -363,7 +363,8 @@ cd <repo>/scripts
 replace-host-name.sh **ec2-sample-01.amazonaws.com**
 ```
 3. Start the web server.
-4
+```
+cd <repo>/www
 http-server -p 8081
 ```
 
@@ -374,7 +375,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDkxMTMzNCwxNjQyNTYzMTg4LC0yMT
+eyJoaXN0b3J5IjpbLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMT
 E5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mzky
 MjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LD
 U5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgz
