@@ -348,24 +348,27 @@ After the changes from the above two sections, your _start-smartquora.sh_ should
 
 Start the REST server by running the _start-smartquora.sh_ script.
 ```
+cd <repo>/smartquora-bna
 ./start-smartquora.sh
 ```
+
 ### Installing the Web Server 
 For testing the BNA we will use a light-weight Node.js based web-server. 
 ```
 cd <repo>/www
 npm install -g http-server
 ```
+
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzUyMzc3MywtNjcwNjQxMDExLC0xND
-g2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0
-MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMT
-M5OTcyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2
-MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Nj
-g4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgx
-OTI5ODhdfQ==
+eyJoaXN0b3J5IjpbLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMT
+Q4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1
+NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLT
+EzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgy
+NjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OT
+Y4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4
+MTkyOTg4XX0=
 -->
