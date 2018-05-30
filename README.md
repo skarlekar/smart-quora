@@ -55,7 +55,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
  
 ### Anatomy of the DApp (or BNA)
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
-![BNA Breakdown](https://github.com/skarlekar/smart-quora/blob/master/images/bna-breakdown.png)
+![BNA Breakdown](images/bna-breakdown.png)
 
 ## SmartQuora Process Flow
 
@@ -64,7 +64,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 #### Launch an EC2 Instance
 For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS 64-bit environment on a AWS EC2 instance as per the configuration shown in the picture below. 
 Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
-![AWS EC2 Instance Configuration](https://github.com/skarlekar/smart-quora/blob/master/images/EC2%20Instance%20Configuration.png)
+![AWS EC2 Instance Configuration](images/EC2%20Instance%20Configuration.png)
 #### Associate an Elastic IP 
 Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between relaunches of the instance.
 #### Create Hyperuser
@@ -101,7 +101,7 @@ After the installation is complete you should see a message stating that the fol
 3. docker
 4. python
 
-![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/pre-req-install-out.png)
+![enter image description here](images/pre-req-install-out.png)
 
 At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.
 
@@ -152,7 +152,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	docker images
 	```
 	You should see the following:
-![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/docker-images-verification.png)
+![enter image description here](images/docker-images-verification.png)
 
  9. The first time you start up a new runtime, you'll need to run the start script, then generate a PeerAdmin card which will be used to connect to the Hyperledger Fabric environment:
 	 ```
@@ -316,7 +316,7 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzE3NDAyMywxNjU2MTE2ODUzLDM1Nz
+eyJoaXN0b3J5IjpbMTQwNzc2MDg2OSwxNjU2MTE2ODUzLDM1Nz
 M0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0Miwy
 MDAxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mj
 c1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4Miwx
