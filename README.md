@@ -311,12 +311,12 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
-If you 
+If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMzI1OTY1MywtMTE2OTY3OTY4OCwxNj
+eyJoaXN0b3J5IjpbMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNj
 U2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4
 LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00NjIzNDQwNywxMjc3ND
 A2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2
