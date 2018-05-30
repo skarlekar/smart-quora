@@ -407,17 +407,17 @@ composer-playground
 9. Click _Create New_ and choose 'Send it to someone else_.
 10. Click _Export Business Network Card_.
 
-Repeat this step a few times 
+Repeat this step a few times for multiple participants. I have created five participants.
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI1NTE1MTUsLTE5Mzk4NDkzMywxMD
-UwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2
-MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyND
-kxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2
-NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNj
-AsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5Miwt
-MjA1ODkyNTc1M119
+eyJoaXN0b3J5IjpbMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNT
+AwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYz
+MTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OT
+EsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3
+MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MC
+wxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0y
+MDU4OTI1NzUzXX0=
 -->
