@@ -357,11 +357,11 @@ cd <repo>/smartquora-bna
 ```
 npm install -g http-server
 ```
-2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of the machine where you have installed this software.
+2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of the machine where you have installed this software. R
 ```
 cd <repo>/scripts
-
-
+replace-host-name.sh ec2-sample-01.amazonaws.com
+```
 http-server -p 8081
 ```
 
@@ -372,11 +372,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjIxNDAyOSwxNjQyNTYzMTg4LC0yMT
-E5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mzky
-MjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LD
-U5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgz
-NTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1Nz
-UzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1Mywz
-NTczNDgyMzhdfQ==
+eyJoaXN0b3J5IjpbMjk0ODYxNjEyLDE2NDI1NjMxODgsLTIxMT
+k2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIy
+MjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNT
+k1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1
+ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NT
+MsMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1
+NzM0ODIzOF19
 -->
