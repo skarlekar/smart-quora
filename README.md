@@ -215,7 +215,7 @@ composer archive create -t dir -n ../
 ```
 composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
-5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
+5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@gra-bna.card in the current directory.
 ```
 composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
 ```
@@ -274,7 +274,7 @@ composer archive create -t dir -n ../
 ```
 4. Install version 0.0.1 of the business app using the peer admin card created earlier.
 ```
-composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
+composer network install -a smartquora-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
 5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
 ```
@@ -315,11 +315,11 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2Mj
-M0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2
-LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3Mz
-A4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5
-OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOT
-EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
-NzYzMV19
+eyJoaXN0b3J5IjpbNDY3NzUzNTQ4LDUwNTk4MzM0MiwyMDAxOD
+AyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIs
+LTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2Nz
+Q4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2NTQy
+NCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3Nj
+E0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0
+OTk1XX0=
 -->
