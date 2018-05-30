@@ -304,7 +304,7 @@ cd ..
 ```
 Navigate to https://your-host-name:3000/explorer
 
-## Securing the REST Server
+### Securing the REST Server
 Now that we have a RESTful interface to our SmartQuora application, it is time to secure it using  the Passport Google OAUTH2.0 delegated authentication strategy.
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
@@ -313,7 +313,7 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 In OAuth 2.0, these access tokens are called “bearer tokens”, and can be used alone, with no signature or cryptography, to access the information. Furthermore, the access token is stored in a cookie in the local storage of the user's web browser. When the user makes a subsequent request, the access token is retrieved from the cookie, and the access token is validated, instead of reauthenticating the user.
 
-### Google+ Authentication Configuration & Setup
+#### Google+ Authentication Configuration & Setup
 1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
 
 2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
@@ -323,7 +323,7 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 npm install -g passport-google-oauth2
 ```
 
-### Setting up the Credentials & Wallet Data Store using MongoDB
+#### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
 
 1. Point your browser to http://mlab.com and log into your account (create an account if you don't already have one).
@@ -378,9 +378,9 @@ replace-host-name.sh **ec2-sample-01.amazonaws.com**
 cd <repo>/www
 http-server -p 8081
 ```
-### 
+### Running the Application 
 Now, open your browser in **incognito** mode and point your browser to: http://your-host-name:8081/index.html
-
+If everything went well, you browser should redirect to 
 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -388,11 +388,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5MzgyMjg0LC01NjYyODg5NjcsMTY0Mj
-U2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIy
-NDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LD
-M2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcy
-NjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5Mi
-wtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2
-NTYxMTY4NTNdfQ==
+eyJoaXN0b3J5IjpbMjAyNzM1ODE1NiwtNTY2Mjg4OTY3LDE2ND
+I1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAy
+MjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNC
+wzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3
+MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOT
+IsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwx
+NjU2MTE2ODUzXX0=
 -->
