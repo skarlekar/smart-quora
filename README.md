@@ -346,9 +346,11 @@ npm install -g loopback-connector-mongodb
 After the changes from the above two sections, your _start-smartquora.sh_ should look like this:
 ![Startup Script](images/sq-start-smart-quora-sh.png)
 
+
 ### Installing the Web Server 
 For testing the BNA we will use a light-weight Node.js based web-server. 
 ```
+cd <repo>/www
 npm install -g http-server
 ```
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -356,7 +358,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDM1NDIwNywtNjcwNjQxMDExLC0xND
+eyJoaXN0b3J5IjpbMjAwNzMyMzk4NCwtNjcwNjQxMDExLC0xND
 g2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0
 MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMT
 M5OTcyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2
