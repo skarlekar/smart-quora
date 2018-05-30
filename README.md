@@ -247,10 +247,11 @@ composer-playground
 composer-rest-server -c admin@hello-bna -n always -w false
 ```
 Navigate to http://your-host-name:3000/explorer
+
 ## Securing the REST Server
 Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using  the Passport Google OAUTH2.0 delegated authentication strategy.
 
-While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients (eg web client apps) to enable them to access the protected resources.
+While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources.
 
 ![Google OAuth2.0 Authentication Strategy](https://github.com/skarlekar/smart-quora/blob/master/images/Google%20OAUTH%20Overview.png)
 
@@ -261,11 +262,11 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzcwNTgzOSwxMjc3NDA2Mjc4LC0xOT
-Y0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4
-MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMT
-U2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkw
-MTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC
-0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgx
-OTEyNDVdfQ==
+eyJoaXN0b3J5IjpbLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5Nj
+QyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgy
+LDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNT
+Y2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAx
+MiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLT
+E3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5
+MTI0NV19
 -->
