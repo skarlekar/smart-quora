@@ -320,7 +320,7 @@ The REST Server itself is configured to persist the business network cards (requ
 ![mlab login](images/sq-mlab-login.png)
 2. Create a new database, select a cloud provider, select the free sandbox plan, click continue and select an available region. Click continue and  provide a database name as shown below. The demonstration uses a db called _quora-auth_.
 ![enter image description here](images/sq-mlab-create-db.gif)
-4. Create an user in the database. This user's credentials will be used 
+4. Create an user in the database. This user's credentials will be used by the REST server to connect to the database and use it for storing the credentials
 
 
 
@@ -329,7 +329,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njk0MzU0NSwtMTg1NjgwOTA0MywtMj
+eyJoaXN0b3J5IjpbMTk5ODY1NTM1NywtMTg1NjgwOTA0MywtMj
 EzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5
 Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NT
 csODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0
