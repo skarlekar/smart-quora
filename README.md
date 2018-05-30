@@ -343,18 +343,19 @@ The REST Server itself is configured to persist the business network cards (requ
 npm install -g loopback-connector-mongodb
 ```
 ### Check REST Server Start-up Script
-After the changes from the above two sections, your _
+After the changes from the above two sections, your _start-smartquora.sh_ should look like this:
+
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzNDM3MjE4LC00ODM5MjIyMDcsMTg2Mj
-kyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcs
-MTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4MywtMTg1Nj
-gwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1
-MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LD
-EzOTczNDY0NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2
-MTRdfQ==
+eyJoaXN0b3J5IjpbLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxOD
+YyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5
+NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xOD
+U2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2
+MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1MywzNTczNDgyMz
+gsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgw
+MjYxNF19
 -->
