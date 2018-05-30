@@ -18,7 +18,7 @@
   <script src="js/CommonUtils.js"></script>
   <script src="js/QuoraUtils.js"></script>
   <script type="text/javascript">
-    const host = "https://ec2-35-168-150-155.compute-1.amazonaws.com:3000"
+    const host = "https://your-host-name:3000"
     const qurl = host + "/api/smartquora.question.Question/";
     const faqurl = host + "/api/queries/FindAllQuestions";
     const pingurl = host + "/api/system/ping";
@@ -108,7 +108,7 @@
         Upload New Digital Identity Card
       </div>
       <div class="card-body">
-        <form name="upload-new-card" action="https://ec2-35-168-150-155.compute-1.amazonaws.com:3000/api/wallet/import" method="post" enctype="multipart/form-data">
+        <form name="upload-new-card" action="https://your-host-name:3000/api/wallet/import" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label for="new-card-name">Card Name</label>
             <input class="form-control form-control-sm" type="text" id="new-card-name" name="name" required="required" maxlength="10" accept="*.card">
