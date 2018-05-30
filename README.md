@@ -398,17 +398,18 @@ We will use the Composer Playground to create a few digital identity cards.
 composer-playground
 ```
 2. Point your browser to http://your-host-name:8080
-3. F
+3. Connect to the _smartquora-bna_
+4. 
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ2NDQzODIsMTA1MDA4MjMwMiwtMT
-c3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2
-MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMj
-A3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1
-OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1OD
-MsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMs
-MTgzNTYxNTMyNF19
+eyJoaXN0b3J5IjpbLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNz
+cwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYx
+MTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMD
+csMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5
+NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4My
+wtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1Mywx
+ODM1NjE1MzI0XX0=
 -->
