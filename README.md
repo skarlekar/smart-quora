@@ -247,7 +247,8 @@ composer-playground
 composer-rest-server -c admin@hello-bna -n always -w false
 ```
 Navigate to http://your-host-name:3000/explorer
-
+## Securing the REST Server
+Now that we have a
 ## Installing SmartQuora
 
 
@@ -255,11 +256,11 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Nj
-g4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAx
-NCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNj
-k3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0
-Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LD
-ExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAx
-MzUzODNdfQ==
+eyJoaXN0b3J5IjpbLTY4NjY1MDU4NCwtMTY5NzAwMjQ2LDE0MT
+EyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5
+LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsND
+k4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTEx
+MzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMS
+w3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5
+NjI2NzddfQ==
 -->
