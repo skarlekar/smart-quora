@@ -262,18 +262,18 @@ Now that we have seen a chance to take a sample application for a spin, it is ti
 ```
 git clone https://github.com/skarlekar/smart-quora.git
 ```
-2.
+2. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjg1Njc1NSwtNDYyMzQ0MDcsMTI3Nz
-QwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1
-Niw5ODY4ODI5ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5OD
-g4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3
-NCwyMDY5NzU5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMT
-EyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5
-MTczOF19
+eyJoaXN0b3J5IjpbLTE4NjcwNTc5NzUsLTQ2MjM0NDA3LDEyNz
+c0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3
+NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOT
+g4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4
+NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLT
+ExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMx
+OTE3MzhdfQ==
 -->
