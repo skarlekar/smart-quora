@@ -346,6 +346,10 @@ npm install -g loopback-connector-mongodb
 After the changes from the above two sections, your _start-smartquora.sh_ should look like this:
 ![Startup Script](images/sq-start-smart-quora-sh.png)
 
+Before you restart the REST server, shut it down if it is already running.
+```
+lsof -i :3000
+k
 Start the REST server by running the _start-smartquora.sh_ script.
 ```
 cd <repo>/smartquora-bna
@@ -375,11 +379,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMT
-E5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mzky
-MjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LD
-U5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgz
-NTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1Nz
-UzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1Mywz
-NTczNDgyMzhdfQ==
+eyJoaXN0b3J5IjpbLTEwOTY0NDk2MzgsLTU2NjI4ODk2NywxNj
+QyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYw
+MjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMT
+QsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5
+NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMD
+kyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgs
+MTY1NjExNjg1M119
 -->
