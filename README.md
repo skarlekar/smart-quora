@@ -303,7 +303,7 @@ docker ps
 ```
 composer-playground
 ```
-11. Start the REST server & browse through the Swagger UI. Note that we have started the REST server using Secure Socket Layer this time using the _start-resh.sh_ script. Hence, change the protocol from HTTP to HTTPS when browsing the REST Explorer.
+11. Start the REST server & browse through the Swagger UI. Note that we have started the REST server using Secure Socket Layer this time using the _start-resh.sh_ script. Hence, change the protocol from HTTP to HTTPS when browsing the REST Explorer. 
 ```
 cd ..
 ./start-rest.sh
@@ -316,11 +316,11 @@ Navigate to https://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYxNzgwNzcsMzU3MzQ4MjM4LDEzOT
-czNDY0NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQs
-LTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5Nz
-AwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwt
-MjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5Mz
-Y4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDVd
-fQ==
+eyJoaXN0b3J5IjpbMTY1NjExNjg1MywzNTczNDgyMzgsMTM5Nz
+M0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgwMjYxNCwt
+NDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MD
+AyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIsMTc1Njc0ODQ0LC0y
+NTczMDgwNTksLTE5ODg4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNj
+g1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYwNV19
+
 -->
