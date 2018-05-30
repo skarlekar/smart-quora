@@ -385,18 +385,18 @@ If everything went well, you browser should redirect to Google authentication pa
 
 After authentication, Google Auth should redirect you back to the application. 
 
-If you are doing this for the first time you will land in a page asking you to upload your digital identity to your wallet. Note that your wallet is maintained on the 
+If you are doing this for the first time you will land in a page asking you to upload your digital identity to your wallet. Note that your wallet is maintained on the MongoDB database on your behalf by the REST server. If you check your MongoDB database now, you will not see any collections
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgyNDQ5NzYsLTE3NzA2OTc3NjMsLT
-U2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2
-NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMT
-QzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUx
-Njk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MD
-QzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQs
-LTExNjk2Nzk2ODhdfQ==
+eyJoaXN0b3J5IjpbMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNT
+Y2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0
+MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExND
+MsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2
+OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwND
+MsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwt
+MTE2OTY3OTY4OF19
 -->
