@@ -171,7 +171,7 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	composer-playground 
 	```
 13. On your favorite browser, navigate to port 8080. If you see the following, your installation of Hyperledger Fabric runtime is successful.
-![Playground starts](https://github.com/skarlekar/smart-quora/blob/master/images/composer-playground.png)
+![Playground starts](images/composer-playground.png)
  
  ### Starting and Stopping Hyperledger Fabric 
  1. To *start* the Hyperledger Fabric environment, use the following:
@@ -228,7 +228,7 @@ composer card import -f ./admin@hello-bna.card
 composer card list
 ```
 This should display the existing card in your runtime as follows:
-![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
+![composer card list output](images/composer-card-list.png)
 
 8. Ensure that the application is running using the composer network ping command
 ```
@@ -282,7 +282,7 @@ composer card import -f ./admin@smartquora-bna.card
 composer card list
 ```
 This should display the existing card in your runtime as follows:
-![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/sq-composer-card-list.png)
+![composer card list output](images/sq-composer-card-list.png)
 
 7. Ensure that the application is running using the composer network ping command
 ```
@@ -316,7 +316,7 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDYwNTk2NiwxNjU2MTE2ODUzLDM1Nz
+eyJoaXN0b3J5IjpbMTU2NzE3NDAyMywxNjU2MTE2ODUzLDM1Nz
 M0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0Miwy
 MDAxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mj
 c1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4Miwx
