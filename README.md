@@ -318,10 +318,12 @@ The REST Server itself is configured to persist the business network cards (requ
 
 1. Point your browser to http://mlab.com and log into your account (create an account if you don't already have one).
 ![mlab login](images/sq-mlab-login.png)
-2. Create a new database, select a cloud provider, select the free sandbox plan, click continue and select an available region. Click continue and  provide a database name as shown below. For this exercise we will  use a db called _quora-auth_.
-![enter image description here](images/sq-mlab-create-db.gif)
-4. Create an user in the database. This user's credentials will be used by the REST server to connect to the database and use it for storing the credentials. For this exer
 
+2. Create a new database, select a cloud provider, select the free sandbox plan, click continue and select an available region. Click continue and  provide a database name as shown below. For this exercise we will  use a db called _quora-auth_.
+![create database](images/sq-mlab-create-db.gif)
+
+3. Create an user in the database. This user's credentials will be used by the REST server to connect to the database and use it for storing the credentials. For this exercise we will create a user called _test_ with password _test123_.
+![create database user](images/sq-mlab-create-user.gif)
 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -329,11 +331,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTUwMTM0MiwxNzU3NDgzNTgzLC0xOD
-U2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2
-MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1MywzNTczNDgyMz
-gsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgw
-MjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2NDI3NTAyLC
-0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIsMTc1Njc0
-ODQ0XX0=
+eyJoaXN0b3J5IjpbLTIxMjEwMDM0MTYsMTc1NzQ4MzU4MywtMT
+g1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1
+NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4Mj
+M4LDEzOTczNDY0NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4
+MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMi
+wtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3
+NDg0NF19
 -->
