@@ -238,7 +238,7 @@ composer network ping -c admin@hello-bna
 ```
 docker ps
 ```
-10. Open the BNA in Playground and connect with your application. Explore the model, partici 
+10. Open the BNA in Playground and connect with your application. Explore the model, participant, access control layer and transaction logic. 
 ```
 composer-playground
 ```
@@ -248,7 +248,8 @@ composer-rest-server -c admin@hello-bna -n always -w false
 ```
 Navigate to http://your-host-name:3000/explorer
 ## Securing the REST Server
-Now that we have a RESTful interface to our Hello World application, it is time to 
+Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using one of the Passport authentication strategy.
+
 ## Installing SmartQuora
 
 
@@ -256,7 +257,7 @@ Now that we have a RESTful interface to our Hello World application, it is time 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDIxMDE5MCwtMTY5NzAwMjQ2LDE0MT
+eyJoaXN0b3J5IjpbLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MT
 EyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5
 LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsND
 k4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTEx
