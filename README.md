@@ -379,18 +379,18 @@ cd <repo>/www
 http-server -p 8081
 ```
 
-Now, point your browser to: http://your-host-name:8081/index.html
+Now, open your browser in incognito mode and point your browser to: http://your-host-name:8081/index.html
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MDEzNjk1LC01NjYyODg5NjcsMTY0Mj
-U2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIy
-NDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LD
-M2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcy
-NjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5Mi
-wtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2
-NTYxMTY4NTNdfQ==
+eyJoaXN0b3J5IjpbMTc3MjE4NTYwNSwtNTY2Mjg4OTY3LDE2ND
+I1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAy
+MjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNC
+wzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3
+MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOT
+IsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwx
+NjU2MTE2ODUzXX0=
 -->
