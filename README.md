@@ -397,17 +397,18 @@ We will use the Composer Playground to create a few digital identity cards.
 ```
 composer-playground
 ```
-2. Point your browser to http:/
+2. Point your browser to http://your-host-name:8080
+3. F
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3NjM1NTYyLDEwNTAwODIzMDIsLTE3Nz
-A2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjEx
-NzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNy
-wxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3
-MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC
-0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4
-MzU2MTUzMjRdfQ==
+eyJoaXN0b3J5IjpbLTE2MjQ2NDQzODIsMTA1MDA4MjMwMiwtMT
+c3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2
+MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMj
+A3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1
+OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1OD
+MsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMs
+MTgzNTYxNTMyNF19
 -->
