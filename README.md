@@ -325,18 +325,18 @@ The REST Server itself is configured to persist the business network cards (requ
 3. Create an user in the database. This user's credentials will be used by the REST server to connect to the database and use it for storing the credentials. For this exercise we will create a user called _test_ with password _test123_.
 ![create database user](images/sq-mlab-create-user.gif)
 
-4. Now copy the database name and po
+4. Now copy the database name and port from MLab and update the _
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDM4NjM2NCwxNzU3NDgzNTgzLC0xOD
-U2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2
-MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1MywzNTczNDgyMz
-gsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgw
-MjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2NDI3NTAyLC
-0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIsMTc1Njc0
-ODQ0XX0=
+eyJoaXN0b3J5IjpbLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NT
+Y4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYx
+NTMyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOC
+wxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMDAxODAy
+NjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIsLT
+E2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2NzQ4
+NDRdfQ==
 -->
