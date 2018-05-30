@@ -409,12 +409,12 @@ composer-playground
 
 ![create digital identity](images/create-digital-identity.gif)
 Repeat this step a few times for multiple participants. I have created five participants.
- 
+ ### Adding 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTI1NDY5OCwxMDY5MjAxODQzLC0xOT
+eyJoaXN0b3J5IjpbLTY4NzUwMzczMiwxMDY5MjAxODQzLC0xOT
 M5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4
 OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMS
 wtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcy
