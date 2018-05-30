@@ -392,24 +392,25 @@ Note that your wallet is maintained on the MongoDB database on your behalf by th
 ![mongodb collections before card](images/mongodb-collections-1.png)
 
 ### Adding Digital Identity Cards
-We will use the Composer Playground to create a few digital identity cards. 
+We will use the Composer Playground to create a few digital identity cards as demonstrated in the animation below.
 1. Start the Playground if it is not already up.
 ```
 composer-playground
 ```
 2. Point your browser to http://your-host-name:8080
 3. Connect to the _smartquora-bna_
-4. 
+4. Create a new Participant.
+5. Navigate to the ID Registry.
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNz
-cwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYx
-MTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMD
-csMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5
-NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4My
-wtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1Mywx
-ODM1NjE1MzI0XX0=
+eyJoaXN0b3J5IjpbMzAzNjYzMDUyLC0xOTM5ODQ5MzMsMTA1MD
+A4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMx
+ODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MS
+wtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcx
+NDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLD
+E3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIw
+NTg5MjU3NTNdfQ==
 -->
