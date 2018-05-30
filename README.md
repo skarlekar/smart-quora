@@ -248,13 +248,6 @@ composer-rest-server -c admin@hello-bna -n always -w true
 ```
 Navigate to http://your-host-name:3000/explorer
 
-## Securing the REST Server
-Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using  the Passport Google OAUTH2.0 delegated authentication strategy.
-
-While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources.
-
-![Google OAuth2.0 Authentication Strategy](https://github.com/skarlekar/smart-quora/blob/master/images/Google%20OAUTH%20Overview.png)
-
 ## Installing SmartQuora
 Now that we have seen a chance to take a sample application for a spin, it is time to install the SmartQuora application. 
 
@@ -272,38 +265,39 @@ cd dist
 ```
 composer archive create -t dir -n ../
 ```
-4. Install version 0.0.1 of the business app using the peer admin card created earlier.
+3. Install version 0.0.1 of the business app using the peer admin card created earlier.
 ```
 composer network install -a smartquora-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
-5. Create a business network admin card named *admin@smartquora-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@smartquora-bna.card in the current directory.
+4. Create a business network admin card named *admin@smartquora-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@smartquora-bna.card in the current directory.
 ```
 composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n smartquora-bna -V 0.0.1
 ```
-6. Import the admin@smartquora-bna.card using the composer card import command
+5. Import the admin@smartquora-bna.card using the composer card import command
 ```
 composer card import -f ./admin@smartquora-bna.card
 ```
-7. Ensure the new admin@smartquora-bna.card is imported using the composer-card-list command.
+6. Ensure the new admin@smartquora-bna.card is imported using the composer-card-list command.
 ```
 composer card list
 ```
 This should display the existing card in your runtime as follows:
 ![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/sq-composer-card-list.png)
 
-8. Ensure that the application is running using the composer network ping command
+7. Ensure that the application is running using the composer network ping command
 ```
 composer network ping -c admin@smartquora-bna
 ```
-9. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
+8. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
 ```
 docker ps
 ```
-10. Open the BNA in Playground and connect with your application. Explore the model, participant, access control layer and transaction logic. 
+9. Open the BNA in Playground and connect with your application. Explore the model, participant, access control layer and transaction logic. 
 ```
 composer-playground
 ```
-11. Start the REST server & browse through the Swagger UI. Note that we have started the REST server using Secure Socket Layer this time using the _start-resh.sh_ script. Hence, change the protocol from HTTP to HTTPS when browsing the REST Explorer. 
+10. Start the REST server & browse through the Swagger UI. 
+Note that we have started the REST server using Secure Socket Layer this time using the _start-resh.sh_ script. Hence, change the protocol from HTTP to HTTPS when browsing the REST Explorer. 
 ```
 cd ..
 ./start-rest.sh
@@ -316,11 +310,11 @@ Navigate to https://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NjExNjg1MywzNTczNDgyMzgsMTM5Nz
-M0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgwMjYxNCwt
-NDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MD
-AyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIsMTc1Njc0ODQ0LC0y
-NTczMDgwNTksLTE5ODg4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNj
-g1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYwNV19
-
+eyJoaXN0b3J5IjpbLTQyNDUyNTc3OSwxNjU2MTE2ODUzLDM1Nz
+M0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0Miwy
+MDAxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mj
+c1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4Miwx
+NzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Nj
+g2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTJd
+fQ==
 -->
