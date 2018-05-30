@@ -385,14 +385,14 @@ If everything went well, you browser should redirect to Google authentication pa
 
 After authentication, Google Auth should redirect you back to the application. 
 
-If you are doing this for the first time you will la, you will have to upload digital identities to your wallet
+If you are doing this for the first time you will land in a page asking you to upload your digital identity to your wallet. Note that your wallet is maintained on the 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ5MzYyOTQsLTE3NzA2OTc3NjMsLT
+eyJoaXN0b3J5IjpbLTEyMDgyNDQ5NzYsLTE3NzA2OTc3NjMsLT
 U2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2
 NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMT
 QzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUx
