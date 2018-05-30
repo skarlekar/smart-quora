@@ -407,17 +407,18 @@ composer-playground
 9. Click _Create New_ and choose 'Send it to someone else_.
 10. Click _Export Business Network Card_.
 
+![create digital identity](images/create-digital-identity.gif)
 Repeat this step a few times for multiple participants. I have created five participants.
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNT
-AwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYz
-MTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OT
-EsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3
-MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MC
-wxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0y
-MDU4OTI1NzUzXX0=
+eyJoaXN0b3J5IjpbLTYxMTI1NDY5OCwxMDY5MjAxODQzLC0xOT
+M5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4
+OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMS
+wtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcy
+MDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOT
+ksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIx
+MzgyNjAwOTJdfQ==
 -->
