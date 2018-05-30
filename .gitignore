@@ -2,3 +2,4 @@ composer-logs
 *.card
 *.bna
 *.bakup
+nohup.out
