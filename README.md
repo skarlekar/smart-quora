@@ -305,7 +305,7 @@ composer-playground
 ```
 11. Start the REST server & browse through the Swagger UI
 ```
-composer-rest-server -c admin@hello-bna -n always -w true
+composer-rest-server -c admin@smartquora-bna -n always -w true
 ```
 Navigate to http://your-host-name:3000/explorer
 
@@ -315,11 +315,11 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ2MTkwODUsNTA1OTgzMzQyLDIwMD
-E4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUw
-MiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NT
-Y3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1
-NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMj
-c2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEw
-NjQ5OTVdfQ==
+eyJoaXN0b3J5IjpbODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MD
+I2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwt
+MTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3ND
+g0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0
+LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MT
+Q2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5
+OTVdfQ==
 -->
