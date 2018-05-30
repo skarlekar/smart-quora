@@ -319,7 +319,7 @@ The REST Server itself is configured to persist the business network cards (requ
 1. Point your browser to http://mlab.com and log into your account (create an account if you don't already have one).
 ![mlab login](images/sq-mlab-login.png)
 3. Create a new database, select a cloud provider, select the free sandbox plan, click continue and select an available region. Click continue and  provide a database name.
-
+![enter image description here](images/sq-mlab-create-db.gif)
 4. 
 
 
@@ -329,11 +329,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMT
-gzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0
-ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMD
-AxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1
-MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNz
-U2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2
-NTQyNF19
+eyJoaXN0b3J5IjpbLTE3MDE1MjQ0ODEsLTIxMzgyNjAwOTIsLT
+IwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNjU2
+MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LD
+UwNTk4MzM0MiwyMDAxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2
+Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LD
+k4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5
+NjAxNF19
 -->
