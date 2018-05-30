@@ -23,9 +23,9 @@ export COMPOSER_DATASOURCES='{
         "connector": "mongodb",
         "host": "yourhost.mlab.com",
         "port": "31740",
-	"database": "smartquora",
-	"user": "quora-admin",
-	"password": "your-password"
+	"database": "quora-auth",
+	"user": "test",
+	"password": "test123"
     }
 }'
 nohup composer-rest-server & 
