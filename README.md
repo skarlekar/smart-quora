@@ -347,17 +347,20 @@ After the changes from the above two sections, your _start-smartquora.sh_ should
 ![Startup Script](images/sq-start-smart-quora-sh.png)
 
 ### Installing the Web Server 
-For testing the 
+For testing the BNA we will use a light-weight Node.js based web-server. 
+```
+npm install -g http-server
+```
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDI2ODAzLC02NzA2NDEwMTEsLTE0OD
-YwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQx
-MTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMz
-k5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYw
-MDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2OD
-gsMTY1NjExNjg1MywzNTczNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5
-Mjk4OF19
+eyJoaXN0b3J5IjpbMTIzNDM1NDIwNywtNjcwNjQxMDExLC0xND
+g2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0
+MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMT
+M5OTcyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2
+MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Nj
+g4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgx
+OTI5ODhdfQ==
 -->
