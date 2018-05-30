@@ -289,7 +289,7 @@ composer card import -f ./admin@smartquora-bna.card
 composer card list
 ```
 This should display the existing card in your runtime as follows:
-![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
+![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/sq-composer-card-list.png)
 
 8. Ensure that the application is running using the composer network ping command
 ```
@@ -315,11 +315,11 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5OD
-MzNDIsMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwt
-MTk2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4OD
-I5ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5ODg4OTYwMTQs
-LTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5Nz
-U5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3
-OV19
+eyJoaXN0b3J5IjpbMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOT
+I5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEy
+Nzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNj
+I3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0x
+OTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4ND
+U4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzRd
+fQ==
 -->
