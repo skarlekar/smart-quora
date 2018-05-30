@@ -311,7 +311,8 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 In OAuth 2.0, these access tokens are called “bearer tokens”, and can be used alone, with no signature or cryptography, to access the information. Furthermore, the access token is stored in a cookie in the local storage of the user's web browser. When the user makes a subsequent request, the access token is retrieved from the cookie, and the access token is validated, instead of reauthenticating the user.
 
-The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on 
+### Setting up the credentials data st
+The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
@@ -320,7 +321,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTMzMjYzMiwxODM1NjE1MzI0LC0xMT
+eyJoaXN0b3J5IjpbMTg3NzQ3OTk0NSwxODM1NjE1MzI0LC0xMT
 Y5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0
 NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2Mj
 M0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2
