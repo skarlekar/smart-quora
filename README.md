@@ -246,7 +246,7 @@ composer-playground
 ```
 composer-rest-server -c admin@hello-bna -n always -w false
 ```
-
+Navigate to http://your-host-name:3000/explorer
 
 ## Installing SmartQuora
 
@@ -255,7 +255,7 @@ composer-rest-server -c admin@hello-bna -n always -w false
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDMxNDg2MSwxNDExMjYyNzU2LDk4Nj
+eyJoaXN0b3J5IjpbLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Nj
 g4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAx
 NCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNj
 k3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0
