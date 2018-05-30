@@ -328,16 +328,18 @@ The REST Server itself is configured to persist the business network cards (requ
 4. Now copy the database name and port from MLab and enter this in the _COMPOSER_DATASOURCES_ section of the  _start-smartquora.sh_ script.
 ![copy host port](images/sq-mlab-host-port.png)
 
+5. Install the MongoDB Loopback connector plugin.
+
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1Nz
-Q4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODky
-NTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NT
-MsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOTI5ODgsNTA1OTgz
-MzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLT
-E5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgy
-OTgyXX0=
+eyJoaXN0b3J5IjpbMjU1Njk3NDcsMTA1MTY5NjI5OSwtMTM5OT
+cyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5
+MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LD
+E2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOTI5
+ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEyNz
+c0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3
+NTZdfQ==
 -->
