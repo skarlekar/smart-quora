@@ -409,16 +409,17 @@ composer-playground
 
 ![create digital identity](images/create-digital-identity.gif)
 Repeat this step a few times for multiple participants. I have created five participants.
- ### Adding 
+
+ ### Adding the Digital Identity to your Wallet
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzUwMzczMiwxMDY5MjAxODQzLC0xOT
-M5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4
-OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMS
-wtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcy
-MDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOT
-ksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIx
-MzgyNjAwOTJdfQ==
+eyJoaXN0b3J5IjpbLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMT
+kzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4
+ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMT
+EsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3
+MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mj
+k5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0y
+MTM4MjYwMDkyXX0=
 -->
