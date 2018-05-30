@@ -380,7 +380,8 @@ http-server -p 8081
 ```
 ### Running the Application 
 Now, open your browser in **incognito** mode and point your browser to: http://your-host-name:8081/index.html
-If everything went well, you browser should redirect to Google authentication
+If everything went well, you browser should redirect to Google authentication page.
+
 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -388,11 +389,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNj
-QyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYw
-MjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMT
-QsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5
-NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMD
-kyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgs
-MTY1NjExNjg1M119
+eyJoaXN0b3J5IjpbLTIwOTkzODg0MDIsLTE3NzA2OTc3NjMsLT
+U2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2
+NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMT
+QzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUx
+Njk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MD
+QzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQs
+LTExNjk2Nzk2ODhdfQ==
 -->
