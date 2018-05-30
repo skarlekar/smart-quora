@@ -404,13 +404,16 @@ composer-playground
 6. Click _Issue New ID_.
 7. Provide a ID Name for the _Participant_.
 8. Choose a _Participant_ from the list.
-9. Click _Create New_ and choose 'Send t
+9. Click _Create New_ and choose 'Send it to someone else_.
+10. Click _Export Business Network Card_.
+
+Repeat this step a few times 
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI1NTAxNjgsLTE5Mzk4NDkzMywxMD
+eyJoaXN0b3J5IjpbLTEwNDI1NTE1MTUsLTE5Mzk4NDkzMywxMD
 UwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2
 MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyND
 kxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2
