@@ -314,7 +314,14 @@ While there are many Passport authentication strategy to choose from such as JWT
 In OAuth 2.0, these access tokens are called “bearer tokens”, and can be used alone, with no signature or cryptography, to access the information. Furthermore, the access token is stored in a cookie in the local storage of the user's web browser. When the user makes a subsequent request, the access token is retrieved from the cookie, and the access token is validated, instead of reauthenticating the user.
 
 ### Google+ Authentication Configuration & Setup
+1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
 
+2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
+
+3.  Now install the Passport Google OAuth2.0 strategy.
+```
+npm install -g passport-google-oauth2
+```
 
 ### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
@@ -335,17 +342,36 @@ The REST Server itself is configured to persist the business network cards (requ
 ```
 npm install -g loopback-connector-mongodb
 ```
+### Start the REST server
+After the changes from the above two sections, your _start-smartquora.sh_ should look like this:
+![Startup Script](images/sq-start-smart-quora-sh.png)
+
+Start the REST server by running the _start-smartquora.sh_ script.
+```
+cd <repo>/smartquora-bna
+./start-smartquora.sh
+```
+
+### Installing the Web Server 
+For testing the BNA we will use a light-weight Node.js based web-server.  Install and start it as follows:
+```
+cd <repo>/www
+npm install -g http-server
+http-server -p 8081
+```
+
+Now, point your browser to: http://your-host-name:8081/index.html
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNj
-k2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQz
-LC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLT
-ExNjk2Nzk2ODgsMTY1NjExNjg1MywzNTczNDgyMzgsMTM5NzM0
-NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIsMjAwMTgwMjYxNCwtND
-YyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MDAy
-NDZdfQ==
+eyJoaXN0b3J5IjpbMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNj
+cwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2Mjky
+MTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMT
+A1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4MywtMTg1Njgw
+OTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1Mz
+I0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEz
+OTczNDY0NTddfQ==
 -->
