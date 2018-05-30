@@ -326,18 +326,18 @@ The REST Server itself is configured to persist the business network cards (requ
 ![create database user](images/sq-mlab-create-user.gif)
 
 4. Now copy the database name and port from MLab and enter this in the _COMPOSER_DATASOURCES_ section of the  _start-smartquora.sh_ script.
-
+![copy host port](images/sq-mlab-host-port.png)
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4MzgzNTI1LC0xMzk5NzI2MCwxNzU3ND
-gzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1
-NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1My
-wzNTczNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMz
-NDIsMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMT
-k2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5
-ODJdfQ==
+eyJoaXN0b3J5IjpbMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1Nz
+Q4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODky
+NTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NT
+MsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOTI5ODgsNTA1OTgz
+MzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLT
+E5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgy
+OTgyXX0=
 -->
