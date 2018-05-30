@@ -309,6 +309,10 @@ Now that we have a RESTful interface to our SmartQuora application, it is time t
 
 While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources. An access key is granted following consent in form of a token. This token allows a client to access the APIs protected by OAuth2.0.
 
+In OAuth 2.0, these access tokens are called “bearer tokens”, and can be used alone, with no signature or cryptography, to access the information. Furthermore, the access token is stored in a cookie in the local storage of the user's web browser. When the user makes a subsequent request, the access token is retrieved from the cookie, and the access token is validated, instead of reauthenticating the user.
+
+The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on 
+
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -316,11 +320,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzIxMzg3MjgsMTgzNTYxNTMyNCwtMT
-E2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2
-NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00Nj
-IzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0
-NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1Nz
-MwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUz
-OTkzXX0=
+eyJoaXN0b3J5IjpbMTkzMTMzMjYzMiwxODM1NjE1MzI0LC0xMT
+Y5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0
+NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2Mj
+M0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2
+LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3Mz
+A4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5
+OTNdfQ==
 -->
