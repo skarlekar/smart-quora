@@ -381,24 +381,25 @@ http-server -p 8081
 ### Running the Application 
 Now, open your browser in **incognito** mode and point your browser to: http://your-host-name:8081/index.html
 If everything went well, you browser should redirect to Google authentication page.
-![enter image description here](images/sq-google-signin.png)
+![sign-in page](images/sq-google-signin.png)
 
 After authentication, Google Auth should redirect you back to the application. 
 
 If you are doing this for the first time you will land in a page asking you to upload your digital identity to your wallet. 
 
-Note that your wallet is maintained on the MongoDB database on your behalf by the REST server. If you check your MongoDB database now, you will see three collections viz., accessToken, user & userIdentity. But the collection for storing 
+Note that your wallet is maintained on the MongoDB database on your behalf by the REST server. If you check your MongoDB database now, you will see three collections viz., accessToken, user & userIdentity. But the collection for storing your Digital Identity called Card is not there yet as shown below
+
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NzIxOTYyLDEwNTAwODIzMDIsLTE3Nz
-A2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjEx
-NzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNy
-wxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3
-MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC
-0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4
-MzU2MTUzMjRdfQ==
+eyJoaXN0b3J5IjpbLTEwNTY0ODk3NTQsMTA1MDA4MjMwMiwtMT
+c3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2
+MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMj
+A3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1
+OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1OD
+MsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMs
+MTgzNTYxNTMyNF19
 -->
