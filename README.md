@@ -242,7 +242,12 @@ docker ps
 ```
 composer-playground
 ```
-11. Start the REST server & browse through the Swagger 
+11. Start the REST server & browse through the Swagger UI
+```
+composer-rest-server -c admin@hello-bna -n always -w false
+```
+
+
 ## Installing SmartQuora
 
 
@@ -250,11 +255,11 @@ composer-playground
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzNzg4MTAwLDE0MTEyNjI3NTYsOTg2OD
-gyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0
-LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OT
-c1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQy
-NzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMT
-EyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5NjI2NzcsMTYzMDEz
-NTM4M119
+eyJoaXN0b3J5IjpbMTY1MDMxNDg2MSwxNDExMjYyNzU2LDk4Nj
+g4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAx
+NCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNj
+k3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0
+Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LD
+ExMjgxOTEyNDUsLTgxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAx
+MzUzODNdfQ==
 -->
