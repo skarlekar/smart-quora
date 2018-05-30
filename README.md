@@ -280,11 +280,11 @@ composer network install -a smartquora-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
 composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n smartquora-bna -V 0.0.1
 ```
-6. Import the admin@hello-bna.card using the composer card import command
+6. Import the admin@smartquora-bna.card using the composer card import command
 ```
 composer card import -f ./admin@smartquora-bna.card
 ```
-7. Ensure the new admin@hello-bna.card is imported using the composer-card-list command.
+7. Ensure the new admin@smartquora-bna.card is imported using the composer-card-list command.
 ```
 composer card list
 ```
@@ -315,7 +315,7 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDY1ODQwMyw4ODE5Mjk4OCw1MDU5OD
+eyJoaXN0b3J5IjpbMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5OD
 MzNDIsMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwt
 MTk2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4OD
 I5ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5ODg4OTYwMTQs
