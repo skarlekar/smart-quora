@@ -1,8 +1,8 @@
  
 
-The appendix below describes how the Google Authentication scheme in this tutorial was set up, in advance of this tutorial.
+The section below describes how the Google Authentication scheme in this tutorial was set up, in advance of this tutorial.
 
-Appendix - Google+ Authentication Configuration & Setup
+Google+ Authentication Configuration & Setup
 -------------------------------------------------------
 
 The appendix below describes how to create an OAUTH2.0 authentication service for authenticating client applications. These steps at a high-level overview consist of:
@@ -96,3 +96,5 @@ You will be prompted to save the Client ID and Client Secret - copy these two an
 ![Client ID and Secret](images/google/client-keys.png)
 
 You're all set - you can now return to the main tutorial to set up your REST Server Authentication using Google's OAUTH2.0 client authentication service.
+
+Sourced from: https://hyperledger.github.io/composer/latest/tutorials/google_oauth2_rest
