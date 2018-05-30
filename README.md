@@ -244,7 +244,7 @@ composer-playground
 ```
 11. Start the REST server & browse through the Swagger UI
 ```
-composer-rest-server -c admin@hello-bna -n always -w false
+composer-rest-server -c admin@hello-bna -n always -w true
 ```
 Navigate to http://your-host-name:3000/explorer
 
@@ -268,7 +268,46 @@ cd smart-quora/smartquora-bna
 mkdir dist
 cd dist
 ```
+ 3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
+```
+composer archive create -t dir -n ../
+```
+4. Install version 0.0.1 of the business app using the peer admin card created earlier.
+```
+composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
+```
+5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
+```
+composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
+```
+6. Import the admin@hello-bna.card using the composer card import command
+```
+composer card import -f ./admin@hello-bna.card
+```
+7. Ensure the new admin@hello-bna.card is imported using the composer-card-list command.
+```
+composer card list
+```
+This should display the existing card in your runtime as follows:
+![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
 
+8. Ensure that the application is running using the composer network ping command
+```
+composer network ping -c admin@hello-bna
+```
+9. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
+```
+docker ps
+```
+10. Open the BNA in Playground and connect with your application. Explore the model, participant, access control layer and transaction logic. 
+```
+composer-playground
+```
+11. Start the REST server & browse through the Swagger UI
+```
+composer-rest-server -c admin@hello-bna -n always -w true
+```
+Navigate to http://your-host-name:3000/explorer
 
 
 
@@ -276,11 +315,11 @@ cd dist
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3Nz
-QwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1
-Niw5ODY4ODI5ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5OD
-g4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3
-NCwyMDY5NzU5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMT
-EyMTI0NDI3OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5
-MTczOF19
+eyJoaXN0b3J5IjpbNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2Mj
+M0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2
+LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3Mz
+A4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5
+OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOT
+EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
+NzYzMV19
 -->
