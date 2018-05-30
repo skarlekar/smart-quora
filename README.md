@@ -402,18 +402,19 @@ composer-playground
 4. Create a new _Participant_.
 5. Navigate to the _ID Registry_.
 6. Click _Issue New ID_.
-7. Provide a name for the _Participant_.
-8. 
+7. Provide a ID Name for the _Participant_.
+8. Choose a _Participant_ from the list.
+9. Click _CreateNChoose send t
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDk1ODY5OSwtMTkzOTg0OTMzLDEwNT
-AwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYz
-MTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OT
-EsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3
-MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MC
-wxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0y
-MDU4OTI1NzUzXX0=
+eyJoaXN0b3J5IjpbNjYwMDYxNDk5LC0xOTM5ODQ5MzMsMTA1MD
+A4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMx
+ODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MS
+wtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcx
+NDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLD
+E3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIw
+NTg5MjU3NTNdfQ==
 -->
