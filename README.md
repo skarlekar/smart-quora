@@ -349,7 +349,13 @@ After the changes from the above two sections, your _start-smartquora.sh_ should
 Before you restart the REST server, shut it down if it is already running.
 ```
 lsof -i :3000
-k
+```
+This will give the process-id of the server attached to port 3000 (if it is running). 
+Kill the process:
+```
+kill <pid>
+```
+
 Start the REST server by running the _start-smartquora.sh_ script.
 ```
 cd <repo>/smartquora-bna
@@ -379,7 +385,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY0NDk2MzgsLTU2NjI4ODk2NywxNj
+eyJoaXN0b3J5IjpbLTE0NzM2Mjk0NTksLTU2NjI4ODk2NywxNj
 QyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYw
 MjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMT
 QsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5
