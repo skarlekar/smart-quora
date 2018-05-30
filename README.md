@@ -184,17 +184,89 @@ Follow the instructions below or use the [HLF Development Tools installation gui
 	 cd ~/fabric-dev-servers
 	 ./stopFabric.sh
 	 ```
+## Creating a Hello World on Hyperledger Fabric
+Now that we have installed Hyperledger Fabric runtime, let us create a Hello-World application to understand the principles and elements of Hyperledger Fabric.
+
+1. In your home directory, use Yeoman to create a business application _hello_bna_ using:
+```
+	yo hyperledger-composer
+```
+Use the following instructions to respond to the menu options:
+Select Business Network
+
+> **Business network name**: hello-bna Description: My first BNA on HLF
+> **Author name**: your-name 
+> **Author email**: your-name@email.com 
+> **License**: Press enter to accept Apache-2.0 
+> **Namespace**: Press enter to accept default 
+> **Do you want to generate an empty template network?**: Select No to generate a populated network
+
+This will create the necessary code in the _hello_bna_ directory.
+
+ 2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and step into it.
+ ```
+mkdir dist; cd dist
+```
+ 3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
+```
+composer archive create -t dir -n ../
+```
+4. Install version 0.0.1 of the business app using the peer admin card created earlier.
+```
+composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
+```
+5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
+```
+composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
+```
+6. Import the admin@hello-bna.card using the composer card import command
+```
+composer card import -f ./admin@hello-bna.card
+```
+7. Ensure the new admin@hello-bna.card is imported using the composer-card-list command.
+```
+composer card list
+```
+This should display the existing card in your runtime as follows:
+![composer card list output](https://github.com/skarlekar/smart-quora/blob/master/images/composer-card-list.png)
+
+8. Ensure that the application is running using the composer network ping command
+```
+composer network ping -c admin@hello-bna
+```
+9. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
+```
+docker ps
+```
+10. Open the BNA in Playground and connect with your application. Explore the model, participant, access control layer and transaction logic. 
+```
+composer-playground
+```
+11. Start the REST server & browse through the Swagger UI
+```
+composer-rest-server -c admin@hello-bna -n always -w false
+```
+Navigate to http://your-host-name:3000/explorer
+
+## Securing the REST Server
+Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using  the Passport Google OAUTH2.0 delegated authentication strategy.
+
+While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources.
+
+![Google OAuth2.0 Authentication Strategy](https://github.com/skarlekar/smart-quora/blob/master/images/Google%20OAUTH%20Overview.png)
+
 ## Installing SmartQuora
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5Nz
-U5MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3
-OSwtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMT
-I4MTkxMjQ1LC04MTEwNDQwNzcsLTcyMjk2MjY3NywxNjMwMTM1
-MzgzLC0yMDY1MjIzNDg1LC0xOTIxMTA1OTk3LC0xNTA5MTYyMT
-U5LDE1MjYxMTQyMjEsNzk0NTgzMzcsLTM1MTUyMzE0NCwzMzM0
-MTY0NTNdfQ==
+eyJoaXN0b3J5IjpbLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5Nj
+QyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgy
+LDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNT
+Y2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAx
+MiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLT
+E3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5
+MTI0NV19
 -->
