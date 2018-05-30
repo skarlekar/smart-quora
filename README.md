@@ -353,10 +353,11 @@ cd <repo>/smartquora-bna
 ```
 
 ### Installing the Web Server 
-For testing the BNA we will use a light-weight Node.js based web-server. 
+For testing the BNA we will use a light-weight Node.js based web-server.  Install and start it as follows:
 ```
 cd <repo>/www
 npm install -g http-server
+
 ```
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
@@ -364,11 +365,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMT
-Q4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1
-NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLT
-EzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgy
-NjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OT
-Y4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4
-MTkyOTg4XX0=
+eyJoaXN0b3J5IjpbLTE5MjA1MTA0NDEsLTIxMTk2MTE3OTAsLT
+Y3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5
+MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMTk3LD
+EwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NTY4
+MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYxNT
+MyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwx
+Mzk3MzQ2NDU3XX0=
 -->
