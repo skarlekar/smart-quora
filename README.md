@@ -316,7 +316,8 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 ### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
 
-1. P
+1. Point your browser to http://mlab.com and logcreate an account if you don't already have one.
+2. 
 
 
 
@@ -325,7 +326,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjE5MDc0NiwxODM1NjE1MzI0LC0xMT
+eyJoaXN0b3J5IjpbLTg1MjE2NTc2MCwxODM1NjE1MzI0LC0xMT
 Y5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0
 NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2Mj
 M0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2
