@@ -317,7 +317,8 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
 
 1. Point your browser to http://mlab.com and log into your account (create an account if you don't already have one).
-2. Create a new database 
+2. Create a new database. ![mlab login](images/sq-mlab-login.png)
+3. 
 
 
 
@@ -326,7 +327,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTI5MDY3OSwtMjA1ODkyNTc1MywxOD
+eyJoaXN0b3J5IjpbLTMwMjM2NzkzOCwtMjA1ODkyNTc1MywxOD
 M1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4
 MjM4LDEzOTczNDY0NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMD
 E4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUw
