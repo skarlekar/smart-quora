@@ -266,6 +266,9 @@ git clone https://github.com/skarlekar/smart-quora.git
 ```
 cd smart-quora/smartquora-bna
 mkdir dist
+cd dist
+```
+
 
 
 
@@ -273,7 +276,7 @@ mkdir dist
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTAwNTUzMywtNDYyMzQ0MDcsMTI3Nz
+eyJoaXN0b3J5IjpbMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3Nz
 QwNjI3OCwtMTk2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1
 Niw5ODY4ODI5ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5OD
 g4OTYwMTQsLTE1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3
