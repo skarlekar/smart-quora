@@ -342,11 +342,14 @@ The REST Server itself is configured to persist the business network cards (requ
 ```
 npm install -g loopback-connector-mongodb
 ```
-### Check REST Server Start-up Script
+### Start the REST server
 After the changes from the above two sections, your _start-smartquora.sh_ should look like this:
 ![Startup Script](images/sq-start-smart-quora-sh.png)
 
-
+Start the REST server by running the _start-smartquora.sh_ script.
+```
+./start-smartquora.sh
+```
 ### Installing the Web Server 
 For testing the BNA we will use a light-weight Node.js based web-server. 
 ```
@@ -358,7 +361,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzMyMzk4NCwtNjcwNjQxMDExLC0xND
+eyJoaXN0b3J5IjpbLTcyNzUyMzc3MywtNjcwNjQxMDExLC0xND
 g2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0
 MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMT
 M5OTcyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2
