@@ -392,12 +392,12 @@ Note that your wallet is maintained on the MongoDB database on your behalf by th
 ![mongodb collections before card](images/mongodb-collections-1.png)
 
 ### Adding Digital Identity Cards
- 
+We will use the Composer Playground to create a few digital identity cards. Start by running the  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk2NjIwOTIsMTA1MDA4MjMwMiwtMT
+eyJoaXN0b3J5IjpbLTEwMDIwNDA1NDMsMTA1MDA4MjMwMiwtMT
 c3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2
 MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMj
 A3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1
