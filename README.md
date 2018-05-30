@@ -307,7 +307,7 @@ Navigate to https://your-host-name:3000/explorer
 ## Securing the REST Server
 Now that we have a RESTful interface to our SmartQuora application, it is time to secure it using  the Passport Google OAUTH2.0 delegated authentication strategy.
 
-While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources.
+While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources. An access key is granted following consent in form of a token. This token allows a client to access the APIs protected by OAuth2.0.
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
@@ -316,11 +316,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNj
-U2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4
-LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00NjIzNDQwNywxMjc3ND
-A2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2
-LDk4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4OD
-g5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0
-XX0=
+eyJoaXN0b3J5IjpbLTE1MzIxMzg3MjgsMTgzNTYxNTMyNCwtMT
+E2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2
+NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00Nj
+IzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0
+NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1Nz
+MwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUz
+OTkzXX0=
 -->
