@@ -359,7 +359,8 @@ npm install -g http-server
 ```
 2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of the machine where you have installed this software.
 ```
-cd <repo>/www
+cd <repo>/scripts
+
 
 http-server -p 8081
 ```
@@ -371,11 +372,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNTYyMDIsMTY0MjU2MzE4OCwtMjExOT
-YxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIy
-MDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OT
-U5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4
-MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1My
-wxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMsMzU3
-MzQ4MjM4XX0=
+eyJoaXN0b3J5IjpbLTIwNjIxNDAyOSwxNjQyNTYzMTg4LC0yMT
+E5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mzky
+MjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LD
+U5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgz
+NTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1Nz
+UzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1Mywz
+NTczNDgyMzhdfQ==
 -->
