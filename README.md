@@ -329,17 +329,20 @@ The REST Server itself is configured to persist the business network cards (requ
 ![copy host port](images/sq-mlab-host-port.png)
 
 5. Install the MongoDB Loopback connector plugin.
+```
+npm install -g loopback-connector-mongodb
+```
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1Njk3NDcsMTA1MTY5NjI5OSwtMTM5OT
-cyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5
-MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LD
-E2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOTI5
-ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEyNz
-c0MDYyNzgsLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3
-NTZdfQ==
+eyJoaXN0b3J5IjpbNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOT
+k3MjYwLDE3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAw
+OTIsLTIwNTg5MjU3NTMsMTgzNTYxNTMyNCwtMTE2OTY3OTY4OC
+wxNjU2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4MTky
+OTg4LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00NjIzNDQwNywxMj
+c3NDA2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYy
+NzU2XX0=
 -->
