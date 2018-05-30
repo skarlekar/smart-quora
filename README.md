@@ -315,7 +315,7 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 
 ### Google+ Authentication Configuration & Setup
 1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
-2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_DATASOURCES_ section of the  _start-smartquora.sh_ script.
+2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
 
 ### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
@@ -342,7 +342,7 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMTY5NjQxMywxNzIwMjU0MTE0LDM2Nz
+eyJoaXN0b3J5IjpbMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2Nz
 E0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAs
 MTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMj
 A1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYx
