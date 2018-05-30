@@ -18,7 +18,7 @@
   <script src="js/CommonUtils.js"></script>
   <script src="js/QuoraUtils.js"></script>
   <script type="text/javascript">
-    const host = "https://ec2-35-168-150-155.compute-1.amazonaws.com:3000"
+    const host = "https://your-host-name:3000"
     const qurl = host + "/api/smartquora.question.Question/";
     const faqurl = host + "/api/queries/FindAllQuestions";
     const pingurl = host + "/api/system/ping";
@@ -30,7 +30,7 @@
 
     var createdQuestions = [];
 
-    var ws = new WebSocket('wss://ec2-35-168-150-155.compute-1.amazonaws.com:3000');
+    var ws = new WebSocket('wss://your-host-name:3000');
     ws.onerror = function(event) {
       showErrorAlert("Error received from WebSocket. See Web Console for more details.");
       console.log('-------------- Websocket Error ------------------------');
