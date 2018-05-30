@@ -360,14 +360,14 @@ npm install -g http-server
 http-server -p 8081
 ```
 
-Point your 
+Now, point your browser to: http://your-host-name:8081/index.html
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjExODEzNCwtMjExOTYxMTc5MCwtNj
+eyJoaXN0b3J5IjpbMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNj
 cwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2Mjky
 MTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMT
 A1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4MywtMTg1Njgw
