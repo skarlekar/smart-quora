@@ -16,7 +16,7 @@ The Hyperledger Fabric blockchain platform that SmartQuora uses for this demonst
 
 The following diagram provides a high-level component diagram of the SmartQuora DApp. 
 
-![SmartQuora Component Diagram](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-components.png)
+![SmartQuora Component Diagram](images/smartquora-components.png)
 
 As such, the blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
 
@@ -32,7 +32,7 @@ SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://
 All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available MongoDB data source online at [mLab](https://mlab.com/). 
 
 The following diagram depicts a single-node view of the SmartQuora DApp.
-![single node view](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-single-node-view.png)
+![single node view](images/smartquora-arch-single-node-view.png)
 
 ### Digital Identity & Wallets
 Blockchain uses Digital Identities to represent participants in the network. A identity is a digital certificate and private key. These identities are used to sign transactions on behalf of the participants on the blockchain network. Identities are assembled in an envelope called _business network cards_ along with the metadata and connection profile of the participant in Hyperledger Fabric. These business cards are then stored in wallets. As such, a participant can have multiple business cards in their wallet.
@@ -47,7 +47,7 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 For further details on the basic workflow of a transaction inside a Hyperledger Fabric blockchain please refer to this [document](http://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement).
 
 The following diagram depicts the SmartQuora DApp when deployed on a multiple hosts to derive the benefits of the blockchain. For the sake of simplicity, in this tutorial, we will deploy the SmartQuora DApp as a logical instance on single host.
-![enter image description here](https://github.com/skarlekar/smart-quora/blob/master/images/smartquora-arch-multi-node-view.png)
+![enter image description here](images/smartquora-arch-multi-node-view.png)
 
 ## DApps - Decentralized Applications
 ### Understanding Blockchain
@@ -316,11 +316,11 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzc2MDg2OSwxNjU2MTE2ODUzLDM1Nz
-M0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0Miwy
-MDAxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mj
-c1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4Miwx
-NzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Nj
-g2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTJd
-fQ==
+eyJoaXN0b3J5IjpbLTExNjk2Nzk2ODgsMTY1NjExNjg1MywzNT
+czNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIs
+MjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2ND
+I3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIs
+MTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5ODg4OTYwMTQsLTE1Nj
+Y4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEy
+XX0=
 -->
