@@ -404,17 +404,17 @@ composer-playground
 6. Click _Issue New ID_.
 7. Provide a ID Name for the _Participant_.
 8. Choose a _Participant_ from the list.
-9. Click _CreateNChoose send t
+9. Click _Create New_ and choose 'Send t
  
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwMDYxNDk5LC0xOTM5ODQ5MzMsMTA1MD
-A4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMx
-ODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MS
-wtNDgzOTIyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcx
-NDE1NTUsNTk1OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLD
-E3NTc0ODM1ODMsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIw
-NTg5MjU3NTNdfQ==
+eyJoaXN0b3J5IjpbLTE3NTI1NTAxNjgsLTE5Mzk4NDkzMywxMD
+UwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2
+MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyND
+kxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2
+NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNj
+AsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5Miwt
+MjA1ODkyNTc1M119
 -->
