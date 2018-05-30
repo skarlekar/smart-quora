@@ -357,7 +357,7 @@ cd <repo>/smartquora-bna
 ```
 npm install -g http-server
 ```
-
+2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of yur
 cd <repo>/www
 
 http-server -p 8081
@@ -370,11 +370,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDIyNzQyMywxNjQyNTYzMTg4LC0yMT
-E5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mzky
-MjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LD
-U5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgz
-NTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1Nz
-UzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1Mywz
-NTczNDgyMzhdfQ==
+eyJoaXN0b3J5IjpbLTE5NTU5NjMwMTcsMTY0MjU2MzE4OCwtMj
+ExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5
+MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NS
+w1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4
+MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNT
+c1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYxMTY4NTMs
+MzU3MzQ4MjM4XX0=
 -->
