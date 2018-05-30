@@ -378,7 +378,8 @@ replace-host-name.sh **ec2-sample-01.amazonaws.com**
 cd <repo>/www
 http-server -p 8081
 ```
-## Running SmartQuor 
+## Running SmartQuora
+### Signing into SmartQuora 
 Now, open your browser in **incognito** mode and point your browser to: http://your-host-name:8081/index.html
 If everything went well, you browser should redirect to Google authentication page.
 ![sign-in page](images/sq-google-signin.png)
@@ -390,17 +391,17 @@ If you are doing this for the first time you will land in a page asking you to u
 Note that your wallet is maintained on the MongoDB database on your behalf by the REST server. If you check your MongoDB database now, you will see three collections viz., accessToken, user & userIdentity. But the collection for storing your Digital Identity called Card is not there yet as shown below
 ![mongodb collections before card](images/mongodb-collections-1.png)
 
-### Adding 
-If you don't have a Google account, go ahead and create one. This account will be the resource owner 
+### Adding Digital Identity Cards
+ 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjA5MjUzMCwxMDUwMDgyMzAyLC0xNz
-cwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYx
-MTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMD
-csMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5
-NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1NzQ4MzU4My
-wtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMjA1ODkyNTc1Mywx
-ODM1NjE1MzI0XX0=
+eyJoaXN0b3J5IjpbLTEzMjk2NjIwOTIsMTA1MDA4MjMwMiwtMT
+c3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2
+MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMj
+A3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1
+OTcyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1OD
+MsLTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMs
+MTgzNTYxNTMyNF19
 -->
