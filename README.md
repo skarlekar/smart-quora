@@ -315,6 +315,7 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 
 ### Google+ Authentication Configuration & Setup
 1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
+2. 
 
 ### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
@@ -341,11 +342,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1OT
-cyMTk3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1ODMs
-LTE4NTY4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMT
-gzNTYxNTMyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0
-ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMD
-AxODAyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1
-MDJdfQ==
+eyJoaXN0b3J5IjpbMzgzNTkzMjAyLDE3MjAyNTQxMTQsMzY3MT
+QxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5NzI2MCwx
+NzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMD
+U4OTI1NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjEx
+Njg1MywzNTczNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MD
+U5ODMzNDIsMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3
+OF19
 -->
