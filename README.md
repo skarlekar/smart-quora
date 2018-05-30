@@ -315,7 +315,11 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 
 ### Google+ Authentication Configuration & Setup
 1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
+
 2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
+3.  Now install the Passport Google OAuth2.0 strategy.
+```
+
 
 ### Setting up the Credentials & Wallet Data Store using MongoDB
 The REST Server itself is configured to persist the business network cards (required to connect to the network) using the MongoDB store. For this exercise we will use the MongoDB database hosted on http://mlab.com to keep it simple.
@@ -342,11 +346,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2Nz
-E0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAs
-MTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5MiwtMj
-A1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2NTYx
-MTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NTcsODgxOTI5ODgsNT
-A1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYy
-NzhdfQ==
+eyJoaXN0b3J5IjpbLTE3NTIzOTAyMTEsMTg2MjkyMTE0MywxNz
+IwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5
+OSwtMTM5OTcyNjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMj
+EzODI2MDA5MiwtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5
+Njc5Njg4LDE2NTYxMTY4NTMsMzU3MzQ4MjM4LDEzOTczNDY0NT
+csODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQsLTQ2MjM0
+NDA3XX0=
 -->
