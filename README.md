@@ -250,7 +250,7 @@ Navigate to http://your-host-name:3000/explorer
 ## Securing the REST Server
 Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using  the Passport Google OAUTH2.0 delegated authentication strategy.
 
-While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API 
+While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. 
 ![Google OAuth2.0 Authentication Strategy](https://github.com/skarlekar/smart-quora/blob/master/images/Google%20OAUTH%20Overview.png)
 
 ## Installing SmartQuora
@@ -260,11 +260,11 @@ While there are many Passport authentication strategy to choose from such as JWT
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2NzQ5ODk4LDEyNzc0MDYyNzgsLTE5Nj
-QyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgy
-LDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNT
-Y2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAx
-MiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLT
-E3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5
-MTI0NV19
+eyJoaXN0b3J5IjpbLTE4OTg4MjAyNjEsMTI3NzQwNjI3OCwtMT
+k2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5
+ODIsMTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5ODg4OTYwMTQsLT
+E1NjY4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5
+MDEyLDEyNzYxNDYwNSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OS
+wtMTc0MTA2NDk5NSwtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4
+MTkxMjQ1XX0=
 -->
