@@ -215,7 +215,7 @@ composer archive create -t dir -n ../
 ```
 composer network install -a hello-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
-5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@gra-bna.card in the current directory.
+5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@hello-bna.card in the current directory.
 ```
 composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
 ```
@@ -278,11 +278,11 @@ composer network install -a smartquora-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
 5. Create a business network admin card named *admin@hello-bna* by providing the *PeerAdmin@hlfv1* card and password *adminpw* to start version 0.0.1 of the app. This will also create the admin@grants-bna.card in the current directory.
 ```
-composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n hello-bna -V 0.0.1
+composer network start  -A admin -S adminpw -c PeerAdmin@hlfv1 -n smartquora-bna -V 0.0.1
 ```
 6. Import the admin@hello-bna.card using the composer card import command
 ```
-composer card import -f ./admin@hello-bna.card
+composer card import -f ./admin@smartquora-bna.card
 ```
 7. Ensure the new admin@hello-bna.card is imported using the composer-card-list command.
 ```
@@ -293,7 +293,7 @@ This should display the existing card in your runtime as follows:
 
 8. Ensure that the application is running using the composer network ping command
 ```
-composer network ping -c admin@hello-bna
+composer network ping -c admin@smartquora-bna
 ```
 9. Use docker ps to ensure that the docker container running the peer to serve the hello-bna application is running
 ```
@@ -315,11 +315,11 @@ Navigate to http://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3NzUzNTQ4LDUwNTk4MzM0MiwyMDAxOD
-AyNjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIs
-LTE2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2Nz
-Q4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2NTQy
-NCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3Nj
-E0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0
-OTk1XX0=
+eyJoaXN0b3J5IjpbLTE1NzQ2MTkwODUsNTA1OTgzMzQyLDIwMD
+E4MDI2MTQsLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUw
+MiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NT
+Y3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1
+NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMj
+c2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLTE3NDEw
+NjQ5OTVdfQ==
 -->
