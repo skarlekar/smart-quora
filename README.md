@@ -351,6 +351,7 @@ Before you restart the REST server, shut it down if it is already running.
 lsof -i :3000
 ```
 This will give the process-id of the server attached to port 3000 (if it is running). 
+
 Kill the process:
 ```
 kill <pid>
@@ -385,11 +386,11 @@ If you don't have a Google account, go ahead and create one. This account will b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzM2Mjk0NTksLTU2NjI4ODk2NywxNj
-QyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYw
-MjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMT
-QsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mjk5LC0xMzk5
-NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMD
-kyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgs
-MTY1NjExNjg1M119
+eyJoaXN0b3J5IjpbNDU5MDEzNjk1LC01NjYyODg5NjcsMTY0Mj
+U2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIy
+NDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LD
+M2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcy
+NjAsMTc1NzQ4MzU4MywtMTg1NjgwOTA0MywtMjEzODI2MDA5Mi
+wtMjA1ODkyNTc1MywxODM1NjE1MzI0LC0xMTY5Njc5Njg4LDE2
+NTYxMTY4NTNdfQ==
 -->
