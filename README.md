@@ -303,7 +303,7 @@ docker ps
 ```
 composer-playground
 ```
-11. Start the REST server & browse through the Swagger UI
+11. Start the REST server & browse through the Swagger UI. Note that we have started the REST server using Secure Socket Layer this time. Hence, change the protocol from HTTP to HTTPS when browsing the REST Explorer.
 ```
 cd ..
 ./start-rest.sh
@@ -316,7 +316,7 @@ Navigate to https://your-host-name:3000/explorer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTMxOTg2NzYsMzU3MzQ4MjM4LDEzOT
+eyJoaXN0b3J5IjpbLTEzNTc1MzM2NDksMzU3MzQ4MjM4LDEzOT
 czNDY0NTcsODgxOTI5ODgsNTA1OTgzMzQyLDIwMDE4MDI2MTQs
 LTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5NjQyNzUwMiwtMTY5Nz
 AwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwt
