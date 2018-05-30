@@ -381,19 +381,20 @@ http-server -p 8081
 ### Running the Application 
 Now, open your browser in **incognito** mode and point your browser to: http://your-host-name:8081/index.html
 If everything went well, you browser should redirect to Google authentication page.
+![enter image description here](images/sq-google-signin.png)
 
-
+After authentication, Google Auth should redirect you back to the appication. 
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTkzODg0MDIsLTE3NzA2OTc3NjMsLT
-U2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2
-NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMT
-QzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUx
-Njk2Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MD
-QzLC0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQs
-LTExNjk2Nzk2ODhdfQ==
+eyJoaXN0b3J5IjpbLTkzNzg2MzQsLTE3NzA2OTc3NjMsLTU2Nj
+I4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEw
+MTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLD
+E3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2
+Mjk5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC
+0yMTM4MjYwMDkyLC0yMDU4OTI1NzUzLDE4MzU2MTUzMjQsLTEx
+Njk2Nzk2ODhdfQ==
 -->
