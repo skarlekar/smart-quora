@@ -205,7 +205,7 @@ This will create the necessary code in the _hello_bna_ directory.
 
  2. Create a subdirectory called _dist_ inside the new _hello_bna_ directory and step into it.
  ```
-    mkdir dist; cd dist
+mkdir dist; cd dist
 ```
  3. Create an archive by providing the type of archive as _dir_ and pointing to the parent directory.
 ```
@@ -239,7 +239,10 @@ composer network ping -c admin@hello-bna
 docker ps
 ```
 10. Open the BNA in Playground and take it for a spin.
-
+```
+composer-playground
+```
+11. Start the RES
 ## Installing SmartQuora
 
 
@@ -247,11 +250,11 @@ docker ps
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3Mz
-A4MDU5LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5
-OTMsNDk4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOT
-EzOTExMzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1Njcw
-NzYzMSw3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC
-03MjI5NjI2NzcsMTYzMDEzNTM4MywtMjA2NTIyMzQ4NSwtMTky
-MTEwNTk5N119
+eyJoaXN0b3J5IjpbMzQyOTk4ODMxLDk4Njg4Mjk4MiwxNzU2Nz
+Q4NDQsLTI1NzMwODA1OSwtMTk4ODg5NjAxNCwtMTU2Njg2NTQy
+NCwxOTM2ODUzOTkzLDQ5ODQ1ODc0LDIwNjk3NTkwMTIsMTI3Nj
+E0NjA1LC0xMzkxMzkxMTM0LC0xMTIxMjQ0Mjc5LC0xNzQxMDY0
+OTk1LC03NTY3MDc2MzEsNzEzMTkxNzM4LDExMjgxOTEyNDUsLT
+gxMTA0NDA3NywtNzIyOTYyNjc3LDE2MzAxMzUzODMsLTIwNjUy
+MjM0ODVdfQ==
 -->
