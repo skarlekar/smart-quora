@@ -305,22 +305,22 @@ cd ..
 Navigate to https://your-host-name:3000/explorer
 
 ## Securing the REST Server
-Now that we have a RESTful interface to our SmartQuora application, it is time to secure the REST server using  the Passport Google OAUTH2.0 delegated authentication strategy.
+Now that we have a RESTful interface to our SmartQuora application, it is time to secure it using  the Passport Google OAUTH2.0 delegated authentication strategy.
 
 While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources.
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
-
+If you 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk2Nzk2ODgsMTY1NjExNjg1MywzNT
-czNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMzNDIs
-MjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMTk2ND
-I3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIs
-MTc1Njc0ODQ0LC0yNTczMDgwNTksLTE5ODg4OTYwMTQsLTE1Nj
-Y4NjU0MjQsMTkzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEy
+eyJoaXN0b3J5IjpbLTUxMzI1OTY1MywtMTE2OTY3OTY4OCwxNj
+U2MTE2ODUzLDM1NzM0ODIzOCwxMzk3MzQ2NDU3LDg4MTkyOTg4
+LDUwNTk4MzM0MiwyMDAxODAyNjE0LC00NjIzNDQwNywxMjc3ND
+A2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2
+LDk4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4OD
+g5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0
 XX0=
 -->
