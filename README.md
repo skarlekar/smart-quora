@@ -248,7 +248,7 @@ composer-rest-server -c admin@hello-bna -n always -w false
 ```
 Navigate to http://your-host-name:3000/explorer
 ## Securing the REST Server
-Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using one of the Passport authentication strategy.
+Now that we have a RESTful interface to our Hello World application, it is time to secure the REST server using  the Passport Google OAUTH2.0authentication strategy.
 
 ## Installing SmartQuora
 
@@ -257,11 +257,11 @@ Now that we have a RESTful interface to our Hello World application, it is time 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQyNzUwMiwtMTY5NzAwMjQ2LDE0MT
-EyNjI3NTYsOTg2ODgyOTgyLDE3NTY3NDg0NCwtMjU3MzA4MDU5
-LC0xOTg4ODk2MDE0LC0xNTY2ODY1NDI0LDE5MzY4NTM5OTMsND
-k4NDU4NzQsMjA2OTc1OTAxMiwxMjc2MTQ2MDUsLTEzOTEzOTEx
-MzQsLTExMjEyNDQyNzksLTE3NDEwNjQ5OTUsLTc1NjcwNzYzMS
-w3MTMxOTE3MzgsMTEyODE5MTI0NSwtODExMDQ0MDc3LC03MjI5
-NjI2NzddfQ==
+eyJoaXN0b3J5IjpbMTc5Mzk3ODA5OSwtMTk2NDI3NTAyLC0xNj
+k3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5ODIsMTc1Njc0ODQ0
+LC0yNTczMDgwNTksLTE5ODg4OTYwMTQsLTE1NjY4NjU0MjQsMT
+kzNjg1Mzk5Myw0OTg0NTg3NCwyMDY5NzU5MDEyLDEyNzYxNDYw
+NSwtMTM5MTM5MTEzNCwtMTEyMTI0NDI3OSwtMTc0MTA2NDk5NS
+wtNzU2NzA3NjMxLDcxMzE5MTczOCwxMTI4MTkxMjQ1LC04MTEw
+NDQwNzddfQ==
 -->
