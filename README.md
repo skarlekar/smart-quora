@@ -325,18 +325,19 @@ The REST Server itself is configured to persist the business network cards (requ
 3. Create an user in the database. This user's credentials will be used by the REST server to connect to the database and use it for storing the credentials. For this exercise we will create a user called _test_ with password _test123_.
 ![create database user](images/sq-mlab-create-user.gif)
 
-4. Now copy the database name and port from MLab and update the _
+4. Now copy the database name and port from MLab and enter this in the _COMPOSER_DATASOURCES_ section of the  _start-smartquora.sh_ script.
+
 
 If you don't have a Google account, go ahead and create one. This account will be the resource owner 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4NT
-Y4MDkwNDMsLTIxMzgyNjAwOTIsLTIwNTg5MjU3NTMsMTgzNTYx
-NTMyNCwtMTE2OTY3OTY4OCwxNjU2MTE2ODUzLDM1NzM0ODIzOC
-wxMzk3MzQ2NDU3LDg4MTkyOTg4LDUwNTk4MzM0MiwyMDAxODAy
-NjE0LC00NjIzNDQwNywxMjc3NDA2Mjc4LC0xOTY0Mjc1MDIsLT
-E2OTcwMDI0NiwxNDExMjYyNzU2LDk4Njg4Mjk4MiwxNzU2NzQ4
-NDRdfQ==
+eyJoaXN0b3J5IjpbMzE4MzgzNTI1LC0xMzk5NzI2MCwxNzU3ND
+gzNTgzLC0xODU2ODA5MDQzLC0yMTM4MjYwMDkyLC0yMDU4OTI1
+NzUzLDE4MzU2MTUzMjQsLTExNjk2Nzk2ODgsMTY1NjExNjg1My
+wzNTczNDgyMzgsMTM5NzM0NjQ1Nyw4ODE5Mjk4OCw1MDU5ODMz
+NDIsMjAwMTgwMjYxNCwtNDYyMzQ0MDcsMTI3NzQwNjI3OCwtMT
+k2NDI3NTAyLC0xNjk3MDAyNDYsMTQxMTI2Mjc1Niw5ODY4ODI5
+ODJdfQ==
 -->
