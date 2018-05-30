@@ -256,17 +256,18 @@ While there are many Passport authentication strategy to choose from such as JWT
 ![Google OAuth2.0 Authentication Strategy](https://github.com/skarlekar/smart-quora/blob/master/images/Google%20OAUTH%20Overview.png)
 
 ## Installing SmartQuora
+Now that we have seen a chance to take a sample application for a spin, it is time to install the SmartQuora application
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjM0NDA3LDEyNzc0MDYyNzgsLTE5Nj
-QyNzUwMiwtMTY5NzAwMjQ2LDE0MTEyNjI3NTYsOTg2ODgyOTgy
-LDE3NTY3NDg0NCwtMjU3MzA4MDU5LC0xOTg4ODk2MDE0LC0xNT
-Y2ODY1NDI0LDE5MzY4NTM5OTMsNDk4NDU4NzQsMjA2OTc1OTAx
-MiwxMjc2MTQ2MDUsLTEzOTEzOTExMzQsLTExMjEyNDQyNzksLT
-E3NDEwNjQ5OTUsLTc1NjcwNzYzMSw3MTMxOTE3MzgsMTEyODE5
-MTI0NV19
+eyJoaXN0b3J5IjpbODgyMDc3MjEzLC00NjIzNDQwNywxMjc3ND
+A2Mjc4LC0xOTY0Mjc1MDIsLTE2OTcwMDI0NiwxNDExMjYyNzU2
+LDk4Njg4Mjk4MiwxNzU2NzQ4NDQsLTI1NzMwODA1OSwtMTk4OD
+g5NjAxNCwtMTU2Njg2NTQyNCwxOTM2ODUzOTkzLDQ5ODQ1ODc0
+LDIwNjk3NTkwMTIsMTI3NjE0NjA1LC0xMzkxMzkxMTM0LC0xMT
+IxMjQ0Mjc5LC0xNzQxMDY0OTk1LC03NTY3MDc2MzEsNzEzMTkx
+NzM4XX0=
 -->
