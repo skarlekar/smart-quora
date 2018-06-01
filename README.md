@@ -316,7 +316,7 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 #### Google+ Authentication Configuration & Setup
 1. Setup Google+ authentication using the guide [here](google-auth-setup.md).
 
-2. Now copy the *client id* and *client secret* from MLab and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
+2. Now copy the *client id* and *client secret* from Google and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
 
 3.  Now install the Passport Google OAuth2.0 strategy.
 ```
@@ -415,11 +415,11 @@ Repeat this step a few times for multiple participants. I have created five part
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMT
-kzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4
-ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMT
-EsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3
-MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5NywxMDUxNjk2Mj
-k5LC0xMzk5NzI2MCwxNzU3NDgzNTgzLC0xODU2ODA5MDQzLC0y
-MTM4MjYwMDkyXX0=
+eyJoaXN0b3J5IjpbLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMD
+Y5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5
+Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OT
+AsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4
+NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUsNTk1OTcyMT
+k3LDEwNTE2OTYyOTksLTEzOTk3MjYwLDE3NTc0ODM1ODMsLTE4
+NTY4MDkwNDNdfQ==
 -->
