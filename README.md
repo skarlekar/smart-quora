@@ -452,7 +452,9 @@ To vote for an answer:
 Awarding an answer is an administrator function and has to be performed in the back-end. Ideally, this will be triggered by a lambda function that finds all the question that are past current time and invokes the award transaction. For now, adding a query to retrieve past due questions and award them through a lambda function is left as an exercise to the reader.
 
 To award an answer, on the server go to the _smartquora-gen_directory and run the _award_question.sh_ script. The script takes a question id as the only parameter.
-
+```
+cd <repo>/smartquora-gen
+award-question
 
 
 ## Troubleshooting
@@ -463,11 +465,11 @@ To award an answer, on the server go to the _smartquora-gen_directory and run th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMT
-IzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5
-OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC
-04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5
-MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nz
-c2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAs
-LTY3MDY0MTAxMV19
+eyJoaXN0b3J5IjpbLTg1NjUzNDcxMCwtMzg1MTQ0MjI0LDEwNj
+IyODczMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAy
+NDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLT
+EyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2
+MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMz
+AyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwt
+MjExOTYxMTc5MF19
 -->
