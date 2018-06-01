@@ -432,8 +432,10 @@ To ask a question:
 1. Point your browser to home page of Smart Quora: http://your-host-name:8081/index.html
 2. In the form _Get Answers To Your Own Questions_, enter a reward amount, due date for the question to be answered by in 24-hour format in the _Due_ field, your question in the _Ask A Question_ field and click the _Ask_ button.
 3. If everything goes well, you should get a notification stating that the transaction was posted successfully and your question should pop-up in the list of questions above the form as shown in the picture below.
+![question](images/sq-question1.png)
 
 ### Provide an Answer or Vote for the Best Answer
+
 
 ### Award an Answer
 
@@ -445,11 +447,11 @@ To ask a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMT
-YzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIz
-NzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC
-0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUw
-MDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2Mz
-E4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkx
-LC00ODM5MjIyMDddfQ==
+eyJoaXN0b3J5IjpbMTg5NDc3MjgwMSwxMjEyMzI4MzI3LC0xNj
+I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
+NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
+05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
+OTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4OD
+k2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEs
+LTE0ODYwMjI0OTFdfQ==
 -->
