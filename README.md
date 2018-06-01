@@ -410,7 +410,7 @@ composer-playground
 ![create digital identity](images/create-digital-identity.gif)
 Repeat this step a few times for multiple participants. I have created five participants.
 
- ### Adding the Digital Identity to your Wallet
+### Adding the Digital Identity to your Wallet
  Now that we have created a few Digital Identities, let us import them into the application.
  1. Point your browser to http://your-host-name:8081/upload-card.html
  2. In the form that comes up, enter a name for the card and upload a card that was exported from Composer Playground.
@@ -418,16 +418,16 @@ Repeat this step a few times for multiple participants. I have created five part
  3. Repeat the step above for the remaining cards.
  ![Smart Quora Upload Card](images/sq-upload-card2.png)
 
-
+### 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMT
-c1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEz
-NjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLD
-EwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQy
-NTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMj
-I0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQs
-MzY3MTQxNTU1XX0=
+eyJoaXN0b3J5IjpbNjU2ODEyODYyLC01MzY5Mjk5MywxOTI3MT
+UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
+MiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLT
+E5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYy
+ODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMD
+ExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0Mywx
+NzIwMjU0MTE0XX0=
 -->
