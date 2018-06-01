@@ -449,7 +449,7 @@ To vote for an answer:
  ![answer](images/sq-answer1.png)
  
 ### Award an Answer
-Awarding an answer is an administrator fu
+Awarding an answer is an administrator function and has to be performed in the back-end. Ideally, this will be triggered by a lambda function that finds all the question that are past current time and sends an _award_
 ## Troubleshooting
 
 
@@ -458,11 +458,11 @@ Awarding an answer is an administrator fu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjY4MTY1NzUsMTA2MjI4NzMzMywxMj
-EyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjky
-OTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4Ni
-wtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2
-OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OT
-c3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkw
-LC02NzA2NDEwMTFdfQ==
+eyJoaXN0b3J5IjpbLTc3NzU5OTgwOSwxMDYyMjg3MzMzLDEyMT
+IzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5
+OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC
+04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5
+MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nz
+c2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAs
+LTY3MDY0MTAxMV19
 -->
