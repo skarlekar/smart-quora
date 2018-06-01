@@ -420,23 +420,24 @@ Repeat this step a few times for multiple participants. I have created five part
 
 ### Selecting a Digital Avatar
 Now that we have a few digital identities in our wallet, let us choose one to use.
-1. Point your browser to http://your-host-name:8081/index.html
+1. Point your browser to home page of Smart Quora: http://your-host-name:8081/index.html
 2. Click on the _Wallet_ button on the top left.
 3. Choose a digital identity from the drop-down.
 4. Click on _Change Card_ button.
 5. You should get a message stating that the digital identity was changed to the card that was selected.
 ![wallet](images/sq-digital-wallet.png)
 
+### Ask a Question
 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5MDYyMDg5LC01MzY5Mjk5MywxOTI3MT
-UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
-MiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLT
-E5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYy
-ODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMD
-ExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0Mywx
-NzIwMjU0MTE0XX0=
+eyJoaXN0b3J5IjpbLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNz
+E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
+MjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC
+0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2
+Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MT
+AxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMs
+MTcyMDI1NDExNF19
 -->
