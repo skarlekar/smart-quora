@@ -424,12 +424,13 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 2. Click on the _Wallet_ button on the top left.
 3. Choose a digital identity from the drop-down.
 4. Click on _Change Card_ button.
-5. You should get a message stating that the digital identity w
+5. You should get a message stating that the digital identity was changed to the card that was selected.
+![wallet](images/sq-digital-wallet.png)
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDkyMTY0MzYsLTUzNjkyOTkzLDE5Mj
+eyJoaXN0b3J5IjpbLTE4NjgzODA2OTEsLTUzNjkyOTkzLDE5Mj
 cxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQw
 MjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0My
 wtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2
