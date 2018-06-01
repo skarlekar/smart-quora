@@ -444,8 +444,8 @@ To answer a question:
 ### Vote for an Answer
 To vote for an answer:
 1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the resulting page, enter your click on the _thumbs up_ or _thumbs down_ in the _Your Answer_ section and click on the _Answer_ button.
-3. If everything goes well, your answer should pop up in the list of answers above and you should get a notification that your transaction was posted successfully.
+2. In the resulting page, enter your click on the _thumbs up_ or _thumbs down_ button next to the answer.
+3. If everything goes well, your vote should be accepted and the vote count should change accordinglyand you should get a notification that your transaction was posted successfully.
  ![answer](images/sq-answer1.png)
  
 ### Award an Answer
@@ -458,11 +458,11 @@ To vote for an answer:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTE1NDg3NCwxMDYyMjg3MzMzLDEyMT
-IzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5
-OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC
-04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5
-MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nz
-c2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAs
-LTY3MDY0MTAxMV19
+eyJoaXN0b3J5IjpbLTIxMTgzODY1NzAsMTA2MjI4NzMzMywxMj
+EyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjky
+OTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4Ni
+wtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2
+OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OT
+c3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkw
+LC02NzA2NDEwMTFdfQ==
 -->
