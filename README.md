@@ -430,7 +430,7 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 ### Ask a Question
 To ask a question:
 1. Point your browser to home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the 
+2. In the form _Get Answers To Your Own Questions_, enter a reward amount, due date for the question to b
 ### Provide an Answer or Vote for the Best Answer
 
 ### Award an Answer
@@ -443,7 +443,7 @@ To ask a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODg2MjUzNiwtMTYyOTQ4NjQxMSwtMT
+eyJoaXN0b3J5IjpbLTU3MTUyNzM1NSwtMTYyOTQ4NjQxMSwtMT
 YzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIz
 NzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC
 0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUw
