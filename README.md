@@ -413,12 +413,14 @@ Repeat this step a few times for multiple participants. I have created five part
  ### Adding the Digital Identity to your Wallet
  Now that we have created a few Digital Identities, let us import them into the application.
  1. Point your browser to http://your-host-name:8081/upload-card.html
- 2. In the form that comes up, enter a n
+ 2. In the form that comes up, enter a name for the card and upload a card that was exported from Composer Playground.
+ 
+ Note: Du
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODI1ODI5MywtMTkyMTc1MjM3NiwtMT
+eyJoaXN0b3J5IjpbMTUwNzcwMjQ2MiwtMTkyMTc1MjM3NiwtMT
 I2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYw
 NzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMD
 IsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0y
