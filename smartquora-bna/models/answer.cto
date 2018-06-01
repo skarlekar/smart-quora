@@ -25,7 +25,7 @@ asset Answer identified by answerId {
   o AnswerStatus status default = 'CREATED'
   o DateTime timeCreated
   o DateTime timeAwarded optional
-  --> Question associatedQuestion
+  o String associatedQuestionId
   --> QuoraUser owner
   --> QuoraUser[] voters optional
   o Integer votes default = 0
