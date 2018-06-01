@@ -434,12 +434,15 @@ To ask a question:
 3. If everything goes well, you should get a notification stating that the transaction was posted successfully and your question should pop-up in the list of questions above the form as shown in the picture below.
 ![question](images/sq-question1.png)
 
-### Provide an Answer or Vote for the Best Answer
+### Provide an Answer 
 To answer a question:
 1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the resulting page, cli
+2. In the resulting page, enter your response in the _Your Answer_ section and click on the _A
  ![question2](images/sq-question2.png)
  ![answer](images/sq-answer1.png)
+ 
+### Vote for an Answer
+
 ### Award an Answer
 
 ## Troubleshooting
@@ -450,11 +453,11 @@ To answer a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ3ODU2OTIsMTIxMjMyODMyNywtMT
-YyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUx
-MjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMi
-wtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5
-Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyOD
-g5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDEx
-LC0xNDg2MDIyNDkxXX0=
+eyJoaXN0b3J5IjpbMTg0NDUwODAyNywxMjEyMzI4MzI3LC0xNj
+I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
+NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
+05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
+OTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4OD
+k2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEs
+LTE0ODYwMjI0OTFdfQ==
 -->
