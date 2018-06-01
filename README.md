@@ -428,12 +428,14 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 ![wallet](images/sq-digital-wallet.png)
 
 ### Ask a Question
-
+To ask a question:
+1. Point your browser to home page of Smart Quora: http://your-host-name:8081/index.html
+2. In the 
 ### Provide an Answer or Vote for the Best Answer
 
 ### Award an Answer
 
-
+## Troubleshooting
 
 
 
@@ -441,11 +443,11 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNT
-M2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkz
-ODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MC
-wxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3
-MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MT
-E3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3
-LDE4NjI5MjExNDNdfQ==
+eyJoaXN0b3J5IjpbLTUyODg2MjUzNiwtMTYyOTQ4NjQxMSwtMT
+YzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIz
+NzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC
+0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUw
+MDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2Mz
+E4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkx
+LC00ODM5MjIyMDddfQ==
 -->
