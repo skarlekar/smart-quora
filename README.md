@@ -416,12 +416,14 @@ Repeat this step a few times for multiple participants. I have created five part
  2. In the form that comes up, enter a name for the card and upload a card that was exported from Composer Playground.
  Note: Due to a bug in the upload-card code, you will not receive an acknowledgement of a successful upload.
  3. Repeat the step above for the remaining cards.
- 
+ ![Smart Quora Upload Card](images/sq-upload-card2.png)
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwMTEwMTQ0LDE5MjcxNTEyNiwtMTkyMT
+eyJoaXN0b3J5IjpbLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMT
 c1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEz
 NjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLD
 EwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQy
