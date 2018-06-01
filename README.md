@@ -436,7 +436,10 @@ To ask a question:
 
 ### Provide an Answer or Vote for the Best Answer
 To answer a question:
-1. Click on the question link in the 
+1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
+2. In the resulting page
+ ![question](images/sq-question1.png)
+4. ![question](images/sq-question1.png)
 ### Award an Answer
 
 ## Troubleshooting
@@ -447,11 +450,11 @@ To answer a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4ODE1NDA2NiwxMjEyMzI4MzI3LC0xNj
-I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
-NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
-05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
-OTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2NjI4OD
-k2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2NDEwMTEs
-LTE0ODYwMjI0OTFdfQ==
+eyJoaXN0b3J5IjpbLTE2MzI0MDkwMjksMTIxMjMyODMyNywtMT
+YyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUx
+MjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMi
+wtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5
+Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyOD
+g5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDEx
+LC0xNDg2MDIyNDkxXX0=
 -->
