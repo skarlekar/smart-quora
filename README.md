@@ -418,16 +418,17 @@ Repeat this step a few times for multiple participants. I have created five part
  3. Repeat the step above for the remaining cards.
  ![Smart Quora Upload Card](images/sq-upload-card2.png)
 
-### 
+### Selecting a Digital Avatar
+Now that we have a few digital identities in our wallet, let 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2ODEyODYyLC01MzY5Mjk5MywxOTI3MT
-UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
-MiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLT
-E5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYy
-ODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMD
-ExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0Mywx
-NzIwMjU0MTE0XX0=
+eyJoaXN0b3J5IjpbMTI0NzA3MDQxNywtNTM2OTI5OTMsMTkyNz
+E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
+MjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC
+0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2
+Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAsLTY3MDY0MT
+AxMSwtMTQ4NjAyMjQ5MSwtNDgzOTIyMjA3LDE4NjI5MjExNDMs
+MTcyMDI1NDExNF19
 -->
