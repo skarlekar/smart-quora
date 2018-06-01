@@ -109,8 +109,8 @@ async function createQuestion(tx) {
 async function createAnswer(tx) {
   var aid;
 
-  if ((typeof tx.id != 'undefined') && (tx.id !== null) && (tx.id.length != 0))
-    aid = tx.id;
+  if ((typeof tx.answerId != 'undefined') && (tx.answerId !== null) && (tx.answerId.length != 0))
+    aid = tx.answerId;
   else
     aid = generateId("answer");
 
@@ -142,7 +142,7 @@ async function createAnswer(tx) {
   if (currentTime >= tx.associatedQuestion.timeToAward)
     throw new Error("Answer cannot be added now. Answering period has elapsed!");
 
-  a.associatedQuestion = tx.associatedQuestion;
+  a.associatedQuestionId = tx.associatedQuestion.getIdentifier();
   a.answerDesc = tx.answerDesc;
   a.status = 'CREATED';
   a.timeCreated = new Date();
@@ -177,8 +177,9 @@ async function createAnswer(tx) {
  * @transaction
  */
 async function voteAnswer(tx) {
+  const questionRegistry = await getAssetRegistry('smartquora.question.Question');
   // Answer must exist
-  var answerRegistry = await getAssetRegistry('smartquora.answer.Answer');
+  const answerRegistry = await getAssetRegistry('smartquora.answer.Answer');
   var answerExists = await answerRegistry.exists(tx.answer.getIdentifier());
   if (!answerExists)
     throw new Error("Answer Id: " + tx.answer.getIdentifier() + " does not exist!");
@@ -195,9 +196,11 @@ async function voteAnswer(tx) {
   if (tx.answer.owner.getIdentifier() == voter.getIdentifier())
     throw new Error("You cannot vote for your own answers!");
 
+  var associatedQuestion = await questionRegistry.get(tx.answer.associatedQuestionId);
+
   // Answer cannot be voted after the awarding period starts
   var currentTime = new Date();
-  if (currentTime >= tx.answer.associatedQuestion.timeToAward)
+  if (currentTime >= associatedQuestion.timeToAward)
     throw new Error("Answer :" + tx.answer.getIdentifier() + " cannot be voted now. Voting period has elapsed!");
 
   if (typeof tx.answer.voters == 'undefined')
@@ -272,7 +275,7 @@ async function awardQuestion(tx) {
     }
     for (i = 0; i < length; i++) {
       var answer = tx.question.answers[i];
-      var award = Math.round(answer.votes / totalVotes * stake * 100)/100;
+      var award = Math.round(answer.votes / totalVotes * stake * 100) / 100;
       //award = award.toFixed(2);
       answer.earnings = award;
       answer.status = 'AWARDED';
