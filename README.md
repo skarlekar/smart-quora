@@ -371,7 +371,7 @@ npm install -g http-server
 2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of the machine where you have installed this software. Note: Only provide the domain name. Do not add the protocol or port here.
 ```
 cd <repo>/scripts
-replace-host-name.sh **ec2-sample-01.amazonaws.com**
+replace-host-name.sh ec2-sample-01.amazonaws.com
 ```
 3. Start the web server.
 ```
@@ -415,11 +415,11 @@ Repeat this step a few times for multiple participants. I have created five part
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMT
-A2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgy
-MzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OC
-wtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkxLC00
-ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMjU0MTE0LDM2NzE0MT
-U1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwtMTM5OTcyNjAsMTc1
-NzQ4MzU4M119
+eyJoaXN0b3J5IjpbLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOT
+g5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4
+NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5Nj
+csMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0x
+NDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMj
+U0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwt
+MTM5OTcyNjBdfQ==
 -->
