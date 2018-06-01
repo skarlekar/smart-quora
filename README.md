@@ -454,8 +454,9 @@ Awarding an answer is an administrator function and has to be performed in the b
 To award an answer, on the server go to the _smartquora-gen_directory and run the _award_question.sh_ script. The script takes a question id as the only parameter.
 ```
 cd <repo>/smartquora-gen
-award-question
-
+award-question.sh your-question-id
+```
+![award](images/sq-award-question.png)
 
 ## Troubleshooting
 
@@ -465,11 +466,11 @@ award-question
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjUzNDcxMCwtMzg1MTQ0MjI0LDEwNj
-IyODczMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAy
-NDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLT
-EyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2
-MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMz
-AyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwt
-MjExOTYxMTc5MF19
+eyJoaXN0b3J5IjpbMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2Mj
+I4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0
+NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMT
+I2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYw
+NzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMD
+IsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0y
+MTE5NjExNzkwXX0=
 -->
