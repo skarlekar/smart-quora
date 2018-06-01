@@ -415,15 +415,16 @@ Repeat this step a few times for multiple participants. I have created five part
  1. Point your browser to http://your-host-name:8081/upload-card.html
  2. In the form that comes up, enter a name for the card and upload a card that was exported from Composer Playground.
  Note: Due to a bug in the upload-card code, you will not receive an acknowledgement of a successful upload.
+ 3. Repeat the step above for the remaining cards.
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTEzNDU3MSwtMTkyMTc1MjM3NiwtMT
-I2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYw
-NzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMD
-IsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0y
-MTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mz
-kyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1
-LDU5NTk3MjE5N119
+eyJoaXN0b3J5IjpbMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMj
+Y1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3
+ODM3MCwxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMi
+wtMTc3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIx
+MTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5MSwtNDgzOT
+IyMjA3LDE4NjI5MjExNDMsMTcyMDI1NDExNCwzNjcxNDE1NTUs
+NTk1OTcyMTk3XX0=
 -->
