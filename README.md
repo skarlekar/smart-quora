@@ -435,8 +435,8 @@ To ask a question:
 ![question](images/sq-question1.png)
 
 ### Provide an Answer or Vote for the Best Answer
-
-
+To answer a question:
+1. Click on the question link in the 
 ### Award an Answer
 
 ## Troubleshooting
@@ -447,7 +447,7 @@ To ask a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDc3MjgwMSwxMjEyMzI4MzI3LC0xNj
+eyJoaXN0b3J5IjpbLTk4ODE1NDA2NiwxMjEyMzI4MzI3LC0xNj
 I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
 NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
 05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
