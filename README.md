@@ -430,7 +430,7 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 ### Ask a Question
 To ask a question:
 1. Point your browser to home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the form _Get Answers To Your Own Questions_, enter a reward amount, due date for the question to b
+2. In the form _Get Answers To Your Own Questions_, enter a reward amount, due date for the question to be answered by in 24-hour format in the _Due_ field, your question in the _Ask A Question_ field and click the 
 ### Provide an Answer or Vote for the Best Answer
 
 ### Award an Answer
@@ -443,11 +443,11 @@ To ask a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTUyNzM1NSwtMTYyOTQ4NjQxMSwtMT
-YzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIz
-NzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC
-0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUw
-MDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0MjU2Mz
-E4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0xNDg2MDIyNDkx
-LC00ODM5MjIyMDddfQ==
+eyJoaXN0b3J5IjpbLTE5MzU3MzEzMDgsLTE2Mjk0ODY0MTEsLT
+E2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUy
+Mzc2LC0xMjY1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OS
+wtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1
+MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2Mjg4OTY3LDE2NDI1Nj
+MxODgsLTIxMTk2MTE3OTAsLTY3MDY0MTAxMSwtMTQ4NjAyMjQ5
+MSwtNDgzOTIyMjA3XX0=
 -->
