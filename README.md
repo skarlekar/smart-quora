@@ -411,16 +411,18 @@ composer-playground
 Repeat this step a few times for multiple participants. I have created five participants.
 
  ### Adding the Digital Identity to your Wallet
- Now that we have Digital Identities
+ Now that we have created a few Digital Identities, let us import them into the application.
+ 1. Point your browser to http://your-host-name:8081/upload-card.html
+ 2. In the form that comes up, 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzA3ODczNSwtMTI2NTA5Mzg4NiwtOD
-AzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIw
-MTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3Nj
-MsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02
-NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOT
-IxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5Nywx
-MDUxNjk2Mjk5XX0=
+eyJoaXN0b3J5IjpbLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLT
+gwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjky
+MDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3Nz
+YzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwt
+NjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2Mj
+kyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcs
+MTA1MTY5NjI5OV19
 -->
