@@ -13,7 +13,7 @@ query FindAllAnswersForGivenQuestion {
   description: "Return all answers for the given question"
   statement: 
      SELECT smartquora.answer.Answer
-       WHERE (associatedQuestion == _$question_id)
+       WHERE (associatedQuestionId == _$question_id)
 }
 
 query FindQuestionsForAwarding {
