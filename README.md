@@ -429,7 +429,11 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 
 ### Ask a Question
 
-### Provide an Answer or ote 
+### Provide an Answer or Vote for the Best Answer
+
+### Award an Answer
+
+
 
 
 
@@ -437,7 +441,7 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0NzMzNjAsLTE2MzcwMjQ2NiwtNT
+eyJoaXN0b3J5IjpbLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNT
 M2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkz
 ODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MC
 wxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3
