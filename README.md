@@ -437,9 +437,9 @@ To ask a question:
 ### Provide an Answer or Vote for the Best Answer
 To answer a question:
 1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the resulting page
- ![question](images/sq-question1.png)
-4. ![question](images/sq-question1.png)
+2. In the resulting page, cli
+ ![question2](images/sq-question2.png)
+ ![answer](images/sq-answer1.png)
 ### Award an Answer
 
 ## Troubleshooting
@@ -450,7 +450,7 @@ To answer a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI0MDkwMjksMTIxMjMyODMyNywtMT
+eyJoaXN0b3J5IjpbLTE2NzQ3ODU2OTIsMTIxMjMyODMyNywtMT
 YyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUx
 MjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMi
 wtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5
