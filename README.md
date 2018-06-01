@@ -414,13 +414,12 @@ Repeat this step a few times for multiple participants. I have created five part
  Now that we have created a few Digital Identities, let us import them into the application.
  1. Point your browser to http://your-host-name:8081/upload-card.html
  2. In the form that comes up, enter a name for the card and upload a card that was exported from Composer Playground.
- 
- Note: Du
+ Note: Due to a bug in the upload-card code, you will not receive an acknowledgement of a successful upload.
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzcwMjQ2MiwtMTkyMTc1MjM3NiwtMT
+eyJoaXN0b3J5IjpbMTk2OTEzNDU3MSwtMTkyMTc1MjM3NiwtMT
 I2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYw
 NzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMD
 IsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0y
