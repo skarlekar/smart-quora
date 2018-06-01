@@ -76,15 +76,15 @@ Step A4: Create OAuth2.0 Client ID credentials for the Credentials Service Accou
     
 3.  Under the 'Authorised Javascript Origins' section add a line with the following URI - this is the client application (the REST Server):
     
-    [http://your-host-name:3000](http://your-host-name:3000)
+    https://your-host-name:3000
     
 4.  We will need to add 'Authorized Redirect URIs' at the bottom - this is where the authenticated session is redirected back to after getting consent from the Google+ OAUTH2.0 authentication service. The callback will match what we will configure in our Composer REST Server environment variables (specifically the variable `COMPOSER_PROVIDERS` when performing this instruction in the main tutorial).
     
 
 Under 'Authorized Redirect URIs' add the following URIs as authorised URIs. Note: it is best to copy/paste each URI below, then hit ENTER in the browser after each line entry- as the URI line editor can sometimes truncate your entry whilst typing .e.g. if you happen to pause when typing the URI.
 
-    http://your-host-name:3000/auth/google
-    http://your-host-name:3000/auth/google/callback
+    https://your-host-name:3000/auth/google
+    https://your-host-name:3000/auth/google/callback
     
 
 Then click on the 'Create' button at the bottom.
