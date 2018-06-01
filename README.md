@@ -449,7 +449,7 @@ To vote for an answer:
  ![answer](images/sq-answer1.png)
  
 ### Award an Answer
-Awarding an answer is an administrator function and has to be performed in the back-end. Ideally, this will be triggered by a lambda function that finds all the question that are past current time and sends an _award_
+Awarding an answer is an administrator function and has to be performed in the back-end. Ideally, this will be triggered by a lambda function that finds all the question that are past current time and invokes the award transaction. For now, adding a query to retrieve past due questions and award them through a lambda function is left as an exe
 ## Troubleshooting
 
 
@@ -458,11 +458,11 @@ Awarding an answer is an administrator function and has to be performed in the b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzU5OTgwOSwxMDYyMjg3MzMzLDEyMT
-IzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5
-OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC
-04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5
-MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nz
-c2MywtNTY2Mjg4OTY3LDE2NDI1NjMxODgsLTIxMTk2MTE3OTAs
-LTY3MDY0MTAxMV19
+eyJoaXN0b3J5IjpbODc2NzU3NjA3LDEwNjIyODczMzMsMTIxMj
+MyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5
+MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLT
+gwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjky
+MDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3Nz
+YzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwt
+NjcwNjQxMDExXX0=
 -->
