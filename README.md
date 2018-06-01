@@ -413,16 +413,16 @@ Repeat this step a few times for multiple participants. I have created five part
  ### Adding the Digital Identity to your Wallet
  Now that we have created a few Digital Identities, let us import them into the application.
  1. Point your browser to http://your-host-name:8081/upload-card.html
- 2. In the form that comes up, 
+ 2. In the form that comes up, enter a n
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLT
-gwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjky
-MDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3Nz
-YzLC01NjYyODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwt
-NjcwNjQxMDExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2Mj
-kyMTE0MywxNzIwMjU0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcs
-MTA1MTY5NjI5OV19
+eyJoaXN0b3J5IjpbMTMzODI1ODI5MywtMTkyMTc1MjM3NiwtMT
+I2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYw
+NzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMD
+IsLTE3NzA2OTc3NjMsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0y
+MTE5NjExNzkwLC02NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4Mz
+kyMjIwNywxODYyOTIxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1
+LDU5NTk3MjE5N119
 -->
