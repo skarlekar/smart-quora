@@ -437,7 +437,8 @@ To ask a question:
 ### Provide an Answer 
 To answer a question:
 1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
-2. In the resulting page, enter your response in the _Your Answer_ section and click on the _A
+2. In the resulting page, enter your response in the _Your Answer_ section and click on the _Answer_ button.
+3. If everything goes well, your answer should pop up in the list of answers above and you should get a notification that your transaction was posted successfully.
  ![question2](images/sq-question2.png)
  ![answer](images/sq-answer1.png)
  
@@ -453,7 +454,7 @@ To answer a question:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDUwODAyNywxMjEyMzI4MzI3LC0xNj
+eyJoaXN0b3J5IjpbMTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNj
 I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
 NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
 05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
