@@ -426,15 +426,17 @@ Now that we have a few digital identities in our wallet, let us choose one to us
 4. Click on _Change Card_ button.
 5. You should get a message stating that the digital identity was changed to the card that was selected.
 ![wallet](images/sq-digital-wallet.png)
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgzODA2OTEsLTUzNjkyOTkzLDE5Mj
-cxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQw
-MjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0My
-wtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3NjMsLTU2
-NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02NzA2ND
-EwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOTIxMTQz
-LDE3MjAyNTQxMTRdfQ==
+eyJoaXN0b3J5IjpbNzk5MDYyMDg5LC01MzY5Mjk5MywxOTI3MT
+UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
+MiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLT
+E5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYy
+ODg5NjcsMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMD
+ExLC0xNDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0Mywx
+NzIwMjU0MTE0XX0=
 -->
