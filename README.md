@@ -411,12 +411,12 @@ composer-playground
 Repeat this step a few times for multiple participants. I have created five participants.
 
  ### Adding the Digital Identity to your Wallet
- 
+ Now that we have Digital Identities
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDgxMzAyOCwtMTI2NTA5Mzg4NiwtOD
+eyJoaXN0b3J5IjpbMTEwNzA3ODczNSwtMTI2NTA5Mzg4NiwtOD
 AzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIw
 MTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3Nj
 MsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02
