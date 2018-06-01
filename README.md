@@ -421,12 +421,13 @@ Repeat this step a few times for multiple participants. I have created five part
 ### Selecting a Digital Avatar
 Now that we have a few digital identities in our wallet, let us choose one to use.
 1. Point your browser to http://your-host-name:8081/index.html
-2. 
+2. Click on the _Wallet_ button on the top left.
+3. 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2MTc5OTY0LC01MzY5Mjk5MywxOTI3MT
+eyJoaXN0b3J5IjpbMTA5NzAwMDM0LC01MzY5Mjk5MywxOTI3MT
 UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
 MiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLT
 E5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYy
