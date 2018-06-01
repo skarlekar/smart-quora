@@ -391,7 +391,7 @@ If you are doing this for the first time you will land in a page asking you to u
 Note that your wallet is maintained on the MongoDB database on your behalf by the REST server. If you check your MongoDB database now, you will see three collections viz., accessToken, user & userIdentity. But the collection for storing your Digital Identity called Card is not there yet as shown below
 ![mongodb collections before card](images/mongodb-collections-1.png)
 
-### Adding Digital Identity Cards
+### Creating Digital Identity Cards
 We will use the Composer Playground to create a few digital identity cards as demonstrated in the animation below.
 1. Start the Playground if it is not already up.
 ```
@@ -411,15 +411,16 @@ composer-playground
 Repeat this step a few times for multiple participants. I have created five participants.
 
  ### Adding the Digital Identity to your Wallet
+ 
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOT
-g5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4
-NDkzMywxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5Nj
-csMTY0MjU2MzE4OCwtMjExOTYxMTc5MCwtNjcwNjQxMDExLC0x
-NDg2MDIyNDkxLC00ODM5MjIyMDcsMTg2MjkyMTE0MywxNzIwMj
-U0MTE0LDM2NzE0MTU1NSw1OTU5NzIxOTcsMTA1MTY5NjI5OSwt
-MTM5OTcyNjBdfQ==
+eyJoaXN0b3J5IjpbLTE4MDgxMzAyOCwtMTI2NTA5Mzg4NiwtOD
+AzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIw
+MTg0MywtMTkzOTg0OTMzLDEwNTAwODIzMDIsLTE3NzA2OTc3Nj
+MsLTU2NjI4ODk2NywxNjQyNTYzMTg4LC0yMTE5NjExNzkwLC02
+NzA2NDEwMTEsLTE0ODYwMjI0OTEsLTQ4MzkyMjIwNywxODYyOT
+IxMTQzLDE3MjAyNTQxMTQsMzY3MTQxNTU1LDU5NTk3MjE5Nywx
+MDUxNjk2Mjk5XX0=
 -->
