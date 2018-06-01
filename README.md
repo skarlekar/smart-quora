@@ -445,7 +445,7 @@ To answer a question:
 To vote for an answer:
 1. Click on the question link in the home page of Smart Quora: http://your-host-name:8081/index.html
 2. In the resulting page, enter your click on the _thumbs up_ or _thumbs down_ button next to the answer.
-3. If everything goes well, your vote should be accepted and the vote count should change accordinglyand you should get a notification that your transaction was posted successfully.
+3. If everything goes well, your vote should be accepted and the vote count should change accordingly. Additonally, you should get a notification stating that your transaction was posted successfully.
  ![answer](images/sq-answer1.png)
  
 ### Award an Answer
@@ -458,7 +458,7 @@ To vote for an answer:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTgzODY1NzAsMTA2MjI4NzMzMywxMj
+eyJoaXN0b3J5IjpbLTEwMzAyMjQxMjYsMTA2MjI4NzMzMywxMj
 EyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjky
 OTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4Ni
 wtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2
