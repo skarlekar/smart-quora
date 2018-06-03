@@ -6,7 +6,7 @@ Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built o
 
 SmartQuora uses a Javascript-based front-end web application to communicate withe the Blockchain platform on which the Smart Contracts reside using a RESTful interface. It uses Passport for authentication of participants using OAuth protocol and allows maintenance of their digital wallets through which the participants can manage their Digital Identities. These Digital Identities are generated and managed using the Hyperledger Fabric platform.
 
-Please note that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. The process documented here is not an exhaustive exercise in building a production quality application.   
+**Please note** that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. The process documented here is not an exhaustive exercise in building a production quality application.   
 
 ## Audience
 You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
@@ -82,7 +82,7 @@ Now that we have an understanding of the components that make up a Hyperledger B
 There are three types of Participants in SmartQuora BNA. They are: Inquirers, Responders and Administrators. Inquirers and Responders are represented as _QuoraUsers_ in the application because their function can interchange - an inquirer can respond to questions from other inquirers or a respondent for a question can pose his/her own questions. The following rules are enforced by the system currently:
 1. Inquirers cannot answer their own questions.
 2. Responders cannot vote for their own answers.
-3. Responders cannot vote more than once for the same answers.
+3. Responders cannot vote more than once for the same answer.
 4. Only administrators can award questions and distribute the reward among the voted answers. 
 
 
@@ -493,11 +493,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2NDIzNjI3LDExODI5OTY3Nyw1MjQ5ND
-YwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5
-MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4Nz
-MzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYs
-LTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NT
-A5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgz
-NzBdfQ==
+eyJoaXN0b3J5IjpbMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mj
+k5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMs
+MzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0ND
+IyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEs
+LTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNz
+UyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2
+OV19
 -->
