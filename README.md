@@ -53,7 +53,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 ## DApps - Decentralized Applications
 ### Understanding Blockchain
-Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its *decentralized nature*. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](https://medium.com/@skarlekar/blockchain-smart-contracts-demystified-4c239d879f4c). 
+Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its *decentralized nature*. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](http://bit.ly/blkchn2018). 
  
 ### Anatomy of the DApp (or BNA)
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
@@ -522,11 +522,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTM2MDcyOCwxNTgwODI3MjQ0LDEzMz
-E0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1MjQ5NDYwNzIs
-LTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5MTM5MT
-UzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4NzMzMywx
-MjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYsLTUzNj
-kyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4
-Nl19
+eyJoaXN0b3J5IjpbLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1OD
+A4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3
+LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2ND
+g1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwx
+MDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2Mz
+cwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2
+XX0=
 -->
