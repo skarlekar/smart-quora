@@ -58,7 +58,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its *decentralized nature*. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all authorized participants to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](http://bit.ly/blkchn2018). 
  
 ### Anatomy of the DApp (or BNA)
- In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
+ In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier on the Hyperledger Fabric platform. Hence, I will use the term DApp or BNA interchangeably throughout the rest of the documentation.
 ![BNA Breakdown](images/bna-breakdown.png)
 
 ### Hyperledger Composer Components
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0NTM5OTcwLDE1Nzg4OTg4NDUsLTIyOT
-AwOTI5NiwxNTM3MTE0NDEzLC0xNDE3OTU4MTAyLC0xNDUwMDAx
-MzQsLTg2OTM2MDcyOCwxNTgwODI3MjQ0LDEzMzE0Nzk3NDIsND
-Q2NDIzNjI3LDExODI5OTY3Nyw1MjQ5NDYwNzIsLTMyODU3Mjg1
-MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5MTM5MTUzMTQsMTkyOT
-k1OTIzLC0zODUxNDQyMjQsMTA2MjI4NzMzMywxMjEyMzI4MzI3
-XX0=
+eyJoaXN0b3J5IjpbLTE0MDUwNDk2MzAsMTU3ODg5ODg0NSwtMj
+I5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgxMDIsLTE0NTAw
+MDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Mi
+w0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcy
+ODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOT
+I5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgz
+MjddfQ==
 -->
