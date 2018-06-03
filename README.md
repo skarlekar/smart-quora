@@ -75,7 +75,7 @@ Before we understand the components of the SmartQuora app, it is essential to th
 **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ## SmartQuora Domain Model
-
+Now that we have an understanding of the cop
 
 
 
@@ -486,11 +486,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyOTUyMTE4LDExODI5OTY3Nyw1MjQ5ND
-YwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5
-MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4Nz
-MzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYs
-LTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3NiwtMTI2NT
-A5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLTIxMDYwNzgz
-NzBdfQ==
+eyJoaXN0b3J5IjpbLTY5MDE5MzcxMiwxMTgyOTk2NzcsNTI0OT
+Q2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0Njgs
+OTEzOTE1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyOD
+czMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2
+LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNj
+UwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4
+MzcwXX0=
 -->
