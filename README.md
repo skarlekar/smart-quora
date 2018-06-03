@@ -78,6 +78,8 @@ Before we understand the components of the SmartQuora app, it is essential to th
 Now that we have an understanding of the components that make up a Hyperledger BNA, let us take a look at the components of the SmartQuora BNA. The following diagram provides a high-level view of the SmartQuora Domain Model.
 ![Domain Model](images/sq-process-flow.png)
 
+### SmartQuora Participants
+There are three tyParticipants in SmartQuora a
 
 
 ## Setup Instructions
@@ -487,11 +489,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTMwNTU3MywxMTgyOTk2NzcsNTI0OT
-Q2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0Njgs
-OTEzOTE1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyOD
-czMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2
-LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNj
-UwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4
-MzcwXX0=
+eyJoaXN0b3J5IjpbLTE1MTgwMTQxNzMsMTE4Mjk5Njc3LDUyND
+k0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4
+LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMj
+g3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2
+NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMj
+Y1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3
+ODM3MF19
 -->
