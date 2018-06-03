@@ -63,7 +63,10 @@ Before we break-down a DApp it is essential to understand its underlying technol
 Before we understand the components of the SmartQuora app, it is essential to the  Hyperledger Composer modeling language. A Hyperledger Composer consists of the following elements:
 
 1. A namespace declaration. Optionally, you can import resources from other namespaces.
-2. Resour
+2. Resources comprising of Assets, Transactions, Events, Enumerated Types and Concepts.
+3. Queries
+4. Access Control Declarations.
+5. 
 
 ### Hyperledger Composer Components
 
@@ -476,7 +479,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzE2NjQ3NzEsNTI0OTQ2MDcyLC0zMj
+eyJoaXN0b3J5IjpbLTE3OTA1Mjc3MDQsNTI0OTQ2MDcyLC0zMj
 g1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0
 LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMj
 MyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5
