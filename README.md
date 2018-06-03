@@ -88,7 +88,7 @@ There are three types of Participants in SmartQuora BNA. They are: Inquirers, Re
 
 ### SmartQuora Assets
 There are two types of Assets modeled in the SmartQuora application. They are: Question and Answer.
-Question - A question consists of 
+Question - A question consists of an unique id, question description, status (CREATED, ANSWERED, AWARDED, DEFAULTED, 
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -497,11 +497,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTAxMjI3MCwxMzMxNDc5NzQyLDQ0Nj
-QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
-LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
-kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
-MTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MT
-UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
-Ml19
+eyJoaXN0b3J5IjpbLTEyODI5MTIyMzQsMTMzMTQ3OTc0Miw0ND
+Y0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUz
+LC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OT
+U5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcs
+LTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNz
+E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
+MjJdfQ==
 -->
