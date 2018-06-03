@@ -1,48 +1,5 @@
-# SmartQuora
 
-- [SmartQuora](#smartquora)
-  * [Audience](#audience)
-  * [Architecture](#architecture)
-    + [Storage](#storage)
-    + [Service Layer](#service-layer)
-    + [Authentication](#authentication)
-    + [Digital Identity & Wallets](#digital-identity---wallets)
-    + [Nodes](#nodes)
-    + [Single and Multi Deployment View of the SmartQuora DApp](#single-and-multi-deployment-view-of-the-smartquora-dapp)
-  * [DApps - Decentralized Applications](#dapps---decentralized-applications)
-    + [Understanding Blockchain](#understanding-blockchain)
-    + [Anatomy of the DApp (or BNA)](#anatomy-of-the-dapp--or-bna-)
-    + [Hyperledger Composer Components](#hyperledger-composer-components)
-  * [SmartQuora Domain Model](#smartquora-domain-model)
-    + [SmartQuora Participants](#smartquora-participants)
-    + [SmartQuora Assets](#smartquora-assets)
-    + [SmartQuora Transactions](#smartquora-transactions)
-    + [SmartQuora Events](#smartquora-events)
-  * [Setup Instructions](#setup-instructions)
-    + [Installing Hyperledger Fabric on AWS](#installing-hyperledger-fabric-on-aws)
-      - [Launch an EC2 Instance](#launch-an-ec2-instance)
-      - [Associate an Elastic IP](#associate-an-elastic-ip)
-      - [Create Hyperuser](#create-hyperuser)
-      - [Install the Hyperledger Fabric Pre-requisites](#install-the-hyperledger-fabric-pre-requisites)
-      - [Install the Hyperledger Development Environment](#install-the-hyperledger-development-environment)
-    + [Starting and Stopping Hyperledger Fabric](#starting-and-stopping-hyperledger-fabric)
-  * [Creating a Hello World on Hyperledger Fabric](#creating-a-hello-world-on-hyperledger-fabric)
-  * [Installing SmartQuora](#installing-smartquora)
-    + [Securing the REST Server](#securing-the-rest-server)
-      - [Google+ Authentication Configuration & Setup](#google--authentication-configuration---setup)
-      - [Setting up the Credentials & Wallet Data Store using MongoDB](#setting-up-the-credentials---wallet-data-store-using-mongodb)
-    + [Start the REST server](#start-the-rest-server)
-    + [Installing the Web Server](#installing-the-web-server)
-  * [Running SmartQuora](#running-smartquora)
-    + [Signing into SmartQuora](#signing-into-smartquora)
-    + [Creating Digital Identity Cards](#creating-digital-identity-cards)
-    + [Adding the Digital Identity to your Wallet](#adding-the-digital-identity-to-your-wallet)
-    + [Selecting a Digital Avatar](#selecting-a-digital-avatar)
-    + [Ask a Question](#ask-a-question)
-    + [Provide an Answer](#provide-an-answer)
-    + [Vote for an Answer](#vote-for-an-answer)
-    + [Award an Answer](#award-an-answer)
-  * [Troubleshooting](#troubleshooting)
+# SmartQuora
 
 **SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. 
 
@@ -568,11 +525,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODA5MjM0MiwtNDQzODgxODQsMTAwNz
-Q0NTgxMiw2MTAwOTkzMDcsLTEzNzU2NjI0NzEsMTg1NDgxNTMz
-OSwxNTc4ODk4ODQ1LC0yMjkwMDkyOTYsMTUzNzExNDQxMywtMT
-QxNzk1ODEwMiwtMTQ1MDAwMTM0LC04NjkzNjA3MjgsMTU4MDgy
-NzI0NCwxMzMxNDc5NzQyLDQ0NjQyMzYyNywxMTgyOTk2NzcsNT
-I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
-NjhdfQ==
+eyJoaXN0b3J5IjpbMzQ1MTg1MTQ2LC00NDM4ODE4NCwxMDA3ND
+Q1ODEyLDYxMDA5OTMwNywtMTM3NTY2MjQ3MSwxODU0ODE1MzM5
+LDE1Nzg4OTg4NDUsLTIyOTAwOTI5NiwxNTM3MTE0NDEzLC0xND
+E3OTU4MTAyLC0xNDUwMDAxMzQsLTg2OTM2MDcyOCwxNTgwODI3
+MjQ0LDEzMzE0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1Mj
+Q5NDYwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2
+OF19
 -->
