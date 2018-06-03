@@ -69,11 +69,11 @@ Before we understand the components of the SmartQuora app, it is essential to un
 3. Queries
 4. Access Control Declarations.
 
-**Participiants** - Participants represents users who interact with assets.
-**Assets** - Assets represents entities which could represent place or things.
-**Transactions** - Transactions are actions that participants can carry out on assets.
-**Events** - Events are emitted by Hyperledger Composer as a result of transactions. 
-**Queries** - SQL-like queries that can be used to search for assets based on its attributes.
+- **Participiants** - Participants represents users who interact with assets.
+- **Assets** - Assets represents entities which could represent place or things.
+- **Transactions** - Transactions are actions that participants can carry out on assets.
+- **Events** - Events are emitted by Hyperledger Composer as a result of transactions. 
+- **Queries** - SQL-like queries that can be used to search for assets based on its attributes.
 **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ## SmartQuora Domain Model
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDgxNTMzOSwxNTc4ODk4ODQ1LC0yMj
-kwMDkyOTYsMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMTQ1MDAw
-MTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5NzQyLD
-Q0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4
-NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mj
-k5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMy
-N119
+eyJoaXN0b3J5IjpbNTY0MzAyNTkwLDE4NTQ4MTUzMzksMTU3OD
+g5ODg0NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgx
+MDIsLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMT
+MzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3
+MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMz
+kxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMz
+XX0=
 -->
