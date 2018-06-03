@@ -1,6 +1,8 @@
 
 # SmartQuora
+## Table of Contents
 
+## Introduction
 **SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. 
 
 Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built on top of the HLF - Hyperledger Fabric Blockchain decentralized peer-to-peer network. It uses Smart Contracts built using HLF Composer API to represent Questions and Answers which contains rules to manage the process and payout. 
@@ -525,11 +527,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1MTg1MTQ2LC00NDM4ODE4NCwxMDA3ND
-Q1ODEyLDYxMDA5OTMwNywtMTM3NTY2MjQ3MSwxODU0ODE1MzM5
-LDE1Nzg4OTg4NDUsLTIyOTAwOTI5NiwxNTM3MTE0NDEzLC0xND
-E3OTU4MTAyLC0xNDUwMDAxMzQsLTg2OTM2MDcyOCwxNTgwODI3
-MjQ0LDEzMzE0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1Mj
-Q5NDYwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2
-OF19
+eyJoaXN0b3J5IjpbLTIxNDA1Mzc0NjMsLTQ0Mzg4MTg0LDEwMD
+c0NDU4MTIsNjEwMDk5MzA3LC0xMzc1NjYyNDcxLDE4NTQ4MTUz
+MzksMTU3ODg5ODg0NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0MTMsLT
+E0MTc5NTgxMDIsLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1ODA4
+MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3LD
+UyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1
+NDY4XX0=
 -->
