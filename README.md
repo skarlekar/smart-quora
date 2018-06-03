@@ -67,7 +67,7 @@ Before we understand the components of the SmartQuora app, it is essential to th
 3. Queries
 4. Access Control Declarations.
 
-Assets - Assets represents entities
+Assets - Assets represents entities which could represent place or things.
 
 ### Hyperledger Composer Components
 
@@ -480,11 +480,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwODI4NDAsNTI0OTQ2MDcyLC0zMjg1Nz
-I4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5
-Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyOD
-MyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5Mywx
-OTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMz
-c0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4
-NDNdfQ==
+eyJoaXN0b3J5IjpbMTM0MzczOTg5LDUyNDk0NjA3MiwtMzI4NT
+cyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwx
+OTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMj
+gzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMs
+MTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MD
+M3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAx
+ODQzXX0=
 -->
