@@ -62,7 +62,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ![BNA Breakdown](images/bna-breakdown.png)
 
 ### Hyperledger Composer Components
-Before we understand the components of the SmartQuora app, it is essential to the  Hyperledger Composer modeling language. A Hyperledger Composer consists of the following elements:
+Before we understand the components of the SmartQuora app, it is essential to understand the  Hyperledger Composer framework. A Hyperledger Composer consists of the following elements:
 
 1. Participants
 2. Resources comprising of Assets, Transactions, Events, Enumerated Types and Concepts.
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDUwNDk2MzAsMTU3ODg5ODg0NSwtMj
-I5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgxMDIsLTE0NTAw
-MDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Mi
-w0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcy
-ODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOT
-I5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgz
-MjddfQ==
+eyJoaXN0b3J5IjpbMTg1NDgxNTMzOSwxNTc4ODk4ODQ1LC0yMj
+kwMDkyOTYsMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMTQ1MDAw
+MTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5NzQyLD
+Q0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4
+NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mj
+k5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMy
+N119
 -->
