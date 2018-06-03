@@ -9,7 +9,7 @@ SmartQuora uses a Javascript-based front-end web application to communicate with
 **Please note** that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. The process documented here is not an exhaustive exercise in building a production quality application.   
 
 ## Audience
-You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
+You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy that a blockchain protocol provides without a central point of failure.
 
 As you are building this application, you will learn about the Hyperledger Fabric blockchain framework, Hyperledger Fabric Composer API, Passport authentication middleware, Docker containerization and various development scaffolding frameworks such as Yeoman, Loopback etc. discussed below.
 
@@ -522,11 +522,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1OD
-A4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3
-LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2ND
-g1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwx
-MDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2Mz
-cwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2
+eyJoaXN0b3J5IjpbLTE0MTc5NTgxMDIsLTE0NTAwMDEzNCwtOD
+Y5MzYwNzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2
+MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02OD
+IwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMs
+LTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mj
+k0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2
 XX0=
 -->
