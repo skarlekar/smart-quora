@@ -102,9 +102,12 @@ The following type of transactions are available in the SmartQuora application.
 
 **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event. This transaction ensurers that the question owners cannot answer their own questions.
 
-**VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensurers that respondents cannot vote for their own answers or vote multiple tims for any answers.
+**VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensurers that respondents cannot vote for their own answers or vote multiple tims for an answer.
 
-**AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongs the voted answers.
+**AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongs the voted answers. This transaction generates the _QuestionAwarded_ event.
+
+#### SmartQuora Events
+
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -513,7 +516,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDYxNDg3MSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbLTk0NzI1NTM4NCwxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
