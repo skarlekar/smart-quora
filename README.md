@@ -68,12 +68,12 @@ Before we understand the components of the SmartQuora app, it is essential to th
 4. Access Control Declarations.
 
 
-Participiants - Participants represents users who interact with assets.
-Assets - Assets represents entities which could represent place or things.
-Transactions - Transactions are actions that participants can carry out on assets.
-Events - Events are emitted by Hyperledger Composer as a result of transactions. 
+**Participiants** - Participants represents users who interact with assets.
+**Assets** - Assets represents entities which could represent place or things.
+**Transactions** - Transactions are actions that participants can carry out on assets.
+**Events** - Events are emitted by Hyperledger Composer as a result of transactions. 
 Queries - SQL-like queries that can be used to search for assets based on its attributes.
-Access Control 
+Access Control - Hyperledger Composer includes an access control language (ACL) that provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ### Hyperledger Composer Components
 
@@ -486,7 +486,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQ0Njg0NzEsNTI0OTQ2MDcyLC0zMj
+eyJoaXN0b3J5IjpbLTE0Mzg0MjYzNjMsNTI0OTQ2MDcyLC0zMj
 g1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0
 LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMj
 MyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5
