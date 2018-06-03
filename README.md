@@ -1,6 +1,6 @@
 # SmartQuora
 
-**SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers.
+**SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. Please note that the intent behind this application was to demonstrate building a sample Decentralized A
 
 Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built on top of the HLF - Hyperledger Fabric Blockchain decentralized peer-to-peer network. It uses Smart Contracts built using HLF Composer API to represent Questions and Answers which contains rules to manage the process and payout. 
 
@@ -466,11 +466,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOT
-E1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMs
-MTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01Mz
-Y5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4
-ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLD
-EwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcw
-Njk3NzYzXX0=
+eyJoaXN0b3J5IjpbMTc5OTI3NTE5MSwtNjgyMDEzNTUzLDM1Nj
+Q4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQs
+MTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNj
+M3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3
+NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLT
+IxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAw
+ODIzMDJdfQ==
 -->
