@@ -84,8 +84,10 @@ There are three types of Participants in SmartQuora BNA. They are: Inquirers, Re
 2. Responders cannot vote for their own answers.
 3. Responders cannot vote more than once for the same answer.
 4. Answers will not be accepted after the due date.
-5. Only administrators can award questions and distribute the reward among the voted answers. 
+5. Only administrators can award questions and distribute the reward among the voted answers after the due date. 
 
+### SmartQuora Assets
+There are two types of Assets represen
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -494,7 +496,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA5MjAyMCwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTgyMDQxNzgwMSwxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
