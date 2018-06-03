@@ -6,6 +6,7 @@ Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built o
 
 SmartQuora uses a Javascript-based front-end web application to communicate withe the Blockchain platform on which the Smart Contracts reside using a RESTful interface. It uses Passport for authentication of participants using OAuth protocol and allows maintenance of their digital wallets through which the participants can manage their Digital Identities. These Digital Identities are generated and managed using the Hyperledger Fabric platform.
 
+Please note that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. It is by no means an exhaustive use case and errors may exist in the process and code. The rp 
 
 ## Audience
 You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
@@ -467,11 +468,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwODMyNTI1LC02ODIwMTM1NTMsMzU2ND
-g1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwx
-MDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2Mz
-cwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2
-LC0xMjY1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMj
-EwNjA3ODM3MCwxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4
-MjMwMl19
+eyJoaXN0b3J5IjpbLTI5MDQxODQyNywtNjgyMDEzNTUzLDM1Nj
+Q4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQs
+MTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNj
+M3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3
+NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLT
+IxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAw
+ODIzMDJdfQ==
 -->
