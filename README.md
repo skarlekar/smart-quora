@@ -60,7 +60,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ![BNA Breakdown](images/bna-breakdown.png)
 
 ## SmartQuora Domain Model
-Before we understand the parts of the SmartQuora app, it is essential to understand the components of the Hyperledger Composer software components.
+Before we understand the components of the SmartQuora app, it is essential to the  Hyperledger Composer modeling language.
 
 ### Hyperledger Composer Components
 
@@ -473,11 +473,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4Mj
-AxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NTkyMywt
-Mzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywtMTYyOT
-Q4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYs
-LTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOT
-g5MzkxMzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4
-NDkzM119
+eyJoaXN0b3J5IjpbNTYzNjcyOTYwLDUyNDk0NjA3MiwtMzI4NT
+cyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwx
+OTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMj
+gzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMs
+MTkyNzE1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MD
+M3NDAyMjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAx
+ODQzXX0=
 -->
