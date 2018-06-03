@@ -87,7 +87,8 @@ There are three types of Participants in SmartQuora BNA. They are: Inquirers, Re
 5. Only administrators can award questions and distribute the reward among the voted answers after the due date. 
 
 ### SmartQuora Assets
-There are two types of Assets represen
+There are two types of Assets modeled in the SmartQuora application. They are: Question and Answer.
+Question - A question consists of 
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -496,7 +497,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDQxNzgwMSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTAwNTAxMjI3MCwxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
