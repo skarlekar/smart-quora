@@ -69,12 +69,12 @@ Before we understand the components of the SmartQuora app, it is essential to un
 3. Queries
 4. Access Control Declarations.
 
- **Participiants** - Participants represents users who interact with assets.
- **Assets** - Assets represents entities which could represent place or things.
+- [ ] **Participiants** - Participants represents users who interact with assets.
+- [ ] **Assets** - Assets represents entities which could represent place or things.
  **Transactions** - Transactions are actions that participants can carry out on assets.
  **Events** - Events are emitted by Hyperledger Composer as a result of transactions. 
-- **Queries** - SQL-like queries that can be used to search for assets based on its attributes.
-- **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
+ **Queries** - SQL-like queries that can be used to search for assets based on its attributes.
+ **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ## SmartQuora Domain Model
 Now that we have an understanding of the components that make up a Hyperledger BNA, let us take a look at the components of the SmartQuora BNA. The following diagram provides a high-level view of the SmartQuora Domain Model.
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkzMTc2MTAzLDE4NTQ4MTUzMzksMTU3OD
-g5ODg0NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgx
-MDIsLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMT
-MzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3
-MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMz
-kxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMz
-XX0=
+eyJoaXN0b3J5IjpbNjUwMTUyNDcsMTg1NDgxNTMzOSwxNTc4OD
+k4ODQ1LC0yMjkwMDkyOTYsMTUzNzExNDQxMywtMTQxNzk1ODEw
+MiwtMTQ1MDAwMTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMz
+MxNDc5NzQyLDQ0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcy
+LC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOT
+E1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzNd
+fQ==
 -->
