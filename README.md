@@ -23,7 +23,7 @@ The following diagram provides a high-level component diagram of the SmartQuora 
 As such, the blockchain is a decentralized system consisting of many nodes that communicate with each other on a peer-to-peer network. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
 
 ### Storage
-DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of chaincode and state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain.
+DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of chaincode and state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain. SmartQuora uses CouchDB.
 
 ### Service Layer
 Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses [Loopback](http://www.loopback.io) to generate a REST server and maps it to the transactions and queries on the DApp.
@@ -522,11 +522,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc5NTgxMDIsLTE0NTAwMDEzNCwtOD
-Y5MzYwNzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2
-MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02OD
-IwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMs
-LTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mj
-k0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2
-XX0=
+eyJoaXN0b3J5IjpbMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMT
+Q1MDAwMTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5
+NzQyLDQ0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMj
+g1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0
+LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMj
+MyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5
+M119
 -->
