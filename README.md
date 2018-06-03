@@ -367,7 +367,7 @@ Now that we have a RESTful interface to our SmartQuora application, it is time t
 
 ![Google OAuth2.0 Authentication Strategy](images/Google%20OAUTH%20Overview.png)
 
-While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The following diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources. An access key is granted following consent in form of a token. This token allows a client to access the APIs protected by OAuth2.0.
+While there are many Passport authentication strategy to choose from such as JWT, SAML, LDAP, AD etc, we will use Google+ API as the authentication provider for this exercise. The above diagram provides an overview of the authentication strategy. Here, the Composer REST server's role is to provide access to business network resources, which are protected by the Google+ API OAuth2.0 scheme. The resource owner is the Google+ API user account we set up.  Its role is to grant consent (or otherwise) to the client application. The Google+ authorization server requests consent of the resource owner and issues access tokens to REST clients  to enable them to access the protected resources. An access key is granted following consent in form of a token. This token allows a client to access the APIs protected by OAuth2.0.
 
 In OAuth 2.0, these access tokens are called “bearer tokens”, and can be used alone, with no signature or cryptography, to access the information. Furthermore, the access token is stored in a cookie in the local storage of the user's web browser. When the user makes a subsequent request, the access token is retrieved from the cookie, and the access token is validated, instead of reauthenticating the user.
 
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzQ0NTgxMiw2MTAwOTkzMDcsLTEzNz
-U2NjI0NzEsMTg1NDgxNTMzOSwxNTc4ODk4ODQ1LC0yMjkwMDky
-OTYsMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMTQ1MDAwMTM0LC
-04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5NzQyLDQ0NjQy
-MzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMsLT
-Y4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NTky
-M119
+eyJoaXN0b3J5IjpbLTQ0Mzg4MTg0LDEwMDc0NDU4MTIsNjEwMD
+k5MzA3LC0xMzc1NjYyNDcxLDE4NTQ4MTUzMzksMTU3ODg5ODg0
+NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgxMDIsLT
+E0NTAwMDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMTMzMTQ3
+OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMz
+I4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMx
+NF19
 -->
