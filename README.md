@@ -60,7 +60,11 @@ Before we break-down a DApp it is essential to understand its underlying technol
 ![BNA Breakdown](images/bna-breakdown.png)
 
 ## SmartQuora Process Flow
-### Hyperledger Co
+Before we understand the parts of the SmartQuora app, it is essential to understand the components of the Hyperledger Composer components.
+
+### Hyperledger Composer Components
+The h
+
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -469,11 +473,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDIyNTAzMywtMzI4NTcyODUzLC02OD
-IwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMs
-LTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mj
-k0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2
-LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAyMjIsLT
-k4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC0xOTM5
-ODQ5MzNdfQ==
+eyJoaXN0b3J5IjpbLTEwMTQxMjU5NzAsLTMyODU3Mjg1MywtNj
+gyMDEzNTUzLDM1NjQ4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIz
+LC0zODUxNDQyMjQsMTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNj
+I5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEy
+NiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC
+05ODkzOTEzNjksLTIxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkz
+OTg0OTMzXX0=
 -->
