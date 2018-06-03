@@ -55,7 +55,7 @@ The following diagram depicts the SmartQuora DApp when deployed on a multiple ho
 
 ## DApps - Decentralized Applications
 ### Understanding Blockchain
-Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its *decentralized nature*. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](http://bit.ly/blkchn2018). 
+Before we break-down a DApp it is essential to understand its underlying technology - the Blockchain. Blockchain is a continously growing digital ledger of records organized in _blocks_ that are linked together by cryptographic validation. The key is to understand that this ledger is neither stored in a centralized location nor managed by any single entity, hence its *decentralized nature*. The block validation system results in new transactions being added irreversibly and old transactions preserved forever for all participants to see, hence its transparency and resilience. Applications built on top of blockchain technology is called DApps. For an overview of blockchain and its underlying technologies, please review the following [whitepaper](http://bit.ly/blkchn2018). 
  
 ### Anatomy of the DApp (or BNA)
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODg5ODg0NSwtMjI5MDA5Mjk2LDE1Mz
-cxMTQ0MTMsLTE0MTc5NTgxMDIsLTE0NTAwMDEzNCwtODY5MzYw
-NzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMT
-E4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1
-NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NT
-E0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0
-MTFdfQ==
+eyJoaXN0b3J5IjpbMTI2Mzc4NTA2MSwxNTc4ODk4ODQ1LC0yMj
+kwMDkyOTYsMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMTQ1MDAw
+MTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5NzQyLD
+Q0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4
+NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mj
+k5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMy
+N119
 -->
