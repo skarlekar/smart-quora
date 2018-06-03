@@ -124,7 +124,7 @@ For this exercise, we will deploy Hyperledger Fabric on a clean Ubuntu 16.04 LTS
 Make sure to open ports: 22, 80, 443, 8080-81 & 3000.
 ![AWS EC2 Instance Configuration](images/EC2%20Instance%20Configuration.png)
 #### Associate an Elastic IP 
-Allocate a new Elastic IP address and associate it with the newly created instance. This will help maintain sanity while working on the scripts between relaunches of the instance.
+Allocate a new Elastic IP address and associate it with the newly created instance. This is not mandatory but will help maintain sanity while working on the scripts between relaunches of the instance.
 #### Create Hyperuser
 Hyperledger Fabric installation prohibits using the root identity to install the software. Therefore, create a new user and add that user to the _sudo_ group. You can choose any user name. I am using _hyperuser_
 
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEwMDk5MzA3LC0xMzc1NjYyNDcxLDE4NT
-Q4MTUzMzksMTU3ODg5ODg0NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0
-MTMsLTE0MTc5NTgxMDIsLTE0NTAwMDEzNCwtODY5MzYwNzI4LD
-E1ODA4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5
-Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMz
-U2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIy
-NF19
+eyJoaXN0b3J5IjpbMTAwNzQ0NTgxMiw2MTAwOTkzMDcsLTEzNz
+U2NjI0NzEsMTg1NDgxNTMzOSwxNTc4ODk4ODQ1LC0yMjkwMDky
+OTYsMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMTQ1MDAwMTM0LC
+04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5NzQyLDQ0NjQy
+MzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMsLT
+Y4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NTky
+M119
 -->
