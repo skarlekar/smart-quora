@@ -90,7 +90,10 @@ The following rules are enforced by the system currently:
 
 ### SmartQuora Assets
 There are two types of Assets modeled in the SmartQuora application. They are: Question and Answer.
-Question - A question consists of an unique id, question description, status (CREATED, ANSWERED, AWARDED, or DEFAULTED), reward amount and a list of answers. If a question is answered and is voted for, the stake is equally distributed among the vot
+
+**Question** - A question consists of an unique id, question description, owner, status (CREATED, ANSWERED, AWARDED, or DEFAULTED), reward amount and a list of answers. If a question is answered and is voted for, the stake is equally distributed among the owners of the voted answers.
+
+**Answer** - An answer consists of an u
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -499,11 +502,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjM1ODExLDEzMzE0Nzk3NDIsNDQ2ND
-IzNjI3LDExODI5OTY3Nyw1MjQ5NDYwNzIsLTMyODU3Mjg1Mywt
-NjgyMDEzNTUzLDM1NjQ4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OT
-IzLC0zODUxNDQyMjQsMTA2MjI4NzMzMywxMjEyMzI4MzI3LC0x
-NjI5NDg2NDExLC0xNjM3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNT
-EyNiwtMTkyMTc1MjM3NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIy
-XX0=
+eyJoaXN0b3J5IjpbLTI2NDE5NTYyOSwxMzMxNDc5NzQyLDQ0Nj
+QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
+LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
+kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
+MTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MT
+UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
+Ml19
 -->
