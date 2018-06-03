@@ -1,10 +1,11 @@
 # SmartQuora
 
-**SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. Please note that the intent behind this application was to demonstrate building a sample Decentralized A
+**SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. 
 
 Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built on top of the HLF - Hyperledger Fabric Blockchain decentralized peer-to-peer network. It uses Smart Contracts built using HLF Composer API to represent Questions and Answers which contains rules to manage the process and payout. 
 
 SmartQuora uses a Javascript-based front-end web application to communicate withe the Blockchain platform on which the Smart Contracts reside using a RESTful interface. It uses Passport for authentication of participants using OAuth protocol and allows maintenance of their digital wallets through which the participants can manage their Digital Identities. These Digital Identities are generated and managed using the Hyperledger Fabric platform.
+
 
 ## Audience
 You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
@@ -466,11 +467,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTI3NTE5MSwtNjgyMDEzNTUzLDM1Nj
-Q4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQs
-MTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNj
-M3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3
-NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLT
-IxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAw
-ODIzMDJdfQ==
+eyJoaXN0b3J5IjpbMjIwODMyNTI1LC02ODIwMTM1NTMsMzU2ND
+g1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwx
+MDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2Mz
+cwMjQ2NiwtNTM2OTI5OTMsMTkyNzE1MTI2LC0xOTIxNzUyMzc2
+LC0xMjY1MDkzODg2LC04MDM3NDAyMjIsLTk4OTM5MTM2OSwtMj
+EwNjA3ODM3MCwxMDY5MjAxODQzLC0xOTM5ODQ5MzMsMTA1MDA4
+MjMwMl19
 -->
