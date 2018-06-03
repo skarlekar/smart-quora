@@ -102,7 +102,7 @@ The following type of transactions are available in the SmartQuora application.
 
 **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event.
 
-
+**VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -511,7 +511,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjI5NTIwMSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTQ2NjgyNjM3NywxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
