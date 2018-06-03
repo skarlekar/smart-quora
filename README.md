@@ -24,7 +24,7 @@ As such, the blockchain is a decentralized system consisting of many nodes that 
 DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of chaincode and state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain.
 
 ### Service Layer
-Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses Loopback to generate a REST server and maps it to the transactions and queries on the DApp.
+Aside from storage, a DApp requires a service layer to communicate with the chaincode on the blockchain and a front-end for user interaction. SmartQuora takes advantage of the Hyperledger Composer REST server which uses [Loopback](http://www.loopback.io) to generate a REST server and maps it to the transactions and queries on the DApp.
 
 ### Authentication
 SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://www.passportjs.org/) authentication middleware to secure the REST server. Specifically, it uses the [Passport Google OAuth](https://github.com/jaredhanson/passport-google-oauth#readme) delegated authentication strategy allowing users to authenticate themselves using their Google account.
@@ -466,11 +466,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OT
-U5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcs
-LTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNz
-E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
-MjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC
-0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2
-Mjg4OTY3XX0=
+eyJoaXN0b3J5IjpbLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOT
+E1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMs
+MTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01Mz
+Y5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4
+ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMTA2MDc4MzcwLD
+EwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgyMzAyLC0xNzcw
+Njk3NzYzXX0=
 -->
