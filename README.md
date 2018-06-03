@@ -6,7 +6,7 @@ Technically speaking, SmartQuora is a *DApp* (Decentralized Application) built o
 
 SmartQuora uses a Javascript-based front-end web application to communicate withe the Blockchain platform on which the Smart Contracts reside using a RESTful interface. It uses Passport for authentication of participants using OAuth protocol and allows maintenance of their digital wallets through which the participants can manage their Digital Identities. These Digital Identities are generated and managed using the Hyperledger Fabric platform.
 
-Please note that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. The process documented here is not an exhaustive exercise in   
+Please note that the intent behind this application was to demonstrate building Smart Contracts on the Hyperledger Fabric platform. The process documented here is not an exhaustive exercise in building a production quality application.   
 
 ## Audience
 You are a Developer or Solutions Architect wanting to learn and build robust, secure and scaleable decentralized applications using open source framework such as Hyperledger Fabric to take full advantage of the autonomy point that a blockchain protocol provides without a central point of failure.
@@ -59,7 +59,8 @@ Before we break-down a DApp it is essential to understand its underlying technol
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
 ![BNA Breakdown](images/bna-breakdown.png)
 
-## SmartQuora 
+## SmartQuora Proces
+
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -468,11 +469,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1MjQzNTUsLTY4MjAxMzU1MywzNTY0OD
-U0NjgsOTEzOTE1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEw
-NjIyODczMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNz
-AyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5MjE3NTIzNzYs
-LTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5MzkxMzY5LC0yMT
-A2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMywxMDUwMDgy
-MzAyXX0=
+eyJoaXN0b3J5IjpbLTQ4NjI4NTQzNCwtNjgyMDEzNTUzLDM1Nj
+Q4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQs
+MTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNj
+M3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3
+NiwtMTI2NTA5Mzg4NiwtODAzNzQwMjIyLC05ODkzOTEzNjksLT
+IxMDYwNzgzNzAsMTA2OTIwMTg0MywtMTkzOTg0OTMzLDEwNTAw
+ODIzMDJdfQ==
 -->
