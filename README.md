@@ -31,7 +31,7 @@ Aside from storage, a DApp requires a service layer to communicate with the chai
 ### Authentication
 SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://www.passportjs.org/) authentication middleware to secure the REST server. Specifically, it uses the [Passport Google OAuth](https://github.com/jaredhanson/passport-google-oauth#readme) delegated authentication strategy allowing users to authenticate themselves using their Google account.
 
-All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available MongoDB data source online at [mLab](https://mlab.com/). 
+All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available MongoDB data source online at [mLab](https://mlab.com/).  It should be noted that a local MongoDB cluster can be used instead of MLab as well. MLab was chosen to ease the implementation
 
 The following diagram depicts a single-node view of the SmartQuora DApp.
 ![single node view](images/smartquora-arch-single-node-view.png)
@@ -522,11 +522,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNzExNDQxMywtMTQxNzk1ODEwMiwtMT
-Q1MDAwMTM0LC04NjkzNjA3MjgsMTU4MDgyNzI0NCwxMzMxNDc5
-NzQyLDQ0NjQyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMj
-g1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0
-LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMj
-MyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5
-M119
+eyJoaXN0b3J5IjpbMTE0NDcyODg4MywxNTM3MTE0NDEzLC0xND
+E3OTU4MTAyLC0xNDUwMDAxMzQsLTg2OTM2MDcyOCwxNTgwODI3
+MjQ0LDEzMzE0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1Mj
+Q5NDYwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2
+OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2Mj
+I4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0
+NjZdfQ==
 -->
