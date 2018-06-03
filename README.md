@@ -75,7 +75,8 @@ Before we understand the components of the SmartQuora app, it is essential to th
 **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ## SmartQuora Domain Model
-Now that we have an understanding of the components that make up a Hyperledger BNA, let us take a look at the components of the SmartQuora BNA. The foll
+Now that we have an understanding of the components that make up a Hyperledger BNA, let us take a look at the components of the SmartQuora BNA. The following diagram provides a high-level view of the SmartQuora Domain Model.
+![Domain Model](images/sq-process-flow.png)
 
 
 
@@ -486,7 +487,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDQxNzE4NywxMTgyOTk2NzcsNTI0OT
+eyJoaXN0b3J5IjpbMjAxOTMwNTU3MywxMTgyOTk2NzcsNTI0OT
 Q2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0Njgs
 OTEzOTE1MzE0LDE5Mjk5NTkyMywtMzg1MTQ0MjI0LDEwNjIyOD
 czMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQxMSwtMTYzNzAyNDY2
