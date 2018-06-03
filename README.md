@@ -59,7 +59,7 @@ Before we break-down a DApp it is essential to understand its underlying technol
  In the world of Hyperledger Fabric, DApps are called BNA or Business Network Applications. We will use the Hyperledger Composer to model the SmartQuora BNA - Business Network Application.  Composer is an extensive, open development toolset and framework to make developing blockchain applications easier. Hence, I will use the term interchangeably throughout the rest of the documentation.
 ![BNA Breakdown](images/bna-breakdown.png)
 
-## SmartQuora Proces
+## SmartQuora Process Flow
 
 
 ## Setup Instructions
@@ -469,7 +469,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjI4NTQzNCwtNjgyMDEzNTUzLDM1Nj
+eyJoaXN0b3J5IjpbLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1Nj
 Q4NTQ2OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQs
 MTA2MjI4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNj
 M3MDI0NjYsLTUzNjkyOTkzLDE5MjcxNTEyNiwtMTkyMTc1MjM3
