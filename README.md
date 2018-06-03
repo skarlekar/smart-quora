@@ -33,9 +33,6 @@ SmartQuora DApp uses the OAuth authentication strategy of the [Passport](http://
 
 All information regarding authenticated users and their wallets is persisted in a [LoopBack](http://loopback.io/) data source by using a LoopBack connector. By default, the REST server uses the LoopBack "memory" connector to persist user information, which is lost when the REST server is terminated. To enable persistent storage of the authenticated users and their wallets, SmartQuora uses a MongoDB LoopBack connector that stores data in a highly available MongoDB data source online at [mLab](https://mlab.com/).  It should be noted that a local MongoDB cluster can be used instead of MLab as well. MLab was chosen to ease the implementation process.
 
-The following diagram depicts a single-node view of the SmartQuora DApp.
-![single node view](images/smartquora-arch-single-node-view.png)
-
 ### Digital Identity & Wallets
 Blockchain uses Digital Identities to represent participants in the network. A identity is a digital certificate and private key. These identities are used to sign transactions on behalf of the participants on the blockchain network. Identities are assembled in an envelope called _business network cards_ along with the metadata and connection profile of the participant in Hyperledger Fabric. These business cards are then stored in wallets. As such, a participant can have multiple business cards in their wallet.
 
@@ -47,6 +44,10 @@ The decentralized nature of a blockchain platform is what gives it the power to 
 3.  **Orderer**: The orderer provides a shared _communication channel_ to clients and peers, offering a broadcast service for messages containing transactions and implements a delivery guarantee.
 
 For further details on the basic workflow of a transaction inside a Hyperledger Fabric blockchain please refer to this [document](http://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement).
+
+### Single and Multi Deployment View of the SmartQuora DA
+The following diagram depicts a single-node view of the SmartQuora DApp.
+![single node view](images/smartquora-arch-single-node-view.png)
 
 The following diagram depicts the SmartQuora DApp when deployed on a multiple hosts to derive the benefits of the blockchain. For the sake of simplicity, in this tutorial, we will deploy the SmartQuora DApp as a logical instance on single host.
 ![enter image description here](images/smartquora-arch-multi-node-view.png)
@@ -522,11 +523,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTAwOTI5NiwxNTM3MTE0NDEzLC0xND
-E3OTU4MTAyLC0xNDUwMDAxMzQsLTg2OTM2MDcyOCwxNTgwODI3
-MjQ0LDEzMzE0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1Mj
-Q5NDYwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2
-OCw5MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2Mj
-I4NzMzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0
-NjZdfQ==
+eyJoaXN0b3J5IjpbMTI4NDI2NzM3NSwtMjI5MDA5Mjk2LDE1Mz
+cxMTQ0MTMsLTE0MTc5NTgxMDIsLTE0NTAwMDEzNCwtODY5MzYw
+NzI4LDE1ODA4MjcyNDQsMTMzMTQ3OTc0Miw0NDY0MjM2MjcsMT
+E4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1
+NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NT
+E0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0
+MTFdfQ==
 -->
