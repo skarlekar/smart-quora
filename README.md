@@ -79,7 +79,7 @@ Now that we have an understanding of the components that make up a Hyperledger B
 ![Domain Model](images/sq-process-flow.png)
 
 ### SmartQuora Participants
-There are three tyParticipants in SmartQuora a
+There are three types of Participants in SmartQuora BNA. They are: Inquirers, Responders and Administrators. Both Inqui
 
 
 ## Setup Instructions
@@ -489,7 +489,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgwMTQxNzMsMTE4Mjk5Njc3LDUyND
+eyJoaXN0b3J5IjpbLTEyOTkxMDY3ODMsMTE4Mjk5Njc3LDUyND
 k0NjA3MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4
 LDkxMzkxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMj
 g3MzMzLDEyMTIzMjgzMjcsLTE2Mjk0ODY0MTEsLTE2MzcwMjQ2
