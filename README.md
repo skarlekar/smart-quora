@@ -74,7 +74,7 @@ Before we understand the components of the SmartQuora app, it is essential to un
 - **Transactions** - Transactions are actions that participants can carry out on assets.
 - **Events** - Events are emitted by Hyperledger Composer as a result of transactions. 
 - **Queries** - SQL-like queries that can be used to search for assets based on its attributes.
-**Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
+- **Access Control** - Access Control provides declarative access control over the elements of the domain model. By defining ACL rules you can determine which users/roles are permitted to create, read, update or delete elements in a business network's domain model.
 
 ## SmartQuora Domain Model
 Now that we have an understanding of the components that make up a Hyperledger BNA, let us take a look at the components of the SmartQuora BNA. The following diagram provides a high-level view of the SmartQuora Domain Model.
@@ -524,11 +524,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0MzAyNTkwLDE4NTQ4MTUzMzksMTU3OD
-g5ODg0NSwtMjI5MDA5Mjk2LDE1MzcxMTQ0MTMsLTE0MTc5NTgx
-MDIsLTE0NTAwMDEzNCwtODY5MzYwNzI4LDE1ODA4MjcyNDQsMT
-MzMTQ3OTc0Miw0NDY0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3
-MiwtMzI4NTcyODUzLC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMz
-kxNTMxNCwxOTI5OTU5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMz
-XX0=
+eyJoaXN0b3J5IjpbLTY3ODY0NjU3NSwxODU0ODE1MzM5LDE1Nz
+g4OTg4NDUsLTIyOTAwOTI5NiwxNTM3MTE0NDEzLC0xNDE3OTU4
+MTAyLC0xNDUwMDAxMzQsLTg2OTM2MDcyOCwxNTgwODI3MjQ0LD
+EzMzE0Nzk3NDIsNDQ2NDIzNjI3LDExODI5OTY3Nyw1MjQ5NDYw
+NzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5MT
+M5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4NzMz
+M119
 -->
