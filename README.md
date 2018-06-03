@@ -100,7 +100,9 @@ The following type of transactions are available in the SmartQuora application.
 
 **CreateQuestion** - A _CreateQuestion_ transaction is invoked by the Inquirer to pose a question. The reward amount and time by which answers are due has to accompany the request. The _CreateQuestion_ transaction generates the _QuestionCreated_ event.
 
-**CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the ans
+**CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event.
+
+
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -509,7 +511,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTI2MzQ1NSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTY2NjI5NTIwMSwxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
