@@ -83,7 +83,7 @@ There are three types of Participants in SmartQuora BNA. They are: Inquirers, Re
 1. Inquirers cannot answer their own questions.
 2. Responders cannot vote for their own answers.
 3. Responders cannot vote more than once for the same answers.
-4. Only administr 
+4. Only administrators can award questions and distribute the reward among the voted answers. 
 
 
 ## Setup Instructions
@@ -493,7 +493,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzMDI5ODI4LDExODI5OTY3Nyw1MjQ5ND
+eyJoaXN0b3J5IjpbNDQ2NDIzNjI3LDExODI5OTY3Nyw1MjQ5ND
 YwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5
 MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4Nz
 MzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYs
