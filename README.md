@@ -79,7 +79,11 @@ Now that we have an understanding of the components that make up a Hyperledger B
 ![Domain Model](images/sq-process-flow.png)
 
 ### SmartQuora Participants
-There are three types of Participants in SmartQuora BNA. They are: Inquirers, Responders and Administrators. Inquirers and Responders are represented as _QuoraUsers_ in the application because their function can interchange - an inquirer can respond to questions from other inquirers or a respondent for a question can pose his/her own questions. The following rules are enforced by the system currently 
+There are three types of Participants in SmartQuora BNA. They are: Inquirers, Responders and Administrators. Inquirers and Responders are represented as _QuoraUsers_ in the application because their function can interchange - an inquirer can respond to questions from other inquirers or a respondent for a question can pose his/her own questions. The following rules are enforced by the system currently:
+1. Inquirers cannot answer their own questions.
+2. Responders cannot vote for their own answers.
+3. Responders cannot vote more than once for the same answers.
+4. Only administr 
 
 
 ## Setup Instructions
@@ -489,7 +493,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MDcyODk5LDExODI5OTY3Nyw1MjQ5ND
+eyJoaXN0b3J5IjpbNTgzMDI5ODI4LDExODI5OTY3Nyw1MjQ5ND
 YwNzIsLTMyODU3Mjg1MywtNjgyMDEzNTUzLDM1NjQ4NTQ2OCw5
 MTM5MTUzMTQsMTkyOTk1OTIzLC0zODUxNDQyMjQsMTA2MjI4Nz
 MzMywxMjEyMzI4MzI3LC0xNjI5NDg2NDExLC0xNjM3MDI0NjYs
