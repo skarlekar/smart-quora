@@ -18,7 +18,7 @@ The following diagram provides a high-level component diagram of the SmartQuora 
 
 ![SmartQuora Component Diagram](images/smartquora-components.png)
 
-As such, the blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
+As such, the blockchain is a decentralized system consisting of many nodes that communicate with each other on a peer-to-peer network. The blockchain runs programs called chaincode, which holds state and ledger data, and executes transactions. The chaincode is the central element as transactions are operations invoked on the chaincode. Transactions have to be “endorsed” and only endorsed transactions may be committed and have an effect on the state. 
 
 ### Storage
 DApps such as SmartQuora consists of Smart Contracts that are translated to chaincode. This chaincode is then deployed into the blockchain. Storage of chaincode and state information differs across blockchain platforms. The default mechanism of persistent state storage in Hyperledger Fabric is LevelDB or CouchDB. In addition to supporting chaincode operations to store and retrieve assets, CouchDB allows performing complex rich queries against the data stored in the blockchain.
@@ -466,11 +466,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzOTE1MzE0LDE5Mjk5NTkyMywtMzg1MT
-Q0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywtMTYyOTQ4NjQx
-MSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MTUxMjYsLTE5Mj
-E3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIyMiwtOTg5Mzkx
-MzY5LC0yMTA2MDc4MzcwLDEwNjkyMDE4NDMsLTE5Mzk4NDkzMy
-wxMDUwMDgyMzAyLC0xNzcwNjk3NzYzLC01NjYyODg5NjcsMTY0
-MjU2MzE4OF19
+eyJoaXN0b3J5IjpbMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OT
+U5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcs
+LTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNz
+E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
+MjIsLTk4OTM5MTM2OSwtMjEwNjA3ODM3MCwxMDY5MjAxODQzLC
+0xOTM5ODQ5MzMsMTA1MDA4MjMwMiwtMTc3MDY5Nzc2MywtNTY2
+Mjg4OTY3XX0=
 -->
