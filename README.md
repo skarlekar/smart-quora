@@ -93,7 +93,7 @@ There are two types of Assets modeled in the SmartQuora application. They are: Q
 
 **Question** - A question consists of an unique id, question description, owner, status (CREATED, ANSWERED, AWARDED, or DEFAULTED), reward amount and a list of answers. If a question is answered and is voted for, the stake is equally distributed among the owners of the voted answers.
 
-**Answer** - An answer consists of an u
+**Answer** - An answer consists of an unique id, answer description, owner, status (CREATED, VOTED, AWARDED), earnings, list of voters.
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -502,7 +502,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NDE5NTYyOSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTk0Mjc1NDE5MywxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
