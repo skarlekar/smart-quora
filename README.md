@@ -102,7 +102,7 @@ The following type of transactions are available in the SmartQuora application.
 
 **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event. This transaction ensurers that the question owners cannot answer their own questions.
 
-**VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event.
+**VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensurers that respondents cannot vote for their own answers or vote multiple tims for any answers.
 
 **AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongs the voted answers.
 
@@ -513,11 +513,11 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTY2NDg0NzcsMTMzMTQ3OTc0Miw0ND
-Y0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUz
-LC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OT
-U5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcs
-LTE2Mjk0ODY0MTEsLTE2MzcwMjQ2NiwtNTM2OTI5OTMsMTkyNz
-E1MTI2LC0xOTIxNzUyMzc2LC0xMjY1MDkzODg2LC04MDM3NDAy
-MjJdfQ==
+eyJoaXN0b3J5IjpbMTY5MDYxNDg3MSwxMzMxNDc5NzQyLDQ0Nj
+QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
+LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
+kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
+MTYyOTQ4NjQxMSwtMTYzNzAyNDY2LC01MzY5Mjk5MywxOTI3MT
+UxMjYsLTE5MjE3NTIzNzYsLTEyNjUwOTM4ODYsLTgwMzc0MDIy
+Ml19
 -->
