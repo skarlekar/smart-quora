@@ -106,7 +106,7 @@ The following type of transactions are available in the SmartQuora application.
 
 **AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongs the voted answers. This transaction generates the _QuestionAwarded_ event.
 
-#### SmartQuora Events
+### SmartQuora Events
 Events in a Hyperledger Fabric BNA is pushed on a Web Socket. Any system listening to the Web Socket will get notified of all the events. As a result, the listeners have to filter out events that are not relevant to it.
 
 SmartQuora events are as follows:
@@ -522,7 +522,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDc0Njg3OSwxMzMxNDc5NzQyLDQ0Nj
+eyJoaXN0b3J5IjpbMTU4MDgyNzI0NCwxMzMxNDc5NzQyLDQ0Nj
 QyMzYyNywxMTgyOTk2NzcsNTI0OTQ2MDcyLC0zMjg1NzI4NTMs
 LTY4MjAxMzU1MywzNTY0ODU0NjgsOTEzOTE1MzE0LDE5Mjk5NT
 kyMywtMzg1MTQ0MjI0LDEwNjIyODczMzMsMTIxMjMyODMyNywt
