@@ -98,7 +98,9 @@ There are two types of Assets modeled in the SmartQuora application. They are: Q
 ### SmartQuora Transactions
 The following type of transactions are available in the SmartQuora application.
 
-**CreateQuestion** - A CreateQuestion transaction is invoked by the Inquirer to pose a question. The reward amount and time by which answers are due has to accompany the request. The CreateQuestion transaction generates the _
+**CreateQuestion** - A _CreateQuestion_ transaction is invoked by the Inquirer to pose a question. The reward amount and time by which answers are due has to accompany the request. The _CreateQuestion_ transaction generates the _QuestionCreated_ event.
+
+**CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an
 
 ## Setup Instructions
 ### Installing Hyperledger Fabric on AWS
@@ -507,7 +509,7 @@ award-question.sh your-question-id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDkzNjkyMDAsMTMzMTQ3OTc0Miw0ND
+eyJoaXN0b3J5IjpbLTEwNjY0NTkxNDUsMTMzMTQ3OTc0Miw0ND
 Y0MjM2MjcsMTE4Mjk5Njc3LDUyNDk0NjA3MiwtMzI4NTcyODUz
 LC02ODIwMTM1NTMsMzU2NDg1NDY4LDkxMzkxNTMxNCwxOTI5OT
 U5MjMsLTM4NTE0NDIyNCwxMDYyMjg3MzMzLDEyMTIzMjgzMjcs
