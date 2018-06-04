@@ -152,7 +152,7 @@ The following type of transactions are available in the SmartQuora application.
 
 - [ ] **CreateQuestion** - A _CreateQuestion_ transaction is invoked by the Inquirer to pose a question. The reward amount and time by which answers are due has to accompany the request. The _CreateQuestion_ transaction generates the _QuestionCreated_ event.
 
-- [ ] **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event. This transaction ensurers that the question owners cannot answer their own questions.
+- [ ] **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event. This transaction ensures that the question owners cannot answer their own questions.
 
 - [ ] **VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensurers that respondents cannot vote for their own answers or vote multiple tims for an answer.
 
