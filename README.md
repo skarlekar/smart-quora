@@ -154,9 +154,9 @@ The following type of transactions are available in the SmartQuora application.
 
 - [ ] **CreateAnswer** - A _CreateAnswer_ transaction is invoked when a respondent provides an answer to an existing question. The _CreateAnswer_ transaction should be invoked with the identifier of the associated question and the answer description. The _CreateAnswer_ transaction generates an _AnswerCreated_ event. This transaction ensures that the question owners cannot answer their own questions.
 
-- [ ] **VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensurers that respondents cannot vote for their own answers or vote multiple tims for an answer.
+- [ ] **VoteAnswer** - A _VoteAnswer_ transaction is invoked to vote up or vote down an existing answer. As a result, it should be invoked with a reference to an existing answer and the direction of the vote (up or down). A _VoteAnswer_ transaction generates the _AnswerVoted_ event. This transaction ensures that respondents cannot vote for their own answers or vote multiple tims for an answer.
 
-- [ ] **AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongs the voted answers. This transaction generates the _QuestionAwarded_ event.
+- [ ] **AwardQuestion** - A _AwardQuestion_ transaction is invoked to find out the highest voted answers and distribute the reward proportionately amongst the voted answers. This transaction generates the _QuestionAwarded_ event.
 
 ### SmartQuora Events
 Events in a Hyperledger Fabric BNA is pushed on a Web Socket. Any system listening to the Web Socket will get notified of all the events. As a result, the listeners have to filter out events that are not relevant to it.
