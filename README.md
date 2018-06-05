@@ -361,6 +361,8 @@ Now that we have seen a chance to take a sample application for a spin, it is ti
 
 1. Clone the SmartQuora Git on your host.
 ```
+mkdir ~/projects
+cd ~/projects
 git clone https://github.com/skarlekar/smart-quora.git
 ```
 2. Create a distribution directory.
