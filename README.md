@@ -606,9 +606,7 @@ An additional issue is that, while you cannot update your own assets to enrich y
 #### Solution 2
 One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). 
 
-The direct CRUD operations can be prevented by adding the following ACL rule in place of the existing  rule. 
-
-By default when _permissions.acl_ exists, the policy is to deny everything. By adding the following rule _UpdateOnlyThroughTransactions _ instead of the existing _OwnerCannotUpdateTheirAssets_ we are allowing any transaction in the _smartquora_ name space to update our assets except where the users are the owner of the assets being operated on by the transaction. This will prevent users from gaming the system.
+By default when _permissions.acl_ exists, the policy is to deny everything. By adding the following rule _UpdateOnlyThroughTransactions _ instead of the existing _OwnerCannotUpdateTheirAssets_ we are allowing any transaction in the _smartquora_ name space to update our assets except where the users are the owner of the assets being operated on by the transaction. This will prevent users from performing CRUD operations and gaming the system 
 
 ```
 rule UpdateOnlyThroughTransactions {
@@ -636,7 +634,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQ0NjMyMjQsMTYxMzEyMTkyMCwxND
-YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
-MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbLTIxMjIyODY5LDE2MTMxMjE5MjAsMTQ2Mz
+U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
+MDMsLTEwNjE1MjcyNjVdfQ==
 -->
