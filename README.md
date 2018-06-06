@@ -586,7 +586,7 @@ rule ThwartTokenlessQuestions {
   action: DENY 
 }
 ```
-
+Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remebe
 > Written with [StackEdit](https://stackedit.io/).
 
 
@@ -600,5 +600,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbOTU0NzkwOTc3LC04MTYzODEzMDMsLTEwNj
+E1MjcyNjVdfQ==
 -->
