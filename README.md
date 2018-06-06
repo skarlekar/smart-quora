@@ -606,7 +606,7 @@ An additional issue is that, while you cannot update your own assets to enrich y
 #### Solution 2
 One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). 
 
-The direct CRUD operations can be prevented by adding an ACL rule to allow updates to assets through transactions only using the following permission:
+The direct CRUD operations can be prevented by adding the following ACL rule in place of the existing 
 ```
 rule UpdateOnlyThroughTransactions {
     description: "Assets can be updated only through transactions"
@@ -633,7 +633,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0MDcwNzM3LDE2MTMxMjE5MjAsMTQ2Mz
+eyJoaXN0b3J5IjpbNTI1NTI5MjYyLDE2MTMxMjE5MjAsMTQ2Mz
 U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
 MDMsLTEwNjE1MjcyNjVdfQ==
 -->
