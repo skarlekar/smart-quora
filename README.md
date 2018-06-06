@@ -589,6 +589,7 @@ rule ThwartTokenlessQuestions {
 Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
 
 ### Issue 2 - Dealing with _DoubleSpenders_
+While mig
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -603,6 +604,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2Mzk1ODA2LC0xNDU1NjY2ODAzLDEzND
-kyMzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbMTk2MzcwOTY2NCwtMTQ1NTY2NjgwMywxMz
+Q5MjM1MTkyLC04MTYzODEzMDMsLTEwNjE1MjcyNjVdfQ==
 -->
