@@ -571,7 +571,7 @@ award-question.sh your-question-id
 ## Exercises
 There are a few issues in this application as it stands. They are:
 ### Issue 1
-The application allows a QuoraUser to spend indiscrimnately with total disregard to how much 
+The application allows a QuoraUser to spend indiscrimnately with total disregard to how much tokens they have in their account. Ideally, we want the QuoraUser to only stake in 
 
 
 
@@ -588,5 +588,5 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMyOTgwNjVdfQ==
+eyJoaXN0b3J5IjpbLTc2MzgzNTI5MV19
 -->
