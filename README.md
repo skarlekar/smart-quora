@@ -53,9 +53,6 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ## Introduction
 **SmartQuora** is an application that enables knowledge sharing among participants while incentivizing answers that are meaningful and well-explained. *Inquirers* pose questions with a reward for the best answers and a due-date by which they are looking for an answer. *Responders* compete with each other to provide the best answers. Participants can like or dislike answers. When the due-date arrives the answers are tallied and the reward is shared proportionately among the responders such that the best answers gets the most earnings.  To avoid abuse of the platform, inquirers cannot answer their own questions and respondents cannot vote for their own answers. 
 
@@ -654,8 +651,8 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzM0ODE4LC0yMDExMjY2OTA4LC0xNj
-E3NTc1NDY4LDE2MTMxMjE5MjAsMTQ2MzU2OTEwOSwtMTQ1NTY2
-NjgwMywxMzQ5MjM1MTkyLC04MTYzODEzMDMsLTEwNjE1MjcyNj
-VdfQ==
+eyJoaXN0b3J5IjpbMTQ5NDk3NTI3MCwtMjAxMTI2NjkwOCwtMT
+YxNzU3NTQ2OCwxNjEzMTIxOTIwLDE0NjM1NjkxMDksLTE0NTU2
+NjY4MDMsMTM0OTIzNTE5MiwtODE2MzgxMzAzLC0xMDYxNTI3Mj
+Y1XX0=
 -->
