@@ -573,7 +573,8 @@ There are a few issues in this application as it stands. They are:
 ### Issue 1
 The application allows a QuoraUser to spend indiscrimnately with total disregard to how much tokens they have in their account. Ideally, we want the QuoraUser to only offer up reward upto the amount they have in their account ie., QuoraUser.token
 #### Solution 1
-This can be easily solved by adding an access control rule that only allows creating a question if they have atleast as much token as they are offering as a reward. 
+This can be easily solved by adding an access control rule that only allows creating a question if they have atleast as much token as they are offering as a reward.
+To do this, add the following to the _permissions.acl_ file.  
 
 
 
@@ -590,5 +591,5 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzM4MjcwOF19
+eyJoaXN0b3J5IjpbLTEwNjE1MjcyNjVdfQ==
 -->
