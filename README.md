@@ -591,7 +591,7 @@ Note: Rules are evaluated from top (most specific) to bottom (least specific). A
 ### Issue 2 - Dealing with _DoubleSpenders_
 Having dealt with tokenless spenders should bring a level of sanity in the SmartQuora economy, it still leaves the problem of _Double Spending_ possible. This is where _Inquirers_ can rapidly create questions offering up stake before previous questions are awarded thereby depleting there coffers leaving a negative balance in their accounts from future awards.
 #### Solution 2
-One solution to this issue is to create a EscrowWallet asset which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). The Escrow asset should 
+One solution to this issue is to create a Escrow Wallet asset which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). The Escrow Wallet asset should be able to hold escrow balances for multiple Smart Quora users and should not be updateable 
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -606,6 +606,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjYwODQ4NiwtMTQ1NTY2NjgwMywxMz
-Q5MjM1MTkyLC04MTYzODEzMDMsLTEwNjE1MjcyNjVdfQ==
+eyJoaXN0b3J5IjpbODU4MTAyMjg5LC0xNDU1NjY2ODAzLDEzND
+kyMzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
 -->
