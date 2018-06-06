@@ -623,9 +623,9 @@ To use the _Escrow_ logic discussed above we have to add an _Escrow_ asset to th
 
 ```
 cd ~/projects/smart-quora/
-cp solution-2\permissions.acl <repo>
-cp solution-2\question.cto <repo>\smartquora-bna\models
-cp solution-2\logic.js <repo>\lib\logic.js
+cp solution-2\permissions.acl smartquora-bna
+cp solution-2\question.cto smartquora-bna\models
+cp solution-2\logic.js smartquora-bna\lib\
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -640,7 +640,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njg0MDUzMywxNjEzMTIxOTIwLDE0Nj
-M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
-MzAzLC0xMDYxNTI3MjY1XX0=
+eyJoaXN0b3J5IjpbLTEzODcwMzIwNDgsMTYxMzEyMTkyMCwxND
+YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
+MTMwMywtMTA2MTUyNzI2NV19
 -->
