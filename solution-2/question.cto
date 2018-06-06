@@ -1,0 +1,67 @@
+namespace smartquora.question
+
+import smartquora.participant.QuoraUser
+import smartquora.answer.Answer
+
+enum QuestionStatus {
+  o CREATED
+  o ANSWERED
+  o CLOSED
+  o AWARDED
+  o DEFAULTED
+}
+
+enum EscrowStatus {
+  o CREATED
+  o RELEASED
+}
+
+asset Escrow identified by questionId {
+  o String questionId
+  o Double balance
+  o EscrowStatus status
+}
+
+asset Question identified by questionId {
+  o String questionId
+  o String questionDesc
+  o QuestionStatus status
+  o Double stake
+  o Double balance
+  o DateTime timeCreated
+  o DateTime timeToAward
+  --> QuoraUser owner
+  --> Answer bestAnswer optional
+  --> Answer[] answers optional
+  o DateTime timeClosedOrDefaulted optional
+  --> Escrow associatedEscrow 
+}
+
+transaction CreateQuestion {
+  o String id optional
+  o String questionDesc
+  o Double offer
+  o DateTime awardingTime
+}
+
+event QuestionCreated {
+  --> Question question
+  --> QuoraUser askedBy
+  o String questionId
+  o String questionDesc
+  o Double offer
+  o DateTime timeCreated
+}
+
+transaction AwardQuestion {
+  --> Question question
+}
+
+event QuestionAwarded {
+  --> Question question
+  o DateTime timeAwarded
+}
+
+event LogInfo {
+  o String message
+}
