@@ -573,7 +573,8 @@ award-question.sh your-question-id
 ![award](images/sq-award-question.png)
 
 ## Exercises
-There are a few issues in this application as it stands. They are:
+There are a few issues in this application as it stands. 
+
 ### Issue 1 - Dealing with _SpendThrifts_
 The application allows a QuoraUser to spend indiscrimnately with total disregard to how much tokens they have in their account. Ideally, we want the QuoraUser to only offer up reward upto the amount they have in their account ie., QuoraUser.token
 #### Solution 1
@@ -651,8 +652,8 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzEyMjYyMTgsMTQ5NDk3NTI3MCwtMj
-AxMTI2NjkwOCwtMTYxNzU3NTQ2OCwxNjEzMTIxOTIwLDE0NjM1
-NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2MzgxMz
-AzLC0xMDYxNTI3MjY1XX0=
+eyJoaXN0b3J5IjpbLTI3OTczMzUyNiwxNDk0OTc1MjcwLC0yMD
+ExMjY2OTA4LC0xNjE3NTc1NDY4LDE2MTMxMjE5MjAsMTQ2MzU2
+OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEzMD
+MsLTEwNjE1MjcyNjVdfQ==
 -->
