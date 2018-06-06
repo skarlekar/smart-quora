@@ -622,7 +622,7 @@ rule UpdateOnlyThroughTransactions {
 To use the _Escrow_ logic discussed above we have to add an _Escrow_ asset to the system. Additionally, logic must be added to subtract the stake from the user's balance and push it into a Escrow as soon as the question is created.
 
 ```
-
+cp <repo>\s
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -637,7 +637,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTk2OTgyLDE2MTMxMjE5MjAsMTQ2Mz
+eyJoaXN0b3J5IjpbMjMxNDU0NDkwLDE2MTMxMjE5MjAsMTQ2Mz
 U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
 MDMsLTEwNjE1MjcyNjVdfQ==
 -->
