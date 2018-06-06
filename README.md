@@ -601,7 +601,7 @@ start-smartquora.sh
 ### Issue 2 - Dealing with _DoubleSpenders_
 While the _SpendThrifts_ problem is solved, it still leaves the problem of _Double Spending_ possible. This is where _Inquirers_ can rapidly create questions offering up stake before previous questions are awarded thereby depleting there coffers and leaving a negative balance in their accounts from future awards.
 
-An additional issue is that, 
+An additional issue is that, while you cannot update your own assets to enrich yourselves, you can update and enrich or impoverish another user by directly updating their QuoraUser
 #### Solution 2
 One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). Make sure that the 
 
@@ -618,7 +618,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2MTAwNjU0LDE2MTMxMjE5MjAsMTQ2Mz
-U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
-MDMsLTEwNjE1MjcyNjVdfQ==
+eyJoaXN0b3J5IjpbLTIwNjIyMDE4NDYsMTYxMzEyMTkyMCwxND
+YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
+MTMwMywtMTA2MTUyNzI2NV19
 -->
