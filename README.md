@@ -612,7 +612,7 @@ An additional issue is that, while you cannot update your own assets to enrich y
 #### Solution 2
 One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). 
 
-By default when _permissions.acl_ exists, the policy is to deny everything. By adding the following rule _UpdateOnlyThroughTransactions _ instead of the existing _OwnerCannotUpdateTheirAssets_ we are allowing any transaction in the _smartquora_ name space to update our assets except where the users are the owner of the assets being operated on by the transaction. This will prevent users from performing CRUD operations and gaming the system 
+By default when _permissions.acl_ exists, the policy is to deny everything. By adding the following rule _UpdateOnlyThroughTransactions_ instead of the existing _OwnerCannotUpdateTheirAssets_ we are allowing any transaction in the _smartquora_ name space to update our assets except where the users are the owner of the assets being operated on by the transaction. This will prevent users from performing CRUD operations and gaming the system 
 
 ```
 rule UpdateOnlyThroughTransactions {
@@ -651,8 +651,8 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NDk3NTI3MCwtMjAxMTI2NjkwOCwtMT
-YxNzU3NTQ2OCwxNjEzMTIxOTIwLDE0NjM1NjkxMDksLTE0NTU2
-NjY4MDMsMTM0OTIzNTE5MiwtODE2MzgxMzAzLC0xMDYxNTI3Mj
-Y1XX0=
+eyJoaXN0b3J5IjpbLTE5NzEyMjYyMTgsMTQ5NDk3NTI3MCwtMj
+AxMTI2NjkwOCwtMTYxNzU3NTQ2OCwxNjEzMTIxOTIwLDE0NjM1
+NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2MzgxMz
+AzLC0xMDYxNTI3MjY1XX0=
 -->
