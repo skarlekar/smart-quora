@@ -592,7 +592,8 @@ Note: Rules are evaluated from top (most specific) to bottom (least specific). A
 
 Once added, the upgrade the BNA as follows:
 ```
-cd ~/projects/smart-quora/smartquora-bna
+cd ~/projects/smart-quora
+cp solution-1/permission.acl
 node upgrade-bna.js
 kill-rest.sh
 start-smartquora.sh
@@ -640,7 +641,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODcwMzIwNDgsMTYxMzEyMTkyMCwxND
+eyJoaXN0b3J5IjpbLTE5NzM4NjYzMTIsMTYxMzEyMTkyMCwxND
 YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
 MTMwMywtMTA2MTUyNzI2NV19
 -->
