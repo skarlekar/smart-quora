@@ -570,7 +570,7 @@ award-question.sh your-question-id
 
 ## Exercises
 There are a few issues in this application as it stands. They are:
-### Issue 1
+### Issue 1 - Dealing with _SpendThrifts_
 The application allows a QuoraUser to spend indiscrimnately with total disregard to how much tokens they have in their account. Ideally, we want the QuoraUser to only offer up reward upto the amount they have in their account ie., QuoraUser.token
 #### Solution 1
 This can be easily solved by adding an access control rule that only allows creating a question if they have atleast as much token as they are offering as a reward.
@@ -587,6 +587,9 @@ rule ThwartTokenlessQuestions {
 }
 ```
 Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
+
+### Issue 2 - Dealing with _DoubleSpenders_
+
 > Written with [StackEdit](https://stackedit.io/).
 
 
@@ -600,6 +603,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtOD
-E2MzgxMzAzLC0xMDYxNTI3MjY1XX0=
+eyJoaXN0b3J5IjpbOTM2Mzk1ODA2LC0xNDU1NjY2ODAzLDEzND
+kyMzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
 -->
