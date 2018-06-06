@@ -593,7 +593,7 @@ Note: Rules are evaluated from top (most specific) to bottom (least specific). A
 Change the _permission.acl_ and upgrade the BNA as follows:
 ```
 cd ~/projects/smart-quora
-cp solution-1/permission.acl smartquora-bna
+cp solution-1/permissions.acl smartquora-bna
 node upgrade-bna.js
 kill-rest.sh
 start-smartquora.sh
@@ -645,7 +645,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTc1NzU0NjgsMTYxMzEyMTkyMCwxND
-YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
-MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbLTEyODkxMjU0MDUsLTE2MTc1NzU0NjgsMT
+YxMzEyMTkyMCwxNDYzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDky
+MzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
 -->
