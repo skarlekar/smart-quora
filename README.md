@@ -575,8 +575,17 @@ The application allows a QuoraUser to spend indiscrimnately with total disregard
 #### Solution 1
 This can be easily solved by adding an access control rule that only allows creating a question if they have atleast as much token as they are offering as a reward.
 To do this, add the following to the _permissions.acl_ file.  
-
-
+```
+rule ThwartTokenlessQuestions {
+  description: "Only Quora users with tokens can pose questions"
+  participant(p): "smartquora.participant.QuoraUser"
+  operation: CREATE
+  resource(r): "smartquora.question.Question"
+  transaction(tx): "smartquora.question.CreateQuestion"
+  condition: (p.token < tx.offer)
+  action: DENY 
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -591,5 +600,5 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE1MjcyNjVdfQ==
+eyJoaXN0b3J5IjpbLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
 -->
