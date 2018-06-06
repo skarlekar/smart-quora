@@ -586,7 +586,7 @@ rule ThwartTokenlessQuestions {
   action: DENY 
 }
 ```
-Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](smart-quora/solution-1/permissions.acl).
+Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
 > Written with [StackEdit](https://stackedit.io/).
 
 
@@ -600,6 +600,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwMDcwNzcyLDEzNDkyMzUxOTIsLTgxNj
-M4MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtOD
+E2MzgxMzAzLC0xMDYxNTI3MjY1XX0=
 -->
