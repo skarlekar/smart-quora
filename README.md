@@ -590,7 +590,7 @@ rule ThwartTokenlessQuestions {
 
 Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
 
-Once added, the upgrade the BNA as follows:
+Change the 
 ```
 cd ~/projects/smart-quora
 cp solution-1/permission.acl
@@ -641,7 +641,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM4NjYzMTIsMTYxMzEyMTkyMCwxND
-YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
-MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbMTQ3NDUzNTc3MywxNjEzMTIxOTIwLDE0Nj
+M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
+MzAzLC0xMDYxNTI3MjY1XX0=
 -->
