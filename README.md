@@ -604,8 +604,9 @@ While the _SpendThrifts_ problem is solved, it still leaves the problem of _Doub
 An additional issue is that, while you cannot update your own assets to enrich yourselves, you can update and enrich or impoverish another user by directly updating their corresponding _QuoraUser_ asset through direct CRUD operations.
 
 #### Solution 2
-Let us fix t
-One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). Make sure that the 
+One solution to this issue is to create a _Escrow_ account for each question which deducts the offer from the inquirer's account as soon as they pose a question. Once the question is awarded (or defaulted), the amount gets released from the Escrow account back to the awardee or the original inquirer (in case of default). 
+
+The direct CRUD operations can be prevented by adding an ACL rule to allow updates to assets through 
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -620,7 +621,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Mjc2MDg0OSwxNjEzMTIxOTIwLDE0Nj
+eyJoaXN0b3J5IjpbMTgxMzEyNzMzOCwxNjEzMTIxOTIwLDE0Nj
 M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
 MzAzLC0xMDYxNTI3MjY1XX0=
 -->
