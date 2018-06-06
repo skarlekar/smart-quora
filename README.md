@@ -590,10 +590,10 @@ rule ThwartTokenlessQuestions {
 
 Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
 
-Change the 
+Change the _permission.acl_ and upgrade the BNA as follows:
 ```
 cd ~/projects/smart-quora
-cp solution-1/permission.acl
+cp solution-1/permission.acl smartquora-bna
 node upgrade-bna.js
 kill-rest.sh
 start-smartquora.sh
@@ -626,7 +626,11 @@ To use the _Escrow_ logic discussed above we have to add an _Escrow_ asset to th
 cd ~/projects/smart-quora/
 cp solution-2\permissions.acl smartquora-bna
 cp solution-2\question.cto smartquora-bna\models
-cp solution-2\logic.js smartquora-bna\lib\
+cp solution-2\logic.js smartquora-bna\lib
+node upgrade-bna.js
+kill-rest.sh
+start-smartquora.sh
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -641,7 +645,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDUzNTc3MywxNjEzMTIxOTIwLDE0Nj
-M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
-MzAzLC0xMDYxNTI3MjY1XX0=
+eyJoaXN0b3J5IjpbLTE2MTc1NzU0NjgsMTYxMzEyMTkyMCwxND
+YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
+MTMwMywtMTA2MTUyNzI2NV19
 -->
