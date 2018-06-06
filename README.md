@@ -45,7 +45,14 @@
     + [Provide an Answer](#provide-an-answer)
     + [Vote for an Answer](#vote-for-an-answer)
     + [Award an Answer](#award-an-answer)
-  * [Troubleshooting](#troubleshooting)
+  * [Exercises](#exercises)
+    + [Issue 1 - Dealing with _SpendThrifts_](#issue-1---dealing-with--spendthrifts-)
+      - [Solution 1](#solution-1)
+    + [Issue 2 - Dealing with _DoubleSpenders_](#issue-2---dealing-with--doublespenders-)
+      - [Solution 2](#solution-2)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -647,7 +654,8 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTEyNjY5MDgsLTE2MTc1NzU0NjgsMT
-YxMzEyMTkyMCwxNDYzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDky
-MzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbLTc1NzM0ODE4LC0yMDExMjY2OTA4LC0xNj
+E3NTc1NDY4LDE2MTMxMjE5MjAsMTQ2MzU2OTEwOSwtMTQ1NTY2
+NjgwMywxMzQ5MjM1MTkyLC04MTYzODEzMDMsLTEwNjE1MjcyNj
+VdfQ==
 -->
