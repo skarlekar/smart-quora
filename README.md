@@ -619,7 +619,7 @@ rule UpdateOnlyThroughTransactions {
     action: ALLOW
 }
 ```
-
+To use the _Escrow_ logic discussed above we have to add an _Escrow_ asset to the system. Additionally, logic must 
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -634,7 +634,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIyODY5LDE2MTMxMjE5MjAsMTQ2Mz
-U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
-MDMsLTEwNjE1MjcyNjVdfQ==
+eyJoaXN0b3J5IjpbLTM3NDQ0NzE5NywxNjEzMTIxOTIwLDE0Nj
+M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
+MzAzLC0xMDYxNTI3MjY1XX0=
 -->
