@@ -592,7 +592,7 @@ Note: Rules are evaluated from top (most specific) to bottom (least specific). A
 
 Once added, the upgrade the BNA as follows:
 ```
-cd <repo>/smartquora-bna
+cd ~/projects/smart-quora/smartquora-bna
 node upgrade-bna.js
 kill-rest.sh
 start-smartquora.sh
@@ -622,10 +622,10 @@ rule UpdateOnlyThroughTransactions {
 To use the _Escrow_ logic discussed above we have to add an _Escrow_ asset to the system. Additionally, logic must be added to subtract the stake from the user's balance and push it into a Escrow as soon as the question is created.
 
 ```
-cd 
-cp <repo>\solution-2\permissions.acl <repo>
-cp <repo>\solution-2\question.cto <repo>\smartquora-bna\models
-cp <repo>\solution-2\logic.js <repo>\lib\logic.js
+cd ~/projects/smart-quora/
+cp solution-2\permissions.acl <repo>
+cp solution-2\question.cto <repo>\smartquora-bna\models
+cp solution-2\logic.js <repo>\lib\logic.js
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -640,7 +640,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQyNzQ4OTAsMTYxMzEyMTkyMCwxND
-YzNTY5MTA5LC0xNDU1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4
-MTMwMywtMTA2MTUyNzI2NV19
+eyJoaXN0b3J5IjpbMTk3Njg0MDUzMywxNjEzMTIxOTIwLDE0Nj
+M1NjkxMDksLTE0NTU2NjY4MDMsMTM0OTIzNTE5MiwtODE2Mzgx
+MzAzLC0xMDYxNTI3MjY1XX0=
 -->
