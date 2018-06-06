@@ -591,7 +591,7 @@ Note: Rules are evaluated from top (most specific) to bottom (least specific). A
 ### Issue 2 - Dealing with _DoubleSpenders_
 Having dealt with tokenless spenders should bring a level of sanity in the SmartQuora economy, it still leaves the problem of _Double Spending_ possible. This is where _Inquirers_ can rapidly create questions offering up stake before previous questions are awarded thereby depleting there coffers leaving a negative balance in their accounts from future awards.
 #### Solution 2
-Th
+One solution to this issue is to create a Escrow asset which keeps d
 
 > Written with [StackEdit](https://stackedit.io/).
 
@@ -606,6 +606,6 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjY2NzcyNjIsLTE0NTU2NjY4MDMsMT
-M0OTIzNTE5MiwtODE2MzgxMzAzLC0xMDYxNTI3MjY1XX0=
+eyJoaXN0b3J5IjpbMzczMDc4OTExLC0xNDU1NjY2ODAzLDEzND
+kyMzUxOTIsLTgxNjM4MTMwMywtMTA2MTUyNzI2NV19
 -->
