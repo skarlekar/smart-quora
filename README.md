@@ -588,8 +588,11 @@ rule ThwartTokenlessQuestions {
 }
 ```
 
-Once 
 Note: Rules are evaluated from top (most specific) to bottom (least specific). As soon as the Participant, Operation and Resource match for a rule then subsequent rules are not evaluated. If no ACL rule fires then the access control decision is DENY. Therefore, remember to add this rule around the top of the _permissions.acl_ file as shown [here](solution-1/permissions.acl).
+
+Once added, the upgrade the BNA as follows:
+```
+cd <
 
 ### Issue 2 - Dealing with _DoubleSpenders_
 Having dealt with tokenless spenders should bring a level of sanity in the SmartQuora economy, it still leaves the problem of _Double Spending_ possible. This is where _Inquirers_ can rapidly create questions offering up stake before previous questions are awarded thereby depleting there coffers leaving a negative balance in their accounts from future awards.
@@ -609,7 +612,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDYyNjc0NSwxNDYzNTY5MTA5LC0xND
-U1NjY2ODAzLDEzNDkyMzUxOTIsLTgxNjM4MTMwMywtMTA2MTUy
-NzI2NV19
+eyJoaXN0b3J5IjpbLTIxMDM0MjMwNzksMTQ2MzU2OTEwOSwtMT
+Q1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEzMDMsLTEwNjE1
+MjcyNjVdfQ==
 -->
