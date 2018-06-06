@@ -569,8 +569,9 @@ award-question.sh your-question-id
 ![award](images/sq-award-question.png)
 
 ## Exercises
-There are a few issues in this application as it stands. 
-### 
+There are a few issues in this application as it stands. They are:
+### Issue 1
+
 
 
 
@@ -587,5 +588,5 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTk1NjIxMV19
+eyJoaXN0b3J5IjpbLTE5MTQxNTQyMjFdfQ==
 -->
