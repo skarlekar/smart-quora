@@ -608,7 +608,7 @@ One solution to this issue is to create a _Escrow_ account for each question whi
 
 The direct CRUD operations can be prevented by adding the following ACL rule in place of the existing _OwnerCannotUpdateTheirAssets_ rule. 
 
-By defaul
+By default when _permissions.acl_ exists, the policy is to deny everything. By adding the following rule we are allowing any transaction
 ```
 rule UpdateOnlyThroughTransactions {
     description: "Assets can be updated only through transactions"
@@ -635,7 +635,7 @@ I0OTQ2MDcyLC0zMjg1NzI4NTMsLTY4MjAxMzU1MywzNTY0ODU0
 NjhdfQ==
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3NDQwNzA2LDE2MTMxMjE5MjAsMTQ2Mz
+eyJoaXN0b3J5IjpbMjM4OTE5NDQ0LDE2MTMxMjE5MjAsMTQ2Mz
 U2OTEwOSwtMTQ1NTY2NjgwMywxMzQ5MjM1MTkyLC04MTYzODEz
 MDMsLTEwNjE1MjcyNjVdfQ==
 -->
