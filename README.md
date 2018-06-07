@@ -514,13 +514,13 @@ We will use the Composer Playground to create a few digital identity cards as de
 composer-playground
 ```
 2. Point your browser to http://your-host-name:8080
-3. Connect to the _smartquora-bna_
-4. Create a new _Participant_.
+3. Connect to the _smartquora-bna_ and click on _Test_
+4. Create a new _Participant_ (make sure to fill out the emailId, fName, lName and token field. Give 100 tokens to start with).
 5. Navigate to the _ID Registry_.
 6. Click _Issue New ID_.
 7. Provide a ID Name for the _Participant_.
 8. Choose a _Participant_ from the list.
-9. Click _Create New_ and choose 'Send it to someone else_.
+9. Click _Create New_ and choose _Send it to someone else_.
 10. Click _Export Business Network Card_.
 
 ![create digital identity](images/create-digital-identity.gif)
