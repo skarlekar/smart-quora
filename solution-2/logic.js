@@ -85,24 +85,26 @@ async function createQuestion(tx) {
   q.owner = owner;
 
     
-  // **** Escrow update begins
+  // **** Escrow update part 1 begins
   var e = getFactory().newResource('smartquora.question', 'Escrow', qid);
   e.status = 'CREATED';
   e.balance = tx.offer;
   const escrowRegistry = await getAssetRegistry('smartquora.question.Escrow');
   await escrowRegistry.add(e);
-  owner.token = owner.token - tx.offer;
-  const userRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
-  await userRegistry.update(owner);
   q.associatedEscrow = e;
-  // **** Escrow update ends
+  // **** Escrow update part 1 ends
   
-  
-  // Get the asset registry for the question.
+    // Get the asset registry for the question.
   const assetRegistry = await getAssetRegistry('smartquora.question.Question');
-
   // Add the question to the asset registry
   await assetRegistry.add(q);
+  
+  // **** Escrow update part 2 begins
+  owner.token = owner.token - tx.offer;
+  const userRegistry = await getParticipantRegistry('smartquora.participant.QuoraUser');
+  await userRegistry.update(owner);  
+  // **** Escrow update part 2 ends here
+
 
   // Emit an event for the added question.
   let event = getFactory().newEvent('smartquora.question', 'QuestionCreated');
