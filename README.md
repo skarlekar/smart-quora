@@ -432,7 +432,9 @@ In OAuth 2.0, these access tokens are called “bearer tokens”, and can be use
 
 2. Now copy the *client id* and *client secret* from Google+ and enter this in the _COMPOSER_PROVIDERS_ section of the  _start-smartquora.sh_ script.
 
-3.  Now install the Passport Google OAuth2.0 strategy.
+3. Update the *successRedirect* field of the _COMPOSER_PROVIDERS_ with the host name of your web-server host (ec2 instance) in place of _your-host_.
+
+4.  Now install the Passport Google OAuth2.0 strategy.
 ```
 npm install -g passport-google-oauth2
 ```
