@@ -215,7 +215,7 @@ After the installation is complete you should see a message stating that the fol
 
 ![enter image description here](images/pre-req-install-out.png)
 
-At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.
+__**At this point remember to log out and log back in to ensure you have access to the newly deployed binaries.**__
 
 Verify that you have access to the binaries installed as follows:
 
