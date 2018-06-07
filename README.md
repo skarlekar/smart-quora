@@ -473,7 +473,7 @@ kill <pid>
 
 Start the REST server by running the _start-smartquora.sh_ script.
 ```
-cd <repo>/smartquora-bna
+cd ~/projects/smart-quora/smartquora-bna
 ./start-smartquora.sh
 ```
 
@@ -484,12 +484,12 @@ npm install -g http-server
 ```
 2. Before we start the webserver, replace the 'your-host-name' string in the _html_ files with the host name of the machine where you have installed this software. Note: Only provide the domain name. Do not add the protocol or port here.
 ```
-cd <repo>/scripts
+cd ~/projects/smart-quora/scripts
 replace-host-name.sh ec2-sample-01.amazonaws.com
 ```
 3. Start the web server.
 ```
-cd <repo>/www
+cd ~/projects/smart-quora/www
 http-server -p 8081
 ```
 ## Running SmartQuora
@@ -567,7 +567,7 @@ Awarding an answer is an administrator function and has to be performed in the b
 
 To award an answer, on the server go to the _smartquora-gen_directory and run the _award_question.sh_ script. The script takes a question id as the only parameter.
 ```
-cd <repo>/smartquora-gen
+cd ~/projects/smart-quora/smartquora-gen
 award-question.sh your-question-id
 ```
 ![award](images/sq-award-question.png)
