@@ -182,8 +182,8 @@ Allocate a new Elastic IP address and associate it with the newly created instan
 #### Create Hyperuser
 Hyperledger Fabric installation prohibits using the root identity to install the software. Therefore, create a new user and add that user to the _sudo_ group. You can choose any user name. I am using _hyperuser_
 
-    $ sudo adduser hyperuser
-    $ sudo adduser hyperuser sudo
+    sudo adduser hyperuser
+    sudo adduser hyperuser sudo
 
 Switch user to hyperuser and add the current working directory "." to the PATH environment variable in .profile.
 
