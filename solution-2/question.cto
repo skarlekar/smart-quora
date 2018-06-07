@@ -34,7 +34,7 @@ asset Question identified by questionId {
   --> Answer bestAnswer optional
   --> Answer[] answers optional
   o DateTime timeClosedOrDefaulted optional
-  --> Escrow associatedEscrow 
+  --> Escrow associatedEscrow optional
 }
 
 transaction CreateQuestion {
